@@ -1,0 +1,67 @@
+excluded:
+  - Pods
+
+force_cast: warning
+force_try: warning
+
+disabled_rules:
+  - type_name
+  - trailing_comma
+  - identifier_name
+  - force_cast
+  - force_try
+  - force_unwrapping
+  - private_outlet
+  - unneeded_parentheses_in_closure_argument
+  - empty_count
+  - line_length
+  - conditional_returns_on_newline
+  - attributes
+  - function_body_length
+  - closure_parameter_position
+  - for_where
+  - control_statement
+  - closure_spacing
+  - trailing_closure
+  - implicitly_unwrapped_optional
+  - closure_end_indentation
+  - unneeded_break_in_switch
+  - number_separator
+  - operator_usage_whitespace
+  - vertical_parameter_alignment
+  - implicit_getter
+  - valid_ibinspectable
+
+opt_in_rules:
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - compiler_protocol_init
+  - conditional_returns_on_newline
+  - contains_over_first_not_nil
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - joined_default_parameter
+  - nimble_operator
+  - number_separator
+  - operator_usage_whitespace
+  - pattern_matching_keywords
+  - private_outlet
+  - redundant_nil_coalescing
+  - single_test_class
+  - sorted_first_last
+  - trailing_closure
+  - unneeded_parentheses_in_closure_argument
+  - yoda_condition
+
+line_length:
+  warning: 300
+  # Some improbably large number because we don't want compile errors
+  # just because of style problems
+  error: 300
+  ignores_urls: true

@@ -1,0 +1,14 @@
+// OTP
+"EnterOTPSent" = "Enter OTP that was sent to %@";
+"WrongNumber" = "Wrong number?";
+"ResendCode" = "Resend Code";
+
+"InvalidOTP" = "Must be a 6-digit code";
+"WrongOTP" = "Wrong OTP entered";
+
+"CodeWillExpired" = "Your code will expire in %@.";
+"CodeHasExpired" = "Your code has expired.";
+
+"NotAValidCode" = "Not a valid code";
+"DataUploaded" = "Data uploaded";
+"DataNotUploaded" = "Data not uploaded";

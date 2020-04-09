@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zG-EN-pX5">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli</string>
+        </array>
+        <array key="Muli-SemiBold.ttf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Upload Data View Controller-->
+        <scene sceneID="Ua4-df-Vvg">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="DFr-mJ-44M" customClass="UploadDataViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gzf-xJ-t6U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For use by the health authority" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYS-5z-whd">
+                                <rect key="frame" x="24" y="40.000000000000007" width="366" height="82.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="HK Nova" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload data for contact tracing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nma-xF-lsY">
+                                <rect key="frame" x="24" y="126.66666666666667" width="366" height="23.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiX-r3-AyO">
+                                <rect key="frame" x="24" y="174.33333333333334" width="366" height="488.66666666666663"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="qgn-MI-aR9" kind="embed" id="dif-jo-wdV"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12135061567162131" green="0.20462612275951686" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fiX-r3-AyO" firstAttribute="leading" secondItem="H2G-Y7-eHw" secondAttribute="leading" constant="24" id="25d-gm-hDu"/>
+                            <constraint firstItem="nma-xF-lsY" firstAttribute="leading" secondItem="KYS-5z-whd" secondAttribute="leading" id="8Gt-eA-B0r"/>
+                            <constraint firstItem="fiX-r3-AyO" firstAttribute="centerX" secondItem="H2G-Y7-eHw" secondAttribute="centerX" id="8uL-RE-YG0"/>
+                            <constraint firstItem="nma-xF-lsY" firstAttribute="top" secondItem="KYS-5z-whd" secondAttribute="bottom" constant="4" id="AFz-Dq-0sM"/>
+                            <constraint firstItem="fiX-r3-AyO" firstAttribute="top" secondItem="nma-xF-lsY" secondAttribute="bottom" constant="24" id="Jgt-US-0sP"/>
+                            <constraint firstItem="KYS-5z-whd" firstAttribute="centerX" secondItem="H2G-Y7-eHw" secondAttribute="centerX" id="TDa-Ch-oGs"/>
+                            <constraint firstItem="KYS-5z-whd" firstAttribute="leading" secondItem="H2G-Y7-eHw" secondAttribute="leading" constant="24" id="Vjk-hz-43a"/>
+                            <constraint firstItem="KYS-5z-whd" firstAttribute="top" secondItem="H2G-Y7-eHw" secondAttribute="top" constant="40" id="euk-It-biH"/>
+                            <constraint firstItem="nma-xF-lsY" firstAttribute="centerX" secondItem="H2G-Y7-eHw" secondAttribute="centerX" id="nV0-bY-DxI"/>
+                            <constraint firstItem="H2G-Y7-eHw" firstAttribute="bottom" secondItem="fiX-r3-AyO" secondAttribute="bottom" constant="24" id="rpi-ec-7mz"/>
+                            <constraint firstItem="H2G-Y7-eHw" firstAttribute="trailing" secondItem="KYS-5z-whd" secondAttribute="trailing" constant="24" id="zWz-dx-uCh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H2G-Y7-eHw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vyd-wD-Nf3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dy-WM-qjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="651" y="-1493"/>
+        </scene>
+        <!--Upload Data Step1VC-->
+        <scene sceneID="JHC-Ky-XlA">
+            <objects>
+                <viewController id="FWU-Ac-8hW" customClass="UploadDataStep1VC" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xSH-pD-dF6">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="488.66666666666663"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-jJ-y4F" userLabel="Step 1 View">
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="488.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If the health authority needs to access your OpenTrace data:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-pX-24Q">
+                                        <rect key="frame" x="24" y="55" width="318" height="47.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensure the code from the health authority matches the one below" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wja-RS-8XO">
+                                        <rect key="frame" x="24" y="153.66666666666666" width="318" height="47.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification code:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-5w-VoS">
+                                        <rect key="frame" x="24" y="262" width="134" height="23.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-JY-VQy">
+                                        <rect key="frame" x="162" y="262" width="5.6666666666666572" height="23.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvJ-Ck-Jfq" customClass="GradientButton" customModule="OpenTrace" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="400.66666666666669" width="318" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="UfP-JE-Kas"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                        <state key="normal" title="Next" backgroundImage="button-gradient">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submit:" destination="DFr-mJ-44M" eventType="touchUpInside" id="jkJ-eq-N9e"/>
+                                            <segue destination="a6e-KY-ZKO" kind="show" id="6ds-i9-e2a"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Puz-2k-wb3">
+                                        <rect key="frame" x="164.66666666666666" y="226" width="37" height="37"/>
+                                        <color key="color" red="0.78432220220000004" green="0.78429466489999999" blue="0.78432160620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </activityIndicatorView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhX-hX-07V">
+                                        <rect key="frame" x="175.66666666666666" y="250.33333333333337" width="48" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EhX-hX-07V" secondAttribute="height" multiplier="1:1" constant="1" id="Jhf-UR-K13"/>
+                                            <constraint firstAttribute="width" constant="48" id="RXa-pZ-4Yn"/>
+                                        </constraints>
+                                        <state key="normal" image="ic-retry"/>
+                                        <connections>
+                                            <action selector="retryBtnTapped:" destination="FWU-Ac-8hW" eventType="touchUpInside" id="SD6-is-jnG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks9-IK-8vm">
+                                        <rect key="frame" x="24" y="126.33333333333333" width="318" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="vBc-pX-24Q" firstAttribute="top" secondItem="nfO-jJ-y4F" secondAttribute="top" constant="55" id="3zf-VA-Fgf"/>
+                                    <constraint firstItem="ks9-IK-8vm" firstAttribute="leading" secondItem="nfO-jJ-y4F" secondAttribute="leading" constant="24" id="5bm-EB-qMF"/>
+                                    <constraint firstAttribute="bottom" secondItem="CvJ-Ck-Jfq" secondAttribute="bottom" constant="40" id="6FR-NB-zuS"/>
+                                    <constraint firstItem="wkG-5w-VoS" firstAttribute="leading" secondItem="wja-RS-8XO" secondAttribute="leading" id="6Wr-ao-E2i"/>
+                                    <constraint firstItem="Puz-2k-wb3" firstAttribute="centerY" secondItem="nfO-jJ-y4F" secondAttribute="centerY" id="8KJ-ax-oKY"/>
+                                    <constraint firstItem="cg9-JY-VQy" firstAttribute="centerY" secondItem="wkG-5w-VoS" secondAttribute="centerY" id="8ju-nI-xrO"/>
+                                    <constraint firstItem="ks9-IK-8vm" firstAttribute="centerX" secondItem="nfO-jJ-y4F" secondAttribute="centerX" id="DfD-DT-HzH"/>
+                                    <constraint firstItem="cg9-JY-VQy" firstAttribute="leading" secondItem="wkG-5w-VoS" secondAttribute="trailing" constant="4" id="FTq-Fc-l0n"/>
+                                    <constraint firstItem="wja-RS-8XO" firstAttribute="top" secondItem="ks9-IK-8vm" secondAttribute="bottom" constant="8" id="IMZ-ZC-vwB"/>
+                                    <constraint firstItem="wja-RS-8XO" firstAttribute="leading" secondItem="vBc-pX-24Q" secondAttribute="leading" id="IXU-oi-lPE"/>
+                                    <constraint firstItem="wja-RS-8XO" firstAttribute="centerX" secondItem="vBc-pX-24Q" secondAttribute="centerX" id="PXa-QG-fAA"/>
+                                    <constraint firstItem="ks9-IK-8vm" firstAttribute="top" secondItem="vBc-pX-24Q" secondAttribute="bottom" constant="24" id="Rh5-XV-koV"/>
+                                    <constraint firstItem="vBc-pX-24Q" firstAttribute="centerX" secondItem="ks9-IK-8vm" secondAttribute="centerX" id="Y3H-qz-9Ya"/>
+                                    <constraint firstItem="vBc-pX-24Q" firstAttribute="leading" secondItem="ks9-IK-8vm" secondAttribute="leading" id="coW-Bl-l3y"/>
+                                    <constraint firstItem="wkG-5w-VoS" firstAttribute="top" secondItem="wja-RS-8XO" secondAttribute="bottom" constant="61" id="eig-jG-ey6"/>
+                                    <constraint firstItem="Puz-2k-wb3" firstAttribute="centerX" secondItem="nfO-jJ-y4F" secondAttribute="centerX" id="htS-RC-OfU"/>
+                                    <constraint firstItem="EhX-hX-07V" firstAttribute="centerY" secondItem="cg9-JY-VQy" secondAttribute="centerY" id="jYp-Bn-JB6"/>
+                                    <constraint firstItem="EhX-hX-07V" firstAttribute="leading" secondItem="cg9-JY-VQy" secondAttribute="trailing" constant="8" id="kdX-rk-1cp"/>
+                                    <constraint firstItem="CvJ-Ck-Jfq" firstAttribute="centerX" secondItem="nfO-jJ-y4F" secondAttribute="centerX" id="vvz-qi-9fR"/>
+                                    <constraint firstItem="CvJ-Ck-Jfq" firstAttribute="leading" secondItem="nfO-jJ-y4F" secondAttribute="leading" constant="24" id="wL4-Xk-vV8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nfO-jJ-y4F" firstAttribute="centerX" secondItem="xSH-pD-dF6" secondAttribute="centerX" id="7BO-bL-yyo"/>
+                            <constraint firstItem="nfO-jJ-y4F" firstAttribute="top" secondItem="xSH-pD-dF6" secondAttribute="top" id="9rB-jS-XjE"/>
+                            <constraint firstItem="nfO-jJ-y4F" firstAttribute="centerY" secondItem="xSH-pD-dF6" secondAttribute="centerY" id="AP0-Ho-zNj"/>
+                            <constraint firstItem="nfO-jJ-y4F" firstAttribute="leading" secondItem="xSH-pD-dF6" secondAttribute="leading" id="DFN-VF-eiP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KB0-zJ-FSc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Agl-23-tQz"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Puz-2k-wb3" id="JKg-e3-s0Q"/>
+                        <outlet property="nextBtn" destination="CvJ-Ck-Jfq" id="BgW-WO-XoZ"/>
+                        <outlet property="retryBtn" destination="EhX-hX-07V" id="IQJ-XE-A10"/>
+                        <outlet property="verificationCode" destination="cg9-JY-VQy" id="y9G-5Q-DnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flo-mL-8ft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.68115942029" y="-1553.804347826087"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3PE-vs-6ar">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qgn-MI-aR9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rRc-Si-2TD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FWU-Ac-8hW" kind="relationship" relationship="rootViewController" id="5t7-Dn-y7M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jyi-oM-Xde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="-2158"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="niW-uL-M2m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0zG-EN-pX5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ol5-H6-gS2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sro-IG-RPf" kind="relationship" relationship="rootViewController" id="Otk-a5-qBx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsV-yG-wyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="-2245"/>
+        </scene>
+        <!--Upload Data-->
+        <scene sceneID="ZiS-ep-CD9">
+            <objects>
+                <viewController id="sro-IG-RPf" customClass="UploadDataToNoteViewController" customModule="OpenTrace" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DE9-j0-QRz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDr-rd-rlV" customClass="GradientButton" customModule="OpenTrace" customModuleProvider="target">
+                                <rect key="frame" x="24" y="575" width="366" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="0v1-PA-lPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Next" backgroundImage="button-gradient">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="DFr-mJ-44M" eventType="touchUpInside" id="XC0-K2-lDj"/>
+                                    <segue destination="DFr-mJ-44M" kind="show" id="Gqw-LG-luu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap ‘Next’ only if a contact tracer tells you to do so" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-E5-kIB">
+                                <rect key="frame" x="24" y="505.66666666666669" width="366" height="53.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="opentrace-logo" translatesAutoresizingMaskIntoConstraints="NO" id="D9s-0f-qQM">
+                                <rect key="frame" x="77" y="228.66666666666663" width="260" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="X8s-JR-ALU"/>
+                                    <constraint firstAttribute="height" constant="170" id="xVo-wD-c8y"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For use by the health authority" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2P-Nw-zNc">
+                                <rect key="frame" x="24" y="40.000000000000007" width="369" height="82.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="28"/>
+                                <color key="textColor" red="0.2195851207" green="0.2196223736" blue="0.2195769846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yjt-E5-kIB" firstAttribute="centerX" secondItem="mGt-GF-1QI" secondAttribute="centerX" id="7hH-nh-10e"/>
+                            <constraint firstItem="IDr-rd-rlV" firstAttribute="top" secondItem="Yjt-E5-kIB" secondAttribute="bottom" constant="16" id="BDr-pp-XlV"/>
+                            <constraint firstItem="D9s-0f-qQM" firstAttribute="centerX" secondItem="mGt-GF-1QI" secondAttribute="centerX" id="D73-Na-qx9"/>
+                            <constraint firstItem="u2P-Nw-zNc" firstAttribute="leading" secondItem="Yjt-E5-kIB" secondAttribute="leading" id="Dsg-ZY-MY8"/>
+                            <constraint firstItem="D9s-0f-qQM" firstAttribute="centerY" secondItem="mGt-GF-1QI" secondAttribute="centerY" constant="-30" id="Hwr-TT-V00"/>
+                            <constraint firstItem="mGt-GF-1QI" firstAttribute="trailing" secondItem="u2P-Nw-zNc" secondAttribute="trailing" constant="21" id="Par-RN-zJ9"/>
+                            <constraint firstItem="u2P-Nw-zNc" firstAttribute="top" secondItem="mGt-GF-1QI" secondAttribute="top" constant="40" id="RCa-kq-wZO"/>
+                            <constraint firstItem="Yjt-E5-kIB" firstAttribute="leading" secondItem="IDr-rd-rlV" secondAttribute="leading" id="SFG-Ql-plg"/>
+                            <constraint firstItem="IDr-rd-rlV" firstAttribute="leading" secondItem="mGt-GF-1QI" secondAttribute="leading" constant="24" id="Vbd-vg-gY2"/>
+                            <constraint firstItem="IDr-rd-rlV" firstAttribute="centerX" secondItem="mGt-GF-1QI" secondAttribute="centerX" id="b9Z-Zz-4kq"/>
+                            <constraint firstItem="mGt-GF-1QI" firstAttribute="bottom" secondItem="IDr-rd-rlV" secondAttribute="bottom" constant="64" id="zqn-KU-TXr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mGt-GF-1QI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload Data" image="ic-upload" selectedImage="ic-upload-selected" id="Y1B-Ag-Xtw"/>
+                    <navigationItem key="navigationItem" id="9vc-Zh-P5M"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ywc-N6-3aU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650.72463768115949" y="-2245.108695652174"/>
+        </scene>
+        <!--Upload Data Step2VC-->
+        <scene sceneID="MLs-LJ-G0a">
+            <objects>
+                <viewController id="a6e-KY-ZKO" customClass="UploadDataStep2VC" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rgX-9n-S74">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="488.66666666666663"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQj-UW-fvt" userLabel="BackBtn">
+                                <rect key="frame" x="24" y="20" width="40" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="czu-6G-Za0"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="1u9-gY-k4h"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-back" translatesAutoresizingMaskIntoConstraints="NO" id="gab-D9-sPQ">
+                                <rect key="frame" x="24" y="20" width="40" height="34"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-su-fK0">
+                                <rect key="frame" x="24" y="74" width="318" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter PIN to upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-PF-Epb">
+                                <rect key="frame" x="24" y="101.33333333333333" width="318" height="23.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-1q-WgQ" customClass="CodeInputView" customModule="OpenTrace" customModuleProvider="target">
+                                <rect key="frame" x="16" y="133" width="334" height="54"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="u0b-PM-ahA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff1-z1-pME">
+                                <rect key="frame" x="24" y="300" width="318" height="76.666666666666686"/>
+                                <string key="text">By uploading, you agree to share with the health authority your OpenTrace proximity data for the past 21 days. We don’t collect any geolocation or personal data.</string>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24k-o7-Lgs" customClass="GradientButton" customModule="OpenTrace" customModuleProvider="target">
+                                <rect key="frame" x="24" y="400.66666666666669" width="318" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aN0-ip-CM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Upload data" backgroundImage="button-gradient">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="DFr-mJ-44M" eventType="touchUpInside" id="8qf-Yd-ulC"/>
+                                    <action selector="uploadDataBtnTapped:" destination="a6e-KY-ZKO" eventType="touchUpInside" id="UPn-Qd-y8i"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="2tM-Ke-llF">
+                                <rect key="frame" x="164.66666666666666" y="226" width="37" height="37"/>
+                                <color key="color" red="0.78432220220000004" green="0.78429466489999999" blue="0.78432160620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ew3-er-D6f">
+                                <rect key="frame" x="16" y="195" width="334" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ft1-PF-Epb" firstAttribute="centerX" secondItem="3zY-su-fK0" secondAttribute="centerX" id="0sG-ul-33z"/>
+                            <constraint firstItem="gab-D9-sPQ" firstAttribute="leading" secondItem="AQj-UW-fvt" secondAttribute="leading" id="187-PF-Rf0"/>
+                            <constraint firstItem="2tM-Ke-llF" firstAttribute="centerX" secondItem="54b-Km-PSA" secondAttribute="centerX" id="36x-ks-Ng7"/>
+                            <constraint firstItem="mKA-1q-WgQ" firstAttribute="leading" secondItem="54b-Km-PSA" secondAttribute="leading" constant="16" id="3QK-55-uNE"/>
+                            <constraint firstItem="3zY-su-fK0" firstAttribute="top" secondItem="AQj-UW-fvt" secondAttribute="bottom" constant="20" id="7CN-vz-uWV"/>
+                            <constraint firstItem="mKA-1q-WgQ" firstAttribute="top" secondItem="Ft1-PF-Epb" secondAttribute="bottom" constant="8" id="B7K-gg-aJF"/>
+                            <constraint firstItem="Ff1-z1-pME" firstAttribute="leading" secondItem="Ft1-PF-Epb" secondAttribute="leading" id="BKc-JQ-6HH"/>
+                            <constraint firstItem="2tM-Ke-llF" firstAttribute="centerY" secondItem="54b-Km-PSA" secondAttribute="centerY" id="IiC-M2-boC"/>
+                            <constraint firstItem="3zY-su-fK0" firstAttribute="centerX" secondItem="54b-Km-PSA" secondAttribute="centerX" id="NYd-ZZ-r0f"/>
+                            <constraint firstItem="Ew3-er-D6f" firstAttribute="leading" secondItem="mKA-1q-WgQ" secondAttribute="leading" id="Tar-PD-kcz"/>
+                            <constraint firstItem="Ft1-PF-Epb" firstAttribute="top" secondItem="3zY-su-fK0" secondAttribute="bottom" constant="8" id="YQL-eN-BZ8"/>
+                            <constraint firstItem="AQj-UW-fvt" firstAttribute="leading" secondItem="54b-Km-PSA" secondAttribute="leading" constant="24" id="ZpJ-FQ-6hk"/>
+                            <constraint firstItem="AQj-UW-fvt" firstAttribute="top" secondItem="54b-Km-PSA" secondAttribute="top" constant="20" id="b70-1k-VQx"/>
+                            <constraint firstItem="54b-Km-PSA" firstAttribute="bottom" secondItem="24k-o7-Lgs" secondAttribute="bottom" constant="40" id="bvv-xe-zbG"/>
+                            <constraint firstItem="mKA-1q-WgQ" firstAttribute="centerX" secondItem="54b-Km-PSA" secondAttribute="centerX" id="cG3-uL-uyg"/>
+                            <constraint firstItem="Ew3-er-D6f" firstAttribute="centerX" secondItem="mKA-1q-WgQ" secondAttribute="centerX" id="dG7-rc-ZXo"/>
+                            <constraint firstItem="24k-o7-Lgs" firstAttribute="leading" secondItem="Ff1-z1-pME" secondAttribute="leading" id="kbS-BM-UNh"/>
+                            <constraint firstItem="gab-D9-sPQ" firstAttribute="bottom" secondItem="AQj-UW-fvt" secondAttribute="bottom" id="lDS-fa-DnT"/>
+                            <constraint firstItem="24k-o7-Lgs" firstAttribute="centerX" secondItem="54b-Km-PSA" secondAttribute="centerX" id="lGG-FQ-NTa"/>
+                            <constraint firstItem="gab-D9-sPQ" firstAttribute="trailing" secondItem="AQj-UW-fvt" secondAttribute="trailing" id="paR-Ov-C4n"/>
+                            <constraint firstItem="Ew3-er-D6f" firstAttribute="top" secondItem="mKA-1q-WgQ" secondAttribute="bottom" constant="8" id="thq-RC-GzM"/>
+                            <constraint firstItem="3zY-su-fK0" firstAttribute="leading" secondItem="54b-Km-PSA" secondAttribute="leading" constant="24" id="tmn-w6-bVS"/>
+                            <constraint firstItem="Ft1-PF-Epb" firstAttribute="leading" secondItem="3zY-su-fK0" secondAttribute="leading" id="ugn-PC-E3V"/>
+                            <constraint firstItem="Ff1-z1-pME" firstAttribute="centerX" secondItem="54b-Km-PSA" secondAttribute="centerX" id="vLR-rn-454"/>
+                            <constraint firstItem="24k-o7-Lgs" firstAttribute="top" secondItem="Ff1-z1-pME" secondAttribute="bottom" constant="24" id="vbf-L7-8Tt"/>
+                            <constraint firstItem="gab-D9-sPQ" firstAttribute="top" secondItem="AQj-UW-fvt" secondAttribute="top" id="yWr-S8-w1W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="54b-Km-PSA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qbp-3n-hQN"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="2tM-Ke-llF" id="eZn-fO-REo"/>
+                        <outlet property="codeInputView" destination="mKA-1q-WgQ" id="9Xw-UH-ip3"/>
+                        <outlet property="disclaimerTextLbl" destination="Ff1-z1-pME" id="bhJ-LA-PTz"/>
+                        <outlet property="uploadErrorMsgLbl" destination="Ew3-er-D6f" id="Uj5-Pc-2cc"/>
+                        <segue destination="LRe-JE-icR" kind="show" identifier="showSuccessVCSegue" id="qhY-RL-AUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhH-AQ-2Cf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="-1553"/>
+        </scene>
+        <!--Upload Data SuccessVC-->
+        <scene sceneID="gXh-MV-8Qs">
+            <objects>
+                <viewController id="LRe-JE-icR" customClass="UploadDataSuccessVC" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v68-fs-xEU">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="488.66666666666663"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC1-Z2-6rf" customClass="GradientButton" customModule="OpenTrace" customModuleProvider="target">
+                                <rect key="frame" x="24" y="400.66666666666669" width="318" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="DZa-rJ-mBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Done" backgroundImage="button-gradient">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnTapped:" destination="LRe-JE-icR" eventType="touchUpInside" id="VYD-h8-6vs"/>
+                                    <action selector="submit:" destination="DFr-mJ-44M" eventType="touchUpInside" id="keP-Yw-yoy"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-done" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-SK-Qk6">
+                                <rect key="frame" x="149.66666666666666" y="40" width="67" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wbj-SK-Qk6" secondAttribute="height" multiplier="1:1" id="7T4-OY-CKo"/>
+                                    <constraint firstAttribute="width" constant="67" id="Wza-Ze-y8x"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your data has been uploaded to the health authority" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGt-RX-ZPK">
+                                <rect key="frame" x="24" y="131" width="318" height="47.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nC1-Z2-6rf" firstAttribute="centerX" secondItem="AeY-n2-PYX" secondAttribute="centerX" id="4qg-Iq-fin"/>
+                            <constraint firstItem="nC1-Z2-6rf" firstAttribute="leading" secondItem="AeY-n2-PYX" secondAttribute="leading" constant="24" id="7eJ-UL-O4h"/>
+                            <constraint firstItem="wbj-SK-Qk6" firstAttribute="top" secondItem="AeY-n2-PYX" secondAttribute="top" constant="40" id="FJF-Rg-sVl"/>
+                            <constraint firstItem="iGt-RX-ZPK" firstAttribute="centerX" secondItem="AeY-n2-PYX" secondAttribute="centerX" id="Jyw-U3-set"/>
+                            <constraint firstItem="iGt-RX-ZPK" firstAttribute="top" secondItem="wbj-SK-Qk6" secondAttribute="bottom" constant="24" id="Q8D-fg-Yvw"/>
+                            <constraint firstItem="AeY-n2-PYX" firstAttribute="bottom" secondItem="nC1-Z2-6rf" secondAttribute="bottom" constant="40" id="ebf-dg-Va9"/>
+                            <constraint firstItem="iGt-RX-ZPK" firstAttribute="leading" secondItem="AeY-n2-PYX" secondAttribute="leading" constant="24" id="q4O-Hi-iCi"/>
+                            <constraint firstItem="wbj-SK-Qk6" firstAttribute="centerX" secondItem="AeY-n2-PYX" secondAttribute="centerX" id="vAw-4L-Vfz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AeY-n2-PYX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="76Q-Ls-vsz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zs4-fO-il2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="-1553"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button-gradient" width="272" height="48"/>
+        <image name="ic-back" width="10.666666984558105" height="17"/>
+        <image name="ic-done" width="67" height="67"/>
+        <image name="ic-retry" width="24" height="24"/>
+        <image name="ic-upload" width="24" height="24"/>
+        <image name="ic-upload-selected" width="24" height="24"/>
+        <image name="opentrace-logo" width="1024" height="1024"/>
+    </resources>
+</document>
