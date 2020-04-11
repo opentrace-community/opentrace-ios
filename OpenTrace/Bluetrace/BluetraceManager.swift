@@ -83,7 +83,7 @@ class BluetraceManager {
 
     func isBluetoothAuthorized() -> Bool {
         if #available(iOS 13.1, *) {
-            return CBManager.authorization == .allowedAlways
+            return CBCentralManager().authorization == .allowedAlways  
         } else {
             // todo: consider iOS 13.0, which has different behavior from 13.1 onwards
             return CBPeripheralManager.authorizationStatus() == .authorized
