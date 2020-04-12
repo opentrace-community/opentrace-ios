@@ -880,6 +880,7 @@
 			baseConfigurationReference = 3C5E7E594E7634084F94F030 /* Pods-OpenTrace.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
+				CLOUDFUNCTIONS_REGION = "asia-east2";
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -910,6 +911,7 @@
 			baseConfigurationReference = 5B9E9EDBFA7A442DC6067BF9 /* Pods-OpenTrace.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
+				CLOUDFUNCTIONS_REGION = "asia-east2";
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
