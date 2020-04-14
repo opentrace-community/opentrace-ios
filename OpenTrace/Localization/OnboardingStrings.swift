@@ -37,5 +37,11 @@ extension DisplayStrings {
 			static let secondaryBody = "Onboarding.Intro.secondaryBody".localized
 			static let footerButtonTitle = "Onboarding.Intro.footerButtonTitle".localized
 		}
+
+		enum HowItWorks {
+			static let header = "Onboarding.HowItWorks.header".localized
+			static let body = "Onboarding.HowItWorks.body".localized
+			static let footerButtonTitle = "Onboarding.HowItWorks.footerButtonTitle".localized
+		}
 	}
 }

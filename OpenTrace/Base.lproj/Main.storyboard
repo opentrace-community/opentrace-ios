@@ -162,6 +162,9 @@ The health authority will seek your consent to upload the data, if it’s needed
                     </view>
                     <navigationItem key="navigationItem" id="lTd-N2-ef4"/>
                     <connections>
+                        <outlet property="bodyLabel" destination="ML0-z9-4tI" id="ZbT-k5-N7f"/>
+                        <outlet property="greatBtn" destination="2RA-ER-v0N" id="2cv-VC-Mvx"/>
+                        <outlet property="headerLabel" destination="u5f-cs-P3k" id="GEG-Ks-mIb"/>
                         <segue destination="mND-9i-sIw" kind="show" identifier="iWantToHelpToPhoneSegue" id="5N3-QG-28h"/>
                         <segue destination="Rdb-X8-6v2" kind="show" identifier="iWantToHelpToConsentSegue" id="kGv-dV-JrM"/>
                     </connections>
@@ -753,7 +756,7 @@ Your battery usage may increase.</string>
                                 <rect key="frame" x="26" y="22" width="268" height="170"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rda-kZ-idO">
-                                <rect key="frame" x="24" y="496" width="272" height="48"/>
+                                <rect key="frame" x="24" y="447" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <state key="normal" title="I'll keep this in mind" backgroundImage="button-gradient"/>
                                 <connections>
@@ -785,7 +788,7 @@ Your battery usage may increase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This saves battery, by letting the app scan with the phone’s display turned off." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-30-OTz">
-                                <rect key="frame" x="24" y="443.5" width="272" height="38.5"/>
+                                <rect key="frame" x="24" y="394.5" width="272" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1623,7 +1626,7 @@ Your battery usage may increase.</string>
                     <tabBarItem key="tabBarItem" title="Help" image="ic-help" selectedImage="ic-help-selected" id="deh-eO-0VD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="27D-GO-jEp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1640,11 +1643,11 @@ Your battery usage may increase.</string>
             <objects>
                 <viewController id="Vo2-KP-JHY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSr-jE-Vfw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To be implemented" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bza-Ha-aNb">
-                                <rect key="frame" x="86.5" y="267" width="147" height="21"/>
+                                <rect key="frame" x="86.5" y="271" width="147" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1828,11 +1831,11 @@ Your battery usage may increase.</string>
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="KDb-VX-rTx" userLabel="Log" customClass="LogViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LJP-Mg-fhV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQw-JW-p12">
-                                <rect key="frame" x="0.0" y="61" width="320" height="438"/>
+                                <rect key="frame" x="0.0" y="61" width="320" height="409"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogCell" id="eTZ-kX-BZb">
@@ -1888,7 +1891,7 @@ Your battery usage may increase.</string>
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="7Cb-h1-N8M" userLabel="TempID" customClass="ContactViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DIy-9n-WvV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TempIDs" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyw-zh-fkG">
@@ -1898,7 +1901,7 @@ Your battery usage may increase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g28-0W-roV">
-                                <rect key="frame" x="0.0" y="104.5" width="320" height="394.5"/>
+                                <rect key="frame" x="0.0" y="104.5" width="320" height="365.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kF8-te-4u5">
@@ -1971,7 +1974,7 @@ Your battery usage may increase.</string>
         <segue reference="12k-kx-ORG"/>
         <segue reference="4eL-1Z-MtW"/>
         <segue reference="Qc8-cY-neO"/>
-        <segue reference="Ray-S7-oHU"/>
-        <segue reference="hvy-rn-te2"/>
+        <segue reference="kGv-dV-JrM"/>
+        <segue reference="5N3-QG-28h"/>
     </inferredMetricsTieBreakers>
 </document>
