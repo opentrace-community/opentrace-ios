@@ -48,10 +48,10 @@ class OTPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let wrongNumberButtonTitle = NSMutableAttributedString(string: NSLocalizedString("WrongNumber", comment: "Wrong number?"), attributes: linkButtonAttributes)
+		let wrongNumberButtonTitle = NSMutableAttributedString(string: DisplayStrings.Onboarding.wrongNumber, attributes: linkButtonAttributes)
         wrongNumberButton?.setAttributedTitle(wrongNumberButtonTitle, for: .normal)
 
-        let resendCodeButtonTitle = NSMutableAttributedString(string: NSLocalizedString("ResendCode", comment: "Resend Code"), attributes: linkButtonAttributes)
+		let resendCodeButtonTitle = NSMutableAttributedString(string: DisplayStrings.Onboarding.resendCode, attributes: linkButtonAttributes)
         resendCodeButton?.setAttributedTitle(resendCodeButtonTitle, for: .normal)
 
         dismissKeyboardOnTap()
@@ -61,7 +61,7 @@ class OTPViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let mobileNumber = UserDefaults.standard.string(forKey: "mobileNumber") ?? "Unknown"
-        self.titleLabel.text = String(format: NSLocalizedString("EnterOTPSent", comment: "Enter OTP that was sent to 91234567"), mobileNumber)
+		self.titleLabel.text = DisplayStrings.Onboarding.enterOTPSent(mobileNumber: mobileNumber)
         startTimer()
     }
 
@@ -90,11 +90,11 @@ class OTPViewController: UIViewController {
 
         if countdownSeconds > 0 {
             let countdown = countdownFormatter.string(from: TimeInterval(countdownSeconds))!
-            expiredMessageLabel?.text = String(format: NSLocalizedString("CodeWillExpired", comment: "Your code will expired in %@."), countdown)
+			expiredMessageLabel?.text = DisplayStrings.Onboarding.codeWillExpire(time: countdown)
             expiredMessageLabel?.isHidden = false
         } else {
             timer?.invalidate()
-            expiredMessageLabel?.text = NSLocalizedString("CodeHasExpired", comment: "Your code has expired.")
+			expiredMessageLabel?.text = DisplayStrings.Onboarding.codeHasExpired
             expiredMessageLabel?.textColor = .red
 
             verifyButton?.isEnabled = false
@@ -168,7 +168,7 @@ class OTPViewController: UIViewController {
         verifyOTP { [unowned viewController = self] status in
             switch status {
             case .InvalidOTP:
-                viewController.errorMessageLabel?.text = NSLocalizedString("InvalidOTP", comment: "Must be a 6-digit code")
+				viewController.errorMessageLabel?.text = DisplayStrings.Onboarding.invalidOTP
                 self.errorMessageLabel?.isHidden = false
             case .WrongOTP:
                 viewController.errorMessageLabel?.text = NSLocalizedString("WrongOTP", comment: "Wrong OTP entered")

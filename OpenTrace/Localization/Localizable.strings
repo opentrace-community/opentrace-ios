@@ -1,0 +1,14 @@
+// OTP
+"Onboarding.EnterOTPSent" = "Enter OTP that was sent to %@";
+"Onboarding.WrongNumber" = "Wrong number?";
+"Onboarding.ResendCode" = "Resend Code";
+
+"Onboarding.InvalidOTP" = "Must be a 6-digit code";
+"Onboarding.WrongOTP" = "Wrong OTP entered";
+
+"Onboarding.CodeWillExpire" = "Your code will expire in %@.";
+"Onboarding.CodeHasExpired" = "Your code has expired.";
+
+"Onboarding.NotAValidCode" = "Not a valid code";
+"Onboarding.DataUploaded" = "Data uploaded";
+"Onboarding.DataNotUploaded" = "Data not uploaded";
