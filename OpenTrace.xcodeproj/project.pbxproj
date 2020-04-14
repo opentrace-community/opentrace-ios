@@ -914,7 +914,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
 				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
-				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
+				INFOPLIST_FILE = OpenTrace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -944,7 +944,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
 				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
-				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
+				INFOPLIST_FILE = OpenTrace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
