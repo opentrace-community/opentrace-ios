@@ -71,6 +71,9 @@
 		C58D817723F169DB00345771 /* PermissionsCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817623F169DB00345771 /* PermissionsCompleteViewController.swift */; };
 		C58D817923F16C3900345771 /* TurnOnBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817823F16C3900345771 /* TurnOnBluetoothViewController.swift */; };
 		C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D209FB23F4476F007233BE /* UITextViewFixed.swift */; };
+		CF5855C824460B1300D5F625 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5855C724460B1300D5F625 /* String+Localization.swift */; };
+		CF5855CA24460B2D00D5F625 /* DisplayStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5855C924460B2D00D5F625 /* DisplayStrings.swift */; };
+		CF5855CC244612D700D5F625 /* OnboardingStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5855CB244612D700D5F625 /* OnboardingStrings.swift */; };
 		D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8824348A7300E4F52F /* Bluetrace.swift */; };
 		D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */; };
 		D8828AFF243DE9340008854F /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
@@ -151,6 +154,9 @@
 		C58D817623F169DB00345771 /* PermissionsCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsCompleteViewController.swift; sourceTree = "<group>"; };
 		C58D817823F16C3900345771 /* TurnOnBluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOnBluetoothViewController.swift; sourceTree = "<group>"; };
 		C5D209FB23F4476F007233BE /* UITextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewFixed.swift; sourceTree = "<group>"; };
+		CF5855C724460B1300D5F625 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		CF5855C924460B2D00D5F625 /* DisplayStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStrings.swift; sourceTree = "<group>"; };
+		CF5855CB244612D700D5F625 /* OnboardingStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStrings.swift; sourceTree = "<group>"; };
 		D81F6C8824348A7300E4F52F /* Bluetrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetrace.swift; sourceTree = "<group>"; };
 		D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceProtocol.swift; sourceTree = "<group>"; };
 		D8D3100A243C7ECD00D760B0 /* BluetraceV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceV2.swift; sourceTree = "<group>"; };
@@ -426,7 +432,7 @@
 				5DD41D4523DCB03D00FD4AB0 /* LaunchScreen.storyboard */,
 				5DD41D3A23DCB03B00FD4AB0 /* AppDelegate.swift */,
 				5DD41D4823DCB03D00FD4AB0 /* Info.plist */,
-				30BE1CAC23F119FD005DCE4F /* Localizable.strings */,
+				CF5855C624460A6D00D5F625 /* Localization */,
 				5DD41D4323DCB03D00FD4AB0 /* Assets.xcassets */,
 				5D7DC312243E1166007180E9 /* Debug logs */,
 				5D7DC308243E0E8B007180E9 /* Main */,
@@ -484,6 +490,17 @@
 				5D7DC334243E5788007180E9 /* Muli-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CF5855C624460A6D00D5F625 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				30BE1CAC23F119FD005DCE4F /* Localizable.strings */,
+				CF5855C724460B1300D5F625 /* String+Localization.swift */,
+				CF5855C924460B2D00D5F625 /* DisplayStrings.swift */,
+				CF5855CB244612D700D5F625 /* OnboardingStrings.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -717,6 +734,7 @@
 				D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */,
 				B60F8BE4242659810007A641 /* UILabelExtension.swift in Sources */,
 				5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */,
+				CF5855C824460B1300D5F625 /* String+Localization.swift in Sources */,
 				5D8B248B23F146C500DBB74D /* PhoneNumberViewController.swift in Sources */,
 				5DC7B8D3242B8D87008E1715 /* BluetraceUtils.swift in Sources */,
 				30BE1CB123F134D0005DCE4F /* Encounter+EncounterRecord.swift in Sources */,
@@ -729,6 +747,7 @@
 				5DD41D5323DD4CA400FD4AB0 /* PeripheralController.swift in Sources */,
 				C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */,
 				C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */,
+				CF5855CA24460B2D00D5F625 /* DisplayStrings.swift in Sources */,
 				5D5F83AD23F023F600770DEF /* EncounterMessageManager.swift in Sources */,
 				5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */,
 				C56CF43F23F18A15006B05B0 /* ConsentViewController.swift in Sources */,
@@ -741,6 +760,7 @@
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
+				CF5855CC244612D700D5F625 /* OnboardingStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
