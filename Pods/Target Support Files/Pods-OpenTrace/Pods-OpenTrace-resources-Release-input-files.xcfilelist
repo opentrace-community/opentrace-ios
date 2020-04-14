@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-OpenTrace/Pods-OpenTrace-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle
