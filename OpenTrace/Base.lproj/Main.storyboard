@@ -758,6 +758,11 @@ Your battery usage may increase.</string>
                         <viewLayoutGuide key="safeArea" id="PHO-4j-w6y"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qmi-E0-d5C"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="PEf-6L-JIR" id="ut6-eh-mC3"/>
+                        <outlet property="footerButton" destination="fwi-lK-bOF" id="qux-UW-zis"/>
+                        <outlet property="headerLabel" destination="jCO-yx-Tur" id="c4T-Fl-acd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SqF-IF-P8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -775,7 +780,7 @@ Your battery usage may increase.</string>
                                 <rect key="frame" x="26" y="22" width="268" height="170"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rda-kZ-idO">
-                                <rect key="frame" x="24" y="447" width="272" height="48"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <state key="normal" title="I'll keep this in mind" backgroundImage="button-gradient"/>
                                 <connections>
@@ -807,7 +812,7 @@ Your battery usage may increase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This saves battery, by letting the app scan with the phone’s display turned off." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-30-OTz">
-                                <rect key="frame" x="24" y="394.5" width="272" height="38.5"/>
+                                <rect key="frame" x="24" y="443.5" width="272" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1990,7 +1995,7 @@ Your battery usage may increase.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dF7-9Z-i4q"/>
-        <segue reference="12k-kx-ORG"/>
+        <segue reference="IfN-Ib-LJ4"/>
         <segue reference="pTP-Q1-0dt"/>
         <segue reference="9GC-gr-FFS"/>
         <segue reference="kGv-dV-JrM"/>

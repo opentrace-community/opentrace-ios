@@ -44,3 +44,8 @@
 "Onboarding.TurnOnBluetooth.primaryBody" = "Do this from Control Center or go to Settings.";
 "Onboarding.TurnOnBluetooth.secondaryBody" = "Then come back to the app to confirm.";
 "Onboarding.TurnOnBluetooth.footerButtonTitle" = "I turned on Bluetooth";
+
+//Permissions Complete
+"Onboarding.PermissionsComplete.header" = "App permissions are fully set up";
+"Onboarding.PermissionsComplete.body" = "Please leave all settings on until the outbreak ends.";
+"Onboarding.PermissionsComplete.footerButtonTitle" = "Continue";

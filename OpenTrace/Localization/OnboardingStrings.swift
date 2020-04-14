@@ -67,5 +67,11 @@ extension DisplayStrings {
 			static let secondaryBody = "Onboarding.TurnOnBluetooth.secondaryBody".localized
 			static let footerButtonTitle = "Onboarding.TurnOnBluetooth.footerButtonTitle".localized
 		}
+
+		enum PermissionsComplete {
+			static let header = "Onboarding.PermissionsComplete.header".localized
+			static let body = "Onboarding.PermissionsComplete.body".localized
+			static let footerButtonTitle = "Onboarding.PermissionsComplete.footerButtonTitle".localized
+		}
 	}
 }
