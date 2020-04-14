@@ -86,6 +86,10 @@
 		30E91BE823EFE514002D592A /* UploadDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDataVC.swift; sourceTree = "<group>"; };
 		30E91BEA23EFEA0B002D592A /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		30FADDAD23F6896C006C125F /* Encounter+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encounter+Event.swift"; sourceTree = "<group>"; };
+		375E62672445F184004D45D3 /* Help.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Help.md; sourceTree = "<group>"; };
+		375E62692445F184004D45D3 /* Help.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Help.md; sourceTree = "<group>"; };
+		375E626A2445F1A1004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		375E626B2445F1A6004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C5E7E594E7634084F94F030 /* Pods-OpenTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTrace.debug.xcconfig"; path = "Target Support Files/Pods-OpenTrace/Pods-OpenTrace.debug.xcconfig"; sourceTree = "<group>"; };
 		553AA5CD243EC91700EE326F /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		557FD392243E4062006BDF38 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -172,6 +176,33 @@
 				721614A641E5A53C6175449B /* Pods_OpenTrace.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		375E62652445F184004D45D3 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				375E62662445F184004D45D3 /* PROD */,
+				375E62682445F184004D45D3 /* STG */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		375E62662445F184004D45D3 /* PROD */ = {
+			isa = PBXGroup;
+			children = (
+				375E62672445F184004D45D3 /* Help.md */,
+				375E626A2445F1A1004D45D3 /* GoogleService-Info.plist */,
+			);
+			path = PROD;
+			sourceTree = "<group>";
+		};
+		375E62682445F184004D45D3 /* STG */ = {
+			isa = PBXGroup;
+			children = (
+				375E62692445F184004D45D3 /* Help.md */,
+				375E626B2445F1A6004D45D3 /* GoogleService-Info.plist */,
+			);
+			path = STG;
 			sourceTree = "<group>";
 		};
 		557FD391243E4048006BDF38 /* Core Data */ = {
@@ -403,8 +434,8 @@
 				5D7DC30D243E0F29007180E9 /* Upload data */,
 				5D7DC30A243E0EAE007180E9 /* Power saver */,
 				5D7DC305243E0D20007180E9 /* Bluetrace */,
-				D885238C24260B2F00E4E4AC /* Firebase */,
 				5DDB85EA23EE39C000B186BC /* Project Bluetrace.entitlements */,
+				375E62652445F184004D45D3 /* Firebase */,
 				D8EB201C23FBE216001C60EC /* help_center_article_style.css */,
 			);
 			path = OpenTrace;
@@ -453,29 +484,6 @@
 				5D7DC334243E5788007180E9 /* Muli-SemiBold.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		D885238C24260B2F00E4E4AC /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				D885238D24260B2F00E4E4AC /* PROD */,
-				D885238F24260B2F00E4E4AC /* STG */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		D885238D24260B2F00E4E4AC /* PROD */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PROD;
-			sourceTree = "<group>";
-		};
-		D885238F24260B2F00E4E4AC /* STG */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = STG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -882,9 +890,9 @@
 				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 27;
-				DEVELOPMENT_TEAM = 4CYF853X55;
+				DEVELOPMENT_TEAM = "";
 				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -895,7 +903,7 @@
 				MARKETING_VERSION = 1.5;
 				ONLY_ACTIVE_ARCH = YES;
 				OT_DISPLAY_NAME = "STG OpenTrace";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.gov.tech.opentrace-stg";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kccreate.intelligentlockdown;
 				PRODUCT_NAME = OpenTrace;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
@@ -912,9 +920,9 @@
 				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 27;
-				DEVELOPMENT_TEAM = 4CYF853X55;
+				DEVELOPMENT_TEAM = "";
 				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -924,7 +932,7 @@
 				);
 				MARKETING_VERSION = 1.5;
 				OT_DISPLAY_NAME = OpenTrace;
-				PRODUCT_BUNDLE_IDENTIFIER = sg.gov.tech.opentrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kccreate.intelligentlockdown;
 				PRODUCT_NAME = OpenTrace;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
