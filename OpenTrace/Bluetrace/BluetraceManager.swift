@@ -53,7 +53,7 @@ class BluetraceManager {
             if topController!.isKind(of: UIAlertController.self) {
                 print("Alert has already popped up!")
             } else {
-                topController?.present(alert, animated: true)
+                //topController?.present(alert, animated: true)
             }
 
         }
