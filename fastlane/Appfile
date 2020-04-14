@@ -1,0 +1,1 @@
+app_identifier = ENV['FL_UPDATE_PLIST_APP_IDENTIFIER']
