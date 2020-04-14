@@ -911,7 +911,7 @@
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
 				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
@@ -941,7 +941,7 @@
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
 				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
@@ -954,6 +954,7 @@
 				OT_DISPLAY_NAME = OpenTrace;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kccreate.intelligentlockdown;
 				PRODUCT_NAME = OpenTrace;
+				PROVISIONING_PROFILE = "d840e641-88ef-47db-bfd1-44dd9bb8cf9b";
 				PROVISIONING_PROFILE_SPECIFIER = "Intelligent Lockdown Prod";
 				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;

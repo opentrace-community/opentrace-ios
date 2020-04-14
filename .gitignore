@@ -2,3 +2,4 @@ xcuserdata/
 .DS_Store
 OpenTrace/Firebase/PROD/GoogleService-Info.plist
 OpenTrace/Firebase/STG/GoogleService-Info.plist
+fastlane/README.md
