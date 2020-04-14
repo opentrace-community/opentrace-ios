@@ -7,7 +7,7 @@ import SafariServices
 
 final class ConsentViewController: UIViewController, SFSafariViewControllerDelegate {
 
-	typealias Copy = DisplayStrings.Onboarding.Constent
+	private typealias Copy = DisplayStrings.Onboarding.Constent
 
 	@IBOutlet private var headerLabel: UILabel!
 	@IBOutlet private var primaryBodyLabel: UILabel!

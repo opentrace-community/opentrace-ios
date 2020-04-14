@@ -5,9 +5,17 @@
 import UIKit
 import UserNotifications
 
-class PermissionsViewController: UIViewController {
+final class PermissionsViewController: UIViewController {
 
-    @IBAction func allowPermissionsBtn(_ sender: UIButton) {
+	private typealias Copy = DisplayStrings.Onboarding.Permissions
+	
+	@IBOutlet private var headerLabel: UILabel!
+	@IBOutlet private var primaryBodyLabel: UILabel!
+	@IBOutlet private var secondaryBodyLabel: UILabel!
+	@IBOutlet private var tertiaryBodyLabel: UILabel!
+	@IBOutlet private var footerButton: UIButton!
+
+	@IBAction func allowPermissionsBtn(_ sender: UIButton) {
         BluetraceManager.shared.turnOn()
         OnboardingManager.shared.allowedPermissions = true
         registerForPushNotifications()
@@ -15,15 +23,21 @@ class PermissionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		setup()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         // Show the navigation bar on other view controllers
-
     }
+
+	private func setup() {
+		headerLabel.text = Copy.header
+		primaryBodyLabel.text = Copy.primaryBody
+		secondaryBodyLabel.text = Copy.secondaryBody
+		tertiaryBodyLabel.text = Copy.tertiaryBody
+		footerButton.setTitle(Copy.footerButtonTitle, for: .normal)
+	}
 
     func registerForPushNotifications() {
         BlueTraceLocalNotifications.shared.checkAuthorization { (_) in

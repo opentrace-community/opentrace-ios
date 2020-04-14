@@ -7,7 +7,7 @@ import FirebaseAuth
 
 final class HowItWorksViewController: UIViewController {
 
-	typealias Copy = DisplayStrings.Onboarding.HowItWorks
+	private typealias Copy = DisplayStrings.Onboarding.HowItWorks
 
 	@IBOutlet private var headerLabel: UILabel!
 	@IBOutlet private var bodyLabel: UILabel!

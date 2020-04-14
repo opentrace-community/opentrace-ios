@@ -31,3 +31,10 @@
 "Onboarding.Constent.preceedingPrivacyButtonTitle" = "Read our";
 "Onboarding.Constent.privacyButtonTitle" = "privacy safeguards";
 "Onboarding.Constent.footerButtonTitle" = "I agree";
+
+//Permissions
+"Onboarding.Permissions.header" = "Set up app permissions";
+"Onboarding.Permissions.primaryBody" = "Select ‘Yes’ for the next two screens to set up.";
+"Onboarding.Permissions.secondaryBody" = "1. Bluetoot\n\n2. Push notifications";
+"Onboarding.Permissions.tertiaryBody" = "Both are needed for the app to work.\n\nYour battery usage may increase.";
+"Onboarding.Permissions.footerButtonTitle" = "Proceed";

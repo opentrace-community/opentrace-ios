@@ -684,6 +684,13 @@ Your battery usage may increase.</string>
                         <viewLayoutGuide key="safeArea" id="gTH-Be-3VE"/>
                     </view>
                     <navigationItem key="navigationItem" id="B3a-X1-mbg"/>
+                    <connections>
+                        <outlet property="footerButton" destination="Zmj-3v-POB" id="V8W-yp-yIX"/>
+                        <outlet property="headerLabel" destination="0pO-gl-umK" id="OTl-eh-7fz"/>
+                        <outlet property="primaryBodyLabel" destination="npY-9G-r2u" id="tVu-Q7-Goq"/>
+                        <outlet property="secondaryBodyLabel" destination="Kv0-mp-Xoy" id="0NG-YW-lh6"/>
+                        <outlet property="tertiaryBodyLabel" destination="9oG-IT-1nY" id="Oav-IX-6P5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyp-XJ-ZDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1981,7 +1988,7 @@ Your battery usage may increase.</string>
         <segue reference="QjH-5K-Ggq"/>
         <segue reference="12k-kx-ORG"/>
         <segue reference="pTP-Q1-0dt"/>
-        <segue reference="Qc8-cY-neO"/>
+        <segue reference="9GC-gr-FFS"/>
         <segue reference="kGv-dV-JrM"/>
         <segue reference="5N3-QG-28h"/>
     </inferredMetricsTieBreakers>
