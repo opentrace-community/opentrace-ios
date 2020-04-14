@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -95,6 +95,12 @@
                         <viewLayoutGuide key="safeArea" id="nOG-gl-32p"/>
                     </view>
                     <navigationItem key="navigationItem" id="M5c-Sc-QmX"/>
+                    <connections>
+                        <outlet property="footerButton" destination="LX0-7p-Shs" id="x51-hl-j5C"/>
+                        <outlet property="headerLabel" destination="00h-JA-MfK" id="tpf-c0-rdX"/>
+                        <outlet property="primaryBodyLabel" destination="G2G-ck-rYV" id="XUq-kf-Y06"/>
+                        <outlet property="secondaryBodyLabel" destination="6HD-UN-iTU" id="sNh-sS-R3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ile-II-UJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,13 +279,13 @@ Use their number instead of yours.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Enter OTP that was sent to " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-qS-9y6">
-                                <rect key="frame" x="32" y="30" width="256" height="23.5"/>
+                                <rect key="frame" x="32" y="30" width="256" height="59"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7X-Ux-SAc">
-                                <rect key="frame" x="32" y="61.5" width="116" height="24"/>
+                                <rect key="frame" x="32" y="97" width="124" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="sdC-LH-a2i"/>
                                 </constraints>
@@ -290,7 +296,7 @@ Use their number instead of yours.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLp-Fk-KTm" userLabel="OTPContainerView">
-                                <rect key="frame" x="0.0" y="85.5" width="320" height="143"/>
+                                <rect key="frame" x="0.0" y="121" width="320" height="148"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-jv-Oa6" customClass="CodeInputView" customModule="OpenTrace" customModuleProvider="target">
                                         <rect key="frame" x="16" y="8" width="288" height="100"/>
@@ -300,7 +306,7 @@ Use their number instead of yours.</string>
                                         </constraints>
                                     </view>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong OTP entered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-Zo-GBT">
-                                        <rect key="frame" x="32" y="116" width="268" height="19"/>
+                                        <rect key="frame" x="32" y="116" width="268" height="24"/>
                                         <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -318,13 +324,13 @@ Use their number instead of yours.</string>
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your code will expire in 3:00." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-pn-IHx">
-                                <rect key="frame" x="32" y="237.5" width="256" height="19"/>
+                                <rect key="frame" x="32" y="278" width="256" height="24"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-JE-cit">
-                                <rect key="frame" x="32" y="256.5" width="98" height="31"/>
+                                <rect key="frame" x="32" y="302" width="101" height="36"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <state key="normal" title="Resend Code"/>
                                 <connections>
@@ -765,7 +771,7 @@ Your battery usage may increase.</string>
                                 <attributedString key="attributedText">
                                     <fragment content="On iPhone, the app needs to be kept open to work.">
                                         <attributes>
-                                            <font key="NSFont" metaFont="label" size="16"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -789,7 +795,7 @@ Your battery usage may increase.</string>
                                 <attributedString key="attributedText">
                                     <fragment content="1. Turn your phone face down, or">
                                         <attributes>
-                                            <font key="NSFont" metaFont="label" size="16"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -801,7 +807,7 @@ Your battery usage may increase.</string>
                                 <attributedString key="attributedText">
                                     <fragment content="2. Keep it upside down in your pocket">
                                         <attributes>
-                                            <font key="NSFont" metaFont="label" size="16"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="20" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1398,7 +1404,7 @@ Your battery usage may increase.</string>
                                                                     <attributedString key="attributedTitle">
                                                                         <fragment content="Use power saver mode">
                                                                             <attributes>
-                                                                                <font key="NSFont" metaFont="label" size="16"/>
+                                                                                <font key="NSFont" metaFont="system" size="16"/>
                                                                                 <integer key="NSUnderline" value="1"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -1936,14 +1942,6 @@ Your battery usage may increase.</string>
             <point key="canvasLocation" x="-2621" y="3375"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QjH-5K-Ggq"/>
-        <segue reference="12k-kx-ORG"/>
-        <segue reference="4eL-1Z-MtW"/>
-        <segue reference="Qc8-cY-neO"/>
-        <segue reference="Ray-S7-oHU"/>
-        <segue reference="hvy-rn-te2"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="01-casual-hero" width="292" height="182"/>
         <image name="05-incomplete-sick-person" width="143" height="104.5"/>
@@ -1954,18 +1952,26 @@ Your battery usage may increase.</string>
         <image name="bluetooth-accepted" width="278" height="193"/>
         <image name="bluetooth-phones" width="246" height="169.5"/>
         <image name="button-gradient" width="272" height="48"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="ic-help" width="24" height="24"/>
         <image name="ic-help-selected" width="24" height="24"/>
         <image name="ic-home" width="24" height="24"/>
         <image name="ic-home-selected" width="24" height="24"/>
-        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="mask-icon" width="22" height="22"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="pogopics" width="270" height="170"/>
         <image name="redcross" width="22" height="22"/>
         <image name="share" width="17" height="17"/>
         <image name="small tick" width="22" height="22"/>
         <image name="smartphone" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="QjH-5K-Ggq"/>
+        <segue reference="12k-kx-ORG"/>
+        <segue reference="4eL-1Z-MtW"/>
+        <segue reference="Qc8-cY-neO"/>
+        <segue reference="Ray-S7-oHU"/>
+        <segue reference="hvy-rn-te2"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -12,3 +12,10 @@
 "Onboarding.NotAValidCode" = "Not a valid code";
 "Onboarding.DataUploaded" = "Data uploaded";
 "Onboarding.DataNotUploaded" = "Data not uploaded";
+
+// Intro 
+"Onboarding.Intro.header" = "Help stop the spread of COVID-19 by turning Bluetooth on";
+"Onboarding.Intro.primaryBody" = "If you had close contact with a COVID-19 case, we help the health authority call you more quickly, to provide guidance and care.";
+"Onboarding.Intro.secondaryBody" = "To protect those around you, the health authority may also ask you to share your data.";
+"Onboarding.Intro.footerButtonTitle" = "I want to help";
+

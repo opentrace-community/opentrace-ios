@@ -31,5 +31,11 @@ extension DisplayStrings {
 
 		static let codeHasExpired = "Onboarding.CodeHasExpired".localized
 
+		enum Intro {
+			static let header = "Onboarding.Intro.header".localized
+			static let primaryBody = "Onboarding.Intro.primaryBody".localized
+			static let secondaryBody = "Onboarding.Intro.secondaryBody".localized
+			static let footerButtonTitle = "Onboarding.Intro.footerButtonTitle".localized
+		}
 	}
 }
