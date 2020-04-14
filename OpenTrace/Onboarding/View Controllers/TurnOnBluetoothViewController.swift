@@ -4,9 +4,16 @@
 
 import UIKit
 
-class TurnOnBluetoothViewController: UIViewController {
+final class TurnOnBluetoothViewController: UIViewController {
 
-    @IBAction func enabledBluetoothBtn(_ sender: UIButton) {
+	private typealias Copy = DisplayStrings.Onboarding.TurnOnBluetooth
+
+	@IBOutlet var headerLabel: UILabel!
+	@IBOutlet var primaryBodyLabel: UILabel!
+	@IBOutlet var secondaryBodyLabel: UILabel!
+	@IBOutlet var footerButton: UIButton!
+
+	@IBAction func enabledBluetoothBtn(_ sender: UIButton) {
 
         OnboardingManager.shared.completedBluetoothOnboarding = true
 
@@ -24,6 +31,14 @@ class TurnOnBluetoothViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		setup()
     }
+
+	private func setup() {
+		headerLabel.text = Copy.header
+		primaryBodyLabel.text = Copy.primaryBody
+		secondaryBodyLabel.text = Copy.secondaryBody
+		footerButton.setTitle(Copy.footerButtonTitle, for: .normal)
+	}
 
 }

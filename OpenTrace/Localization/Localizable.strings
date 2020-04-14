@@ -38,3 +38,9 @@
 "Onboarding.Permissions.secondaryBody" = "1. Bluetoot\n\n2. Push notifications";
 "Onboarding.Permissions.tertiaryBody" = "Both are needed for the app to work.\n\nYour battery usage may increase.";
 "Onboarding.Permissions.footerButtonTitle" = "Proceed";
+
+//Turn On Bluetooth
+"Onboarding.TurnOnBluetooth.header" = "Turn on your Bluetooth";
+"Onboarding.TurnOnBluetooth.primaryBody" = "Do this from Control Center or go to Settings.";
+"Onboarding.TurnOnBluetooth.secondaryBody" = "Then come back to the app to confirm.";
+"Onboarding.TurnOnBluetooth.footerButtonTitle" = "I turned on Bluetooth";

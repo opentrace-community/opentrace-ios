@@ -537,7 +537,7 @@ Use their number instead of yours.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="enabledBluetoothBtn:" destination="jtV-53-sil" eventType="touchUpInside" id="OhZ-8d-ygC"/>
+                                    <action selector="enabledBluetoothBtn:" destination="jtV-53-sil" eventType="touchUpInside" id="mU7-yZ-nBA"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-3 progress" translatesAutoresizingMaskIntoConstraints="NO" id="Xeb-By-Vdk">
@@ -590,6 +590,10 @@ Use their number instead of yours.</string>
                     </view>
                     <navigationItem key="navigationItem" id="wa8-bd-DB6"/>
                     <connections>
+                        <outlet property="footerButton" destination="QGC-4P-Xbk" id="k1z-a5-mEE"/>
+                        <outlet property="headerLabel" destination="Ahv-yZ-Jd3" id="l5i-1q-bfz"/>
+                        <outlet property="primaryBodyLabel" destination="tjL-QF-W6s" id="bSc-KP-GH2"/>
+                        <outlet property="secondaryBodyLabel" destination="Ure-ju-qCc" id="aNi-KM-JNn"/>
                         <segue destination="GaQ-f5-ei6" kind="show" identifier="showFullySetUpFromTurnOnBtSegue" id="sbt-WA-Zmh"/>
                         <segue destination="JXd-F4-xFZ" kind="show" identifier="showHomeFromTurnOnBtSegue" id="dF7-9Z-i4q"/>
                     </connections>
@@ -1985,7 +1989,7 @@ Your battery usage may increase.</string>
         <image name="smartphone" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QjH-5K-Ggq"/>
+        <segue reference="dF7-9Z-i4q"/>
         <segue reference="12k-kx-ORG"/>
         <segue reference="pTP-Q1-0dt"/>
         <segue reference="9GC-gr-FFS"/>
