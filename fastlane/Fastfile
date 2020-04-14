@@ -1,0 +1,2 @@
+fastlane_version "2.86.0"
+import_from_git(url: 'https://github.com/theappbusiness/MasterFastfile.git', branch: 'feature/better-signing-approach', path: 'Fastfile')
