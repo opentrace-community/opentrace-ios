@@ -49,3 +49,12 @@
 "Onboarding.PermissionsComplete.header" = "App permissions are fully set up";
 "Onboarding.PermissionsComplete.body" = "Please leave all settings on until the outbreak ends.";
 "Onboarding.PermissionsComplete.footerButtonTitle" = "Continue";
+
+//PogoInstructions
+"Onboarding.PogoInstructions.header" = "iPhone users, take note!";
+"Onboarding.PogoInstructions.primaryBody" = "On iPhone, the app needs to be kept open to work.";
+"Onboarding.PogoInstructions.secondaryBody" = "To access power saver mode:";
+"Onboarding.PogoInstructions.faceDown" = "1. Turn your phone face down, or";
+"Onboarding.PogoInstructions.upsideDown" = "2. Keep it upside down in your pocket";
+"Onboarding.PogoInstructions.footerText" = "This saves battery, by letting the app scan with the phone’s display turned off.";
+"Onboarding.PogoInstructions.footerButtonTitle" = "I'll keep this in mind";

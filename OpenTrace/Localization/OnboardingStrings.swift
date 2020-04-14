@@ -73,5 +73,15 @@ extension DisplayStrings {
 			static let body = "Onboarding.PermissionsComplete.body".localized
 			static let footerButtonTitle = "Onboarding.PermissionsComplete.footerButtonTitle".localized
 		}
+
+		enum PogoInstructions {
+			static let header = "Onboarding.PogoInstructions.header".localized
+			static let primaryBody = "Onboarding.PogoInstructions.primaryBody".localized
+			static let secondaryBody = "Onboarding.PogoInstructions.secondaryBody".localized
+			static let faceDown = "Onboarding.PogoInstructions.faceDown".localized
+			static let upsideDown = "Onboarding.PogoInstructions.upsideDown".localized
+			static let footerText = "Onboarding.PogoInstructions.footerText".localized
+			static let footerButtonTitle = "Onboarding.PogoInstructions.footerButtonTitle".localized
+		}
 	}
 }
