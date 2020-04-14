@@ -2,7 +2,6 @@
 //  OnboardingManager.swift
 //  OpenTrace
 
-
 import Foundation
 import FirebaseAuth
 
@@ -13,8 +12,6 @@ class OnboardingManager {
     func returnCurrentLaunchPage() -> String {
         if !completedIWantToHelp {
             return "intro"
-        } else if Auth.auth().currentUser == nil {
-            return "phoneNumber"
         } else if !hasConsented {
             return "consent"
         } else if !allowedPermissions {
