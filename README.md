@@ -23,7 +23,7 @@ The OpenTrace reference implementation comprises:
 
 ### Setting up Firebase for Staging and Production
 
-The app relies on Firebase functions to work. More information can be obtained in the [OpenTrace cloud functions repository]{<https://github.com/opentrace-community/opentrace-cloud-functions}.>
+The app relies on Firebase functions to work. More information can be obtained in the [OpenTrace cloud functions repository](https://github.com/opentrace-community/opentrace-cloud-functions).
 
 1. After setting up Firebase, place your configuration files in the respective directories.
 
