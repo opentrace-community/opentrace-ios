@@ -43,5 +43,14 @@ extension DisplayStrings {
 			static let body = "Onboarding.HowItWorks.body".localized
 			static let footerButtonTitle = "Onboarding.HowItWorks.footerButtonTitle".localized
 		}
+
+		enum Constent {
+			static let header = "Onboarding.Constent.header".localized
+			static let primaryBody = "Onboarding.Constent.primaryBody".localized
+			static let secondaryBody = "Onboarding.Constent.secondaryBody".localized
+			static let preceedingPrivacyButtonTitle = "Onboarding.Constent.preceedingPrivacyButtonTitle".localized
+			static let privacyButtonTitle = "Onboarding.Constent.privacyButtonTitle".localized
+			static let footerButtonTitle = "Onboarding.Constent.footerButtonTitle".localized
+		}
 	}
 }

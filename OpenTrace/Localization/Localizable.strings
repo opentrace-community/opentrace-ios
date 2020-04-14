@@ -24,3 +24,10 @@
 "Onboarding.HowItWorks.body" = "We use Bluetooth signals to determine if you are near another OpenTrace user. \n\nThis proximity data is encrypted and stored only on your phone.\n\nThe health authority will seek your consent to upload the data, if it’s needed for contact tracing.";
 "Onboarding.HowItWorks.footerButtonTitle" = "Great!!!";
 
+//Consent
+"Onboarding.Constent.header" = "Your consent is needed for the following:";
+"Onboarding.Constent.primaryBody" = "To store your mobile number in a secured OpenTrace registry";
+"Onboarding.Constent.secondaryBody" = "To allow OpenTrace users to send the health authority information of encounters with you, if they are confirmed or suspected to have COVID-19 ";
+"Onboarding.Constent.preceedingPrivacyButtonTitle" = "Read our";
+"Onboarding.Constent.privacyButtonTitle" = "privacy safeguards";
+"Onboarding.Constent.footerButtonTitle" = "I agree";

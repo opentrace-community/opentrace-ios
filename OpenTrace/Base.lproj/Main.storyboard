@@ -509,6 +509,14 @@ Use their number instead of yours.</string>
                         <viewLayoutGuide key="safeArea" id="b1n-7f-e0t"/>
                     </view>
                     <navigationItem key="navigationItem" id="DxS-RM-Ztr"/>
+                    <connections>
+                        <outlet property="footerButton" destination="N9Z-d2-PXT" id="ph3-La-WvN"/>
+                        <outlet property="headerLabel" destination="swY-fQ-mdw" id="E4D-em-fad"/>
+                        <outlet property="preceedingPrivacyButtonLabel" destination="8kX-AB-ztf" id="AMC-W9-jUL"/>
+                        <outlet property="primaryBodyLabel" destination="oXq-Kh-nOP" id="pg9-j7-oWx"/>
+                        <outlet property="privacySafeguardButton" destination="fHp-qK-Q85" id="mwE-aO-vlV"/>
+                        <outlet property="secondaryBodyLabel" destination="WZa-7l-4tI" id="ID0-Md-eUJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcI-CB-ngP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1972,7 +1980,7 @@ Your battery usage may increase.</string>
     <inferredMetricsTieBreakers>
         <segue reference="QjH-5K-Ggq"/>
         <segue reference="12k-kx-ORG"/>
-        <segue reference="4eL-1Z-MtW"/>
+        <segue reference="pTP-Q1-0dt"/>
         <segue reference="Qc8-cY-neO"/>
         <segue reference="kGv-dV-JrM"/>
         <segue reference="5N3-QG-28h"/>
