@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct EncounterRecord: Encodable {
+struct EncounterRecord: Encodable, CustomStringConvertible {
     var timestamp: Date?
     var msg: String?
     var modelC: String?
@@ -13,6 +13,7 @@ struct EncounterRecord: Encodable {
     var txPower: Double?
     var org: String?
     var v: Int?
+    var description: String { return "\(self.timestamp?.description ?? "nil")\nid: \(self.msg ?? "nil")\no: \(self.org ?? "nil")\nrs: \(self.rssi ?? 0.0) \ntx: \(self.txPower ?? 0.0)\nlC:\(self.modelC ?? "nil")\nlP \(self.modelP ?? "nil")" }
 
     mutating func update(msg: String) {
         self.msg = msg

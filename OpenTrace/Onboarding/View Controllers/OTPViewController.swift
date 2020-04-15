@@ -152,6 +152,8 @@ class OTPViewController: UIViewController {
             }
 
             FirebaseAPIs.getHandshakePin { (pin) in
+                // Uncomment line below to debug without having firebase functions in place #bluetooth_debug
+                // result(.Success); return
                 if let pin = pin {
                     UserDefaults.standard.set(pin, forKey: OTPViewController.userDefaultsPinKey)
                     result(.Success)

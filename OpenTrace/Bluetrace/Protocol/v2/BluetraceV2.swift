@@ -25,6 +25,11 @@ class V2Peripheral: PeripheralProtocol {
     }
 
     func prepareReadRequestData(onComplete: @escaping (Data?) -> Void) {
+
+// Uncomment the code below to be able to debug bluetooth without getting tempIDs from firebase #bluetooth_debug
+//        let fakePayload: Data? = Data("Fj5jfbTtDySw8JoVsCmeul0wsoIcJKRPV0HtEFUlNvNg6C3wyGj8R1utPbw+Iz8tqAdpbxR1nSvr+ILXPG--".utf8)
+//        onComplete(fakePayload); return
+        
         if advtPayloadExpiry == nil ||  Date() > advtPayloadExpiry! {
             EncounterMessageManager.shared.fetchBatchTempIdsFromFirebase {(error: Error?, resp: (tempIds: [[String: Any]], refreshDate: Date)?) in
                 guard let response = resp else {
