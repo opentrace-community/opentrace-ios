@@ -72,3 +72,8 @@
 "Monitoring.FeelingWell.title" = "OK, great!";
 "Monitoring.FeelingWell.subtitle" = "Blah blah blah";
 "Monitoring.FeelingWell.okClose" = "OK";
+
+//Help
+"Help.View.title" = "Help";
+"Help.Error.title" = "Something went wrong";
+"Help.Error.dismiss" = "Dismiss";

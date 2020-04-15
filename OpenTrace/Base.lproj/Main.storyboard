@@ -1753,29 +1753,32 @@ Your battery usage may increase.</string>
             </objects>
             <point key="canvasLocation" x="-4851" y="4374"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="B4n-im-32p">
             <objects>
-                <viewController id="Vo2-KP-JHY" sceneMemberID="viewController">
+                <viewController id="Vo2-KP-JHY" customClass="HelpViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSr-jE-Vfw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To be implemented" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bza-Ha-aNb">
-                                <rect key="frame" x="86.5" y="267" width="147" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZH9-jw-L27">
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Bza-Ha-aNb" firstAttribute="centerX" secondItem="N1U-bO-RET" secondAttribute="centerX" id="Stg-D3-KRL"/>
-                            <constraint firstItem="Bza-Ha-aNb" firstAttribute="centerY" secondItem="N1U-bO-RET" secondAttribute="centerY" id="XKn-Se-F3f"/>
+                            <constraint firstItem="ZH9-jw-L27" firstAttribute="top" secondItem="N1U-bO-RET" secondAttribute="top" id="5Xw-gD-fYO"/>
+                            <constraint firstItem="ZH9-jw-L27" firstAttribute="leading" secondItem="N1U-bO-RET" secondAttribute="leading" id="KyD-WC-d49"/>
+                            <constraint firstItem="N1U-bO-RET" firstAttribute="bottom" secondItem="ZH9-jw-L27" secondAttribute="bottom" id="lZT-fd-qFa"/>
+                            <constraint firstItem="N1U-bO-RET" firstAttribute="trailing" secondItem="ZH9-jw-L27" secondAttribute="trailing" id="v99-La-ryA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N1U-bO-RET"/>
                     </view>
                     <navigationItem key="navigationItem" id="gsT-BG-Q8r"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZH9-jw-L27" id="b6K-C1-QD3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwI-1J-vTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
