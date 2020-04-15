@@ -909,7 +909,7 @@
 			buildSettings = {
 				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
@@ -923,9 +923,9 @@
 				MARKETING_VERSION = 1.5;
 				ONLY_ACTIVE_ARCH = YES;
 				OT_DISPLAY_NAME = "STG OpenTrace";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kccreate.intelligentlockdown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kccreate.intelligentlockdown.dev;
 				PRODUCT_NAME = OpenTrace;
-				PROVISIONING_PROFILE_SPECIFIER = "Intelligent Lockdown Prod";
+				PROVISIONING_PROFILE_SPECIFIER = "Intelligent Lockdown dev";
 				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
