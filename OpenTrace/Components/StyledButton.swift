@@ -28,15 +28,9 @@ final class StyledButton: UIButton {
 		setup()
 	}
 
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		updateBorederLayerPath()
-	}
-
 	private func setup() {
 		cornerRadius = 8
 		setupAppearance()
-		setupBorderLayer()
 		heightAnchor.constraint(equalToConstant: 56).isActive = true
 		titleLabel?.font = UIFont(descriptor: .preferredFontDescriptor(withTextStyle: .headline), size: 16)
 	}
@@ -45,28 +39,9 @@ final class StyledButton: UIButton {
 		backgroundColor = appearance.backgroundColour
 		borderColor = appearance.borderColor
 		setTitleColor(appearance.textColour, for: .normal)
+		layer.borderColor = appearance.borderColor.cgColor
+		layer.borderWidth = 2
 	}
-
-	private func setupBorderLayer() {
-		resetShapeLayerIfNeeded()
-		borderLayer.strokeColor = appearance.borderColor.cgColor
-		borderLayer.lineWidth = 2
-		borderLayer.fillColor = .none
-
-		layer.insertSublayer(borderLayer, at: 0)
-	}
-
-	private func resetShapeLayerIfNeeded() {
-		if borderLayer.superlayer != nil {
-			borderLayer.removeFromSuperlayer()
-			borderLayer = CAShapeLayer()
-		}
-	}
-
-	private func updateBorederLayerPath() {
-		borderLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
-	}
-
 }
 
 extension StyledButton {
