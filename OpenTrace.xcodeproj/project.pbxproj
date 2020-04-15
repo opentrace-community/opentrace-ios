@@ -79,6 +79,7 @@
 		CF5855CC244612D700D5F625 /* OnboardingStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5855CB244612D700D5F625 /* OnboardingStrings.swift */; };
 		CF82AF2C24473BE300081964 /* HelpStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82AF2B24473BE300081964 /* HelpStrings.swift */; };
 		CF82AF302447432A00081964 /* HelpContent.json in Resources */ = {isa = PBXBuildFile; fileRef = CF82AF2F2447432A00081964 /* HelpContent.json */; };
+		CF82AF352447539400081964 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82AF342447539400081964 /* StyledButton.swift */; };
 		D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8824348A7300E4F52F /* Bluetrace.swift */; };
 		D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */; };
 		D8828AFF243DE9340008854F /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
@@ -173,6 +174,7 @@
 		CF5855CB244612D700D5F625 /* OnboardingStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStrings.swift; sourceTree = "<group>"; };
 		CF82AF2B24473BE300081964 /* HelpStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpStrings.swift; sourceTree = "<group>"; };
 		CF82AF2F2447432A00081964 /* HelpContent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HelpContent.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		CF82AF342447539400081964 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
 		D81F6C8824348A7300E4F52F /* Bluetrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetrace.swift; sourceTree = "<group>"; };
 		D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceProtocol.swift; sourceTree = "<group>"; };
 		D8D3100A243C7ECD00D760B0 /* BluetraceV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceV2.swift; sourceTree = "<group>"; };
@@ -462,6 +464,7 @@
 		5DD41D3923DCB03B00FD4AB0 /* OpenTrace */ = {
 			isa = PBXGroup;
 			children = (
+				CF82AF332447532200081964 /* Components */,
 				37CDA2442447593F0085A56C /* Extensions */,
 				557FD391243E4048006BDF38 /* Core Data */,
 				C585C83923EEB93A0061B7C6 /* UIElements */,
@@ -555,6 +558,14 @@
 				CF82AF2B24473BE300081964 /* HelpStrings.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		CF82AF332447532200081964 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CF82AF342447539400081964 /* StyledButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		EA8667972447513A007FF257 /* HealthCheck */ = {
@@ -847,6 +858,7 @@
 				B65553542427512B0007F031 /* FirebaseAPIs.swift in Sources */,
 				D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */,
 				7F2F0BA223EFFF75006D7404 /* PermissionsViewController.swift in Sources */,
+				CF82AF352447539400081964 /* StyledButton.swift in Sources */,
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
