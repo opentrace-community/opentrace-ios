@@ -10,11 +10,11 @@ import UIKit
 
 extension UIAlertController {
     static func buildGenericAlert() -> UIAlertController {
-        let alert = UIAlertController(title: DisplayStrings.Gloabl.GenericError.title,
-                                      message: DisplayStrings.Gloabl.GenericError.body,
+        let alert = UIAlertController(title: DisplayStrings.General.GenericError.title,
+                                      message: DisplayStrings.General.GenericError.body,
                                       preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: DisplayStrings.Gloabl.GenericError.dismissAction,
+        alert.addAction(UIAlertAction(title: DisplayStrings.General.GenericError.dismissAction,
                                       style: .default,
                                       handler: nil))
         return alert

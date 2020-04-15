@@ -15,7 +15,6 @@
 		30E91BE923EFE514002D592A /* UploadDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BE823EFE514002D592A /* UploadDataVC.swift */; };
 		30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BEA23EFEA0B002D592A /* CodeInputView.swift */; };
 		30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FADDAD23F6896C006C125F /* Encounter+Event.swift */; };
-		37CDA243244757A80085A56C /* GlobalStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDA242244757A70085A56C /* GlobalStrings.swift */; };
 		37CDA247244759630085A56C /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDA246244759630085A56C /* UIAlertController+Additions.swift */; };
 		553AA5CE243EC91700EE326F /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553AA5CD243EC91700EE326F /* OnboardingManager.swift */; };
 		557FD393243E4062006BDF38 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FD392243E4062006BDF38 /* DatabaseManager.swift */; };
@@ -84,6 +83,12 @@
 		D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */; };
 		D8828AFF243DE9340008854F /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
 		D8D3100B243C7ECD00D760B0 /* BluetraceV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D3100A243C7ECD00D760B0 /* BluetraceV2.swift */; };
+		EA86679A24475159007FF257 /* HealthCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86679824475156007FF257 /* HealthCheckViewController.swift */; };
+		EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679924475156007FF257 /* HealthCheckViewController.xib */; };
+		EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86679C2447585C007FF257 /* MonitoringStrings.swift */; };
+		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
+		EAED3E0424474BF10009D266 /* SymptomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAED3E0224474BF10009D266 /* SymptomsViewController.xib */; };
+		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,7 +104,6 @@
 		375E62692445F184004D45D3 /* Help.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Help.md; sourceTree = "<group>"; };
 		375E626A2445F1A1004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		375E626B2445F1A6004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		37CDA242244757A70085A56C /* GlobalStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStrings.swift; sourceTree = "<group>"; };
 		37CDA246244759630085A56C /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		3C5E7E594E7634084F94F030 /* Pods-OpenTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTrace.debug.xcconfig"; path = "Target Support Files/Pods-OpenTrace/Pods-OpenTrace.debug.xcconfig"; sourceTree = "<group>"; };
 		553AA5CD243EC91700EE326F /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
@@ -174,6 +178,12 @@
 		D8D3100A243C7ECD00D760B0 /* BluetraceV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceV2.swift; sourceTree = "<group>"; };
 		D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowItWorksViewController.swift; sourceTree = "<group>"; };
 		D8EB201C23FBE216001C60EC /* help_center_article_style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = help_center_article_style.css; sourceTree = "<group>"; };
+		EA86679824475156007FF257 /* HealthCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckViewController.swift; sourceTree = "<group>"; };
+		EA86679924475156007FF257 /* HealthCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthCheckViewController.xib; sourceTree = "<group>"; };
+		EA86679C2447585C007FF257 /* MonitoringStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringStrings.swift; sourceTree = "<group>"; };
+		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
+		EAED3E0224474BF10009D266 /* SymptomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsViewController.xib; sourceTree = "<group>"; };
+		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +476,7 @@
 				5DD41D4323DCB03D00FD4AB0 /* Assets.xcassets */,
 				5D7DC312243E1166007180E9 /* Debug logs */,
 				5D7DC308243E0E8B007180E9 /* Main */,
+				EAED3E0024474B910009D266 /* Monitoring */,
 				5D7DC309243E0E96007180E9 /* Onboarding */,
 				5D7DC30D243E0F29007180E9 /* Upload data */,
 				5D7DC30A243E0EAE007180E9 /* Power saver */,
@@ -538,11 +549,39 @@
 				30BE1CAC23F119FD005DCE4F /* Localizable.strings */,
 				CF5855C724460B1300D5F625 /* String+Localization.swift */,
 				CF5855C924460B2D00D5F625 /* DisplayStrings.swift */,
+				EAED3E0624474F310009D266 /* GeneralStrings.swift */,
+				EA86679C2447585C007FF257 /* MonitoringStrings.swift */,
 				CF5855CB244612D700D5F625 /* OnboardingStrings.swift */,
-				37CDA242244757A70085A56C /* GlobalStrings.swift */,
 				CF82AF2B24473BE300081964 /* HelpStrings.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		EA8667972447513A007FF257 /* HealthCheck */ = {
+			isa = PBXGroup;
+			children = (
+				EA86679824475156007FF257 /* HealthCheckViewController.swift */,
+				EA86679924475156007FF257 /* HealthCheckViewController.xib */,
+			);
+			path = HealthCheck;
+			sourceTree = "<group>";
+		};
+		EAED3E0024474B910009D266 /* Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667972447513A007FF257 /* HealthCheck */,
+				EAED3E0524474C000009D266 /* Symptoms */,
+			);
+			path = Monitoring;
+			sourceTree = "<group>";
+		};
+		EAED3E0524474C000009D266 /* Symptoms */ = {
+			isa = PBXGroup;
+			children = (
+				EAED3E0124474BF10009D266 /* SymptomsViewController.swift */,
+				EAED3E0224474BF10009D266 /* SymptomsViewController.xib */,
+			);
+			path = Symptoms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -620,10 +659,12 @@
 				5DD41D4723DCB03D00FD4AB0 /* LaunchScreen.storyboard in Resources */,
 				5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */,
 				5D7DC344243E5789007180E9 /* Muli-ExtraLightItalic.ttf in Resources */,
+				EAED3E0424474BF10009D266 /* SymptomsViewController.xib in Resources */,
 				5D7DC33D243E5789007180E9 /* Muli-ExtraLight.ttf in Resources */,
 				CF82AF302447432A00081964 /* HelpContent.json in Resources */,
 				5D7DC343243E5789007180E9 /* Muli-Regular.ttf in Resources */,
 				5D7DC342243E5789007180E9 /* Muli-LightItalic.ttf in Resources */,
+				EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */,
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
 				7785BB05240E09C700802EBC /* ActivityIndicator.json in Resources */,
 				5D7DC345243E5789007180E9 /* Muli-Italic.ttf in Resources */,
@@ -755,7 +796,6 @@
 				B615C5A723F8EB1700345969 /* UIProgressView + Extension.swift in Sources */,
 				87260F2E243D9C51009C6E14 /* PogoManager.swift in Sources */,
 				B6932CEA2426288E003D1810 /* UploadDataStep2VC.swift in Sources */,
-				37CDA243244757A80085A56C /* GlobalStrings.swift in Sources */,
 				5D8DD06723E329A200E097EF /* tracer.xcdatamodeld in Sources */,
 				872DCEA9243DD1C00014B07E /* Logger.swift in Sources */,
 				37CDA247244759630085A56C /* UIAlertController+Additions.swift in Sources */,
@@ -767,6 +807,7 @@
 				30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */,
 				5D8DD05A23E2F08400E097EF /* ContactViewController.swift in Sources */,
 				C58D817923F16C3900345771 /* TurnOnBluetoothViewController.swift in Sources */,
+				EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */,
 				5D8DD05C23E2F0A700E097EF /* LogViewController.swift in Sources */,
 				5D5F83B023F045A800770DEF /* HomeViewController.swift in Sources */,
 				5D8DD05E23E2F0BA00E097EF /* InfoViewController.swift in Sources */,
@@ -777,6 +818,7 @@
 				B60F8BE6242667CB0007A641 /* UploadDataStep1VC.swift in Sources */,
 				553AA5CE243EC91700EE326F /* OnboardingManager.swift in Sources */,
 				C58D817723F169DB00345771 /* PermissionsCompleteViewController.swift in Sources */,
+				EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */,
 				D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */,
 				B60F8BE4242659810007A641 /* UILabelExtension.swift in Sources */,
 				5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */,
@@ -793,6 +835,7 @@
 				5DD41D5323DD4CA400FD4AB0 /* PeripheralController.swift in Sources */,
 				C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */,
 				C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */,
+				EA86679A24475159007FF257 /* HealthCheckViewController.swift in Sources */,
 				CF5855CA24460B2D00D5F625 /* DisplayStrings.swift in Sources */,
 				5D5F83AD23F023F600770DEF /* EncounterMessageManager.swift in Sources */,
 				5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */,
@@ -807,6 +850,7 @@
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
+				EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */,
 				CF0696952447386500206258 /* DetailCell.swift in Sources */,
 				CF5855CC244612D700D5F625 /* OnboardingStrings.swift in Sources */,
 			);

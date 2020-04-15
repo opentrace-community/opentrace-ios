@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 extension DisplayStrings {
 
 	enum Help {

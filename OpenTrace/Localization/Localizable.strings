@@ -59,10 +59,23 @@
 "Onboarding.PogoInstructions.footerText" = "This saves battery, by letting the app scan with the phone’s display turned off.";
 "Onboarding.PogoInstructions.footerButtonTitle" = "I'll keep this in mind";
 
-// MARK: - Generic Error
-"Gloabl.GenericError.title" = "Oops";
-"Gloabl.GenericError.body" = "Something went wrong, please try again.";
-"Gloabl.GenericError.dismiss_action" = "Ok";
+// MARK: - General
+"General.GenericError.title" = "Oops";
+"General.GenericError.body" = "Something went wrong, please try again.";
+"General.GenericError.dismiss_action" = "Ok";
+
+"General.cancel" = "Cancel";
+
+// MARK: - Monitoring, Health Check
+"Monitoring.HealthCheck.title" = "How do you feel today?";
+"Monitoring.HealthCheck.subtitle" = "Keep a track of your symptoms.";
+"Monitoring.HealthCheck.feelingWell" = "I'm feeling good";
+"Monitoring.HealthCheck.feelingSick" = "I'm not quite feeling right";
+
+// MARK: - Monitoring, Feeling Well
+"Monitoring.FeelingWell.title" = "OK, great!";
+"Monitoring.FeelingWell.subtitle" = "Blah blah blah";
+"Monitoring.FeelingWell.okClose" = "OK";
 
 // MARK: - Help
 "Help.View.title" = "Help";
