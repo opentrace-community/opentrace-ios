@@ -2,7 +2,7 @@ import Foundation
 import FirebaseFunctions
 
 struct FirebaseAPIs {
-    static var functions = Functions.functions(region: "asia-east2")
+    static var functions = Functions.functions(region: "europe-west2")
 
     static func getHandshakePin(_ onComplete: @escaping (String?) -> Void) {
         functions.httpsCallable("getHandshakePin").call { (resp, error) in

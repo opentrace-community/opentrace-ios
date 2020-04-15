@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pushNotificationOffView: UIView!
     @IBOutlet weak var incompleteHeaderView: UIView!
     @IBOutlet weak var successHeaderView: UIView!
+    @IBOutlet weak var monitorView: UIView!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var lastUpdatedLabel: UILabel!
@@ -107,6 +108,12 @@ class HomeViewController: UIViewController {
         #if DEBUG
         self.performSegue(withIdentifier: "HomeToDebugSegue", sender: self)
         #endif
+    }
+
+    @IBAction func onMonitorTapped(_ sender: UITapGestureRecognizer) {
+        let healthCheckViewController = HealthCheckViewController()
+        let navigationController = UINavigationController(rootViewController: healthCheckViewController)
+        present(navigationController, animated: true)
     }
 
     @IBAction func onShareTapped(_ sender: UITapGestureRecognizer) {

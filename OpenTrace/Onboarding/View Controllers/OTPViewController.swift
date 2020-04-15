@@ -34,7 +34,7 @@ class OTPViewController: UIViewController {
     static let userDefaultsPinKey = "HEALTH_AUTH_VERIFICATION_CODE"
 
     var countdownSeconds = twoMinutes
-    lazy var functions = Functions.functions(region: "asia-east2")
+    lazy var functions = Functions.functions(region: "europe-west2")
 
     let linkButtonAttributes: [NSAttributedString.Key: Any] = [.font: UIFont(name: "Muli", size: 16)!, .foregroundColor: UIColor.blue, .underlineStyle: NSUnderlineStyle.single.rawValue]
 
