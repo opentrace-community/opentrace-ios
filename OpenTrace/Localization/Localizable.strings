@@ -61,3 +61,5 @@
 
 //Help
 "Help.View.title" = "Help";
+"Help.Error.title" = "Something went wrong";
+"Help.Error.dismiss" = "Dismiss";

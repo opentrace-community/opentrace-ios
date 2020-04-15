@@ -15,5 +15,10 @@ extension DisplayStrings {
 
 			static let title = "Help.View.title".localized
 		}
+
+		enum Error {
+			static let title = "Help.Error.title".localized
+			static let dismiss = "Help.Error.dismiss".localized
+		}
 	}
 }

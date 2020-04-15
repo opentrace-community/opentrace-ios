@@ -13,28 +13,32 @@ final class HelpViewController: UIViewController {
 
 	private typealias Copy = DisplayStrings.Help
 
-	private let dataSource: [Section] = [.init(title: "About the app", rows: [.init(title: "How do I use this?",
-																			subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-																			urlString: "https://www.google.com/"),
-																	  .init(title: "Does this steal my data?",
-																			subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
-																			urlString: "https://www.google.com/")]),
-								 .init(title: "About the virus", rows: [.init(title: "What is a virus?",
-																			  subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ",
-																			  urlString: "https://www.google.com/"),
-																		.init(title: "How you can protect yourself",
-																			  subTitle: "Lorem ipsum dolor sit amet, consectetur",
-																			  urlString: nil)])]
-
 	@IBOutlet private var tableView: UITableView!
+
+	private var dataSource: [Section] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		fetchTableData()
 		navigationItem.title = Copy.View.title
 		tableView.register(DetailCell.self, forCellReuseIdentifier: DetailCell().identifier)
 		tableView.delegate = self
 		tableView.dataSource = self
     }
+
+	private func fetchTableData() {
+		guard let helpContentPath = Bundle.main.url(forResource: "HelpContent", withExtension: "json") else { return }
+		do {
+			let jsonData = try Data(contentsOf: helpContentPath, options: .mappedIfSafe)
+			let helpData = try JSONDecoder().decode([Section].self, from: jsonData)
+			dataSource = helpData
+		}
+		catch {
+			let alert = UIAlertController(title: Copy.Error.title, message: error.localizedDescription, preferredStyle: .alert)
+			alert.addAction(.init(title: Copy.Error.dismiss, style: .cancel))
+			present(alert, animated: true)
+		}
+	}
 }
 
 extension HelpViewController: UITableViewDelegate, UITableViewDataSource {
@@ -68,12 +72,12 @@ extension HelpViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension HelpViewController {
 
-	struct Section {
+	struct Section: Codable {
 		let title: String
 		let rows: [CellModel]
 	}
 
-	struct CellModel {
+	struct CellModel: Codable {
 		let title: String
 		let subTitle: String
 		let urlString: String?
