@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zG-EN-pX5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zG-EN-pX5">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,20 +78,20 @@
             <objects>
                 <viewController id="FWU-Ac-8hW" customClass="UploadDataStep1VC" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xSH-pD-dF6">
-                        <rect key="frame" x="0.0" y="0.0" width="366" height="488.66666666666663"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-jJ-y4F" userLabel="Step 1 View">
-                                <rect key="frame" x="0.0" y="0.0" width="366" height="488.66666666666669"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If the health authority needs to access your OpenTrace data:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-pX-24Q">
-                                        <rect key="frame" x="24" y="55" width="318" height="47.333333333333343"/>
+                                        <rect key="frame" x="24" y="55" width="366" height="47.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensure the code from the health authority matches the one below" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wja-RS-8XO">
-                                        <rect key="frame" x="24" y="153.66666666666666" width="318" height="47.333333333333343"/>
+                                        <rect key="frame" x="24" y="153.66666666666666" width="366" height="47.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -109,7 +109,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvJ-Ck-Jfq" customClass="GradientButton" customModule="OpenTrace" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="400.66666666666669" width="318" height="48"/>
+                                        <rect key="frame" x="24" y="648" width="366" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="UfP-JE-Kas"/>
                                         </constraints>
@@ -123,7 +123,7 @@
                                         </connections>
                                     </button>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Puz-2k-wb3">
-                                        <rect key="frame" x="164.66666666666666" y="226" width="37" height="37"/>
+                                        <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
                                         <color key="color" red="0.78432220220000004" green="0.78429466489999999" blue="0.78432160620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -143,7 +143,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks9-IK-8vm">
-                                        <rect key="frame" x="24" y="126.33333333333333" width="318" height="19.333333333333329"/>
+                                        <rect key="frame" x="24" y="126.33333333333333" width="366" height="19.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -210,7 +210,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="FWU-Ac-8hW" kind="relationship" relationship="rootViewController" id="5t7-Dn-y7M"/>
+                        <segue destination="a6e-KY-ZKO" kind="relationship" relationship="rootViewController" id="yV5-kg-MgT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyi-oM-Xde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -484,4 +484,7 @@
         <image name="ic-upload-selected" width="24" height="24"/>
         <image name="opentrace-logo" width="1024" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yV5-kg-MgT"/>
+    </inferredMetricsTieBreakers>
 </document>
