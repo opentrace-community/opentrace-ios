@@ -1,0 +1,32 @@
+[
+	{
+		"title": "About the app",
+		"rows": [
+			{
+				"title": "How do I use this?",
+				"subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+				"urlString": "https://www.google.com/"
+			},
+			{
+				"title": "Does this steal my data?",
+				"subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+				"urlString": "https://www.google.com/"
+			}
+		]
+	},
+	{
+		"title": "About the virus",
+		"rows": [
+			{
+				"title": "What is a virus?",
+				"subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+				"urlString": "https://www.google.com/"
+			},
+			{
+				"title": "How you can protect yourself?",
+				"subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+				"urlString": null
+			}
+		]
+	}
+]

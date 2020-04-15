@@ -71,9 +71,13 @@
 		C58D817723F169DB00345771 /* PermissionsCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817623F169DB00345771 /* PermissionsCompleteViewController.swift */; };
 		C58D817923F16C3900345771 /* TurnOnBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D817823F16C3900345771 /* TurnOnBluetoothViewController.swift */; };
 		C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D209FB23F4476F007233BE /* UITextViewFixed.swift */; };
+		CF06969224471E5200206258 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06969124471E5200206258 /* HelpViewController.swift */; };
+		CF0696952447386500206258 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0696942447386500206258 /* DetailCell.swift */; };
 		CF5855C824460B1300D5F625 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5855C724460B1300D5F625 /* String+Localization.swift */; };
 		CF5855CA24460B2D00D5F625 /* DisplayStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5855C924460B2D00D5F625 /* DisplayStrings.swift */; };
 		CF5855CC244612D700D5F625 /* OnboardingStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5855CB244612D700D5F625 /* OnboardingStrings.swift */; };
+		CF82AF2C24473BE300081964 /* HelpStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82AF2B24473BE300081964 /* HelpStrings.swift */; };
+		CF82AF302447432A00081964 /* HelpContent.json in Resources */ = {isa = PBXBuildFile; fileRef = CF82AF2F2447432A00081964 /* HelpContent.json */; };
 		D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8824348A7300E4F52F /* Bluetrace.swift */; };
 		D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */; };
 		D8828AFF243DE9340008854F /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
@@ -154,9 +158,13 @@
 		C58D817623F169DB00345771 /* PermissionsCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsCompleteViewController.swift; sourceTree = "<group>"; };
 		C58D817823F16C3900345771 /* TurnOnBluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOnBluetoothViewController.swift; sourceTree = "<group>"; };
 		C5D209FB23F4476F007233BE /* UITextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewFixed.swift; sourceTree = "<group>"; };
+		CF06969124471E5200206258 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		CF0696942447386500206258 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		CF5855C724460B1300D5F625 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		CF5855C924460B2D00D5F625 /* DisplayStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStrings.swift; sourceTree = "<group>"; };
 		CF5855CB244612D700D5F625 /* OnboardingStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStrings.swift; sourceTree = "<group>"; };
+		CF82AF2B24473BE300081964 /* HelpStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpStrings.swift; sourceTree = "<group>"; };
+		CF82AF2F2447432A00081964 /* HelpContent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HelpContent.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		D81F6C8824348A7300E4F52F /* Bluetrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetrace.swift; sourceTree = "<group>"; };
 		D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceProtocol.swift; sourceTree = "<group>"; };
 		D8D3100A243C7ECD00D760B0 /* BluetraceV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceV2.swift; sourceTree = "<group>"; };
@@ -269,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				5D5F83AF23F045A800770DEF /* HomeViewController.swift */,
+				CF0696932447385100206258 /* Help */,
 				B615C5A823FA403400345969 /* UIViewController + Extension.swift */,
 			);
 			path = "View Controllers";
@@ -492,6 +501,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		CF0696932447385100206258 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				CF06969124471E5200206258 /* HelpViewController.swift */,
+				CF82AF2F2447432A00081964 /* HelpContent.json */,
+				CF0696942447386500206258 /* DetailCell.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
 		CF5855C624460A6D00D5F625 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +518,7 @@
 				CF5855C724460B1300D5F625 /* String+Localization.swift */,
 				CF5855C924460B2D00D5F625 /* DisplayStrings.swift */,
 				CF5855CB244612D700D5F625 /* OnboardingStrings.swift */,
+				CF82AF2B24473BE300081964 /* HelpStrings.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -579,6 +599,7 @@
 				5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */,
 				5D7DC344243E5789007180E9 /* Muli-ExtraLightItalic.ttf in Resources */,
 				5D7DC33D243E5789007180E9 /* Muli-ExtraLight.ttf in Resources */,
+				CF82AF302447432A00081964 /* HelpContent.json in Resources */,
 				5D7DC343243E5789007180E9 /* Muli-Regular.ttf in Resources */,
 				5D7DC342243E5789007180E9 /* Muli-LightItalic.ttf in Resources */,
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
@@ -725,6 +746,7 @@
 				5D8DD05C23E2F0A700E097EF /* LogViewController.swift in Sources */,
 				5D5F83B023F045A800770DEF /* HomeViewController.swift in Sources */,
 				5D8DD05E23E2F0BA00E097EF /* InfoViewController.swift in Sources */,
+				CF82AF2C24473BE300081964 /* HelpStrings.swift in Sources */,
 				7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */,
 				30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */,
 				30BE1CAF23F1349F005DCE4F /* EncounterRecord.swift in Sources */,
@@ -751,6 +773,7 @@
 				5D5F83AD23F023F600770DEF /* EncounterMessageManager.swift in Sources */,
 				5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */,
 				C56CF43F23F18A15006B05B0 /* ConsentViewController.swift in Sources */,
+				CF06969224471E5200206258 /* HelpViewController.swift in Sources */,
 				879EF841243609DA0061C75F /* UploadDataToNoteViewController.swift in Sources */,
 				557FD393243E4062006BDF38 /* DatabaseManager.swift in Sources */,
 				30BE1CAA23F108BA005DCE4F /* UploadFileData.swift in Sources */,
@@ -760,6 +783,7 @@
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
+				CF0696952447386500206258 /* DetailCell.swift in Sources */,
 				CF5855CC244612D700D5F625 /* OnboardingStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
