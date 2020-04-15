@@ -23,10 +23,11 @@ class HealthCheckViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: DisplayStrings.General.cancel, style: .plain, target: self, action: #selector(cancel))
 
-        titleLabel.text = DisplayStrings.Monitoring.HealthCheck.title
-        subtitleLabel.text = DisplayStrings.Monitoring.HealthCheck.subtitle
-        wellButton.setTitle(DisplayStrings.Monitoring.HealthCheck.feelingWell, for: .normal)
-        sickButton.setTitle(DisplayStrings.Monitoring.HealthCheck.feelingSick, for: .normal)
+        typealias Copy = DisplayStrings.Monitoring.HealthCheck
+        titleLabel.text = Copy.title
+        subtitleLabel.text = Copy.subtitle
+        wellButton.setTitle(Copy.feelingWell, for: .normal)
+        sickButton.setTitle(Copy.feelingSick, for: .normal)
     }
 
     @objc private func cancel() {
@@ -35,8 +36,9 @@ class HealthCheckViewController: UIViewController {
 
     @IBAction func didTapFeelingWell(_ sender: Any) {
         // TODO: Replace alert with separate screen
-        let alert = UIAlertController(title: DisplayStrings.Monitoring.FeelingWell.title, message: DisplayStrings.Monitoring.FeelingWell.subtitle, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: DisplayStrings.Monitoring.FeelingWell.okClose, style: .default, handler: { [weak self] _ in
+        typealias Copy = DisplayStrings.Monitoring.FeelingWell
+        let alert = UIAlertController(title: Copy.title, message: Copy.subtitle, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: Copy.okClose, style: .default, handler: { [weak self] _ in
             self?.dismiss(animated: true)
         }))
         present(alert, animated: true)
