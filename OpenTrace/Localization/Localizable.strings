@@ -58,3 +58,6 @@
 "Onboarding.PogoInstructions.upsideDown" = "2. Keep it upside down in your pocket";
 "Onboarding.PogoInstructions.footerText" = "This saves battery, by letting the app scan with the phone’s display turned off.";
 "Onboarding.PogoInstructions.footerButtonTitle" = "I'll keep this in mind";
+
+//Help
+"Help.View.title" = "Help";
