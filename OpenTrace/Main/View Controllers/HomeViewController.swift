@@ -69,7 +69,7 @@ class HomeViewController: UIViewController {
 
     private func readPermissionsAndUpdateViews() {
 
-        blePoweredOn = true//BluetraceManager.shared.isBluetoothOn()
+        blePoweredOn = BluetraceManager.shared.isBluetoothOn()
         bleAuthorized = BluetraceManager.shared.isBluetoothAuthorized()
 
         BlueTraceLocalNotifications.shared.checkAuthorization { (pnsGranted) in
