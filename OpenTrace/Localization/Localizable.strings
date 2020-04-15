@@ -63,3 +63,8 @@
 "Gloabl.GenericError.title" = "Oops";
 "Gloabl.GenericError.body" = "Something went wrong, please try again.";
 "Gloabl.GenericError.dismiss_action" = "Ok";
+
+// MARK: - Help
+"Help.View.title" = "Help";
+"Help.Error.title" = "Something went wrong";
+"Help.Error.dismiss" = "Dismiss";
