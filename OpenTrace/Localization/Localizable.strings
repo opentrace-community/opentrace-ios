@@ -1,4 +1,4 @@
-// OTP
+// MARK: - OTP
 "Onboarding.EnterOTPSent" = "Enter OTP that was sent to %@";
 "Onboarding.WrongNumber" = "Wrong number?";
 "Onboarding.ResendCode" = "Resend Code";
@@ -13,18 +13,18 @@
 "Onboarding.DataUploaded" = "Data uploaded";
 "Onboarding.DataNotUploaded" = "Data not uploaded";
 
-// Intro 
+// MARK: - Intro
 "Onboarding.Intro.header" = "Help stop the spread of COVID-19 by turning Bluetooth on";
 "Onboarding.Intro.primaryBody" = "If you had close contact with a COVID-19 case, we help the health authority call you more quickly, to provide guidance and care.";
 "Onboarding.Intro.secondaryBody" = "To protect those around you, the health authority may also ask you to share your data.";
 "Onboarding.Intro.footerButtonTitle" = "I want to help";
 
-//How It Works
+// MARK: - How It Works
 "Onboarding.HowItWorks.header" = "How OpenTrace works";
 "Onboarding.HowItWorks.body" = "We use Bluetooth signals to determine if you are near another OpenTrace user. \n\nThis proximity data is encrypted and stored only on your phone.\n\nThe health authority will seek your consent to upload the data, if it’s needed for contact tracing.";
 "Onboarding.HowItWorks.footerButtonTitle" = "Great!!!";
 
-//Consent
+// MARK: - Consent
 "Onboarding.Constent.header" = "Your consent is needed for the following:";
 "Onboarding.Constent.primaryBody" = "To store your mobile number in a secured OpenTrace registry";
 "Onboarding.Constent.secondaryBody" = "To allow OpenTrace users to send the health authority information of encounters with you, if they are confirmed or suspected to have COVID-19 ";
@@ -32,25 +32,25 @@
 "Onboarding.Constent.privacyButtonTitle" = "privacy safeguards";
 "Onboarding.Constent.footerButtonTitle" = "I agree";
 
-//Permissions
+// MARK: - Permissions
 "Onboarding.Permissions.header" = "Set up app permissions";
 "Onboarding.Permissions.primaryBody" = "Select ‘Yes’ for the next two screens to set up.";
 "Onboarding.Permissions.secondaryBody" = "1. Bluetoot\n\n2. Push notifications";
 "Onboarding.Permissions.tertiaryBody" = "Both are needed for the app to work.\n\nYour battery usage may increase.";
 "Onboarding.Permissions.footerButtonTitle" = "Proceed";
 
-//Turn On Bluetooth
+// MARK: - Turn On Bluetooth
 "Onboarding.TurnOnBluetooth.header" = "Turn on your Bluetooth";
 "Onboarding.TurnOnBluetooth.primaryBody" = "Do this from Control Center or go to Settings.";
 "Onboarding.TurnOnBluetooth.secondaryBody" = "Then come back to the app to confirm.";
 "Onboarding.TurnOnBluetooth.footerButtonTitle" = "I turned on Bluetooth";
 
-//Permissions Complete
+// MARK: - Permissions Complete
 "Onboarding.PermissionsComplete.header" = "App permissions are fully set up";
 "Onboarding.PermissionsComplete.body" = "Please leave all settings on until the outbreak ends.";
 "Onboarding.PermissionsComplete.footerButtonTitle" = "Continue";
 
-//PogoInstructions
+// MARK: - PogoInstructions
 "Onboarding.PogoInstructions.header" = "iPhone users, take note!";
 "Onboarding.PogoInstructions.primaryBody" = "On iPhone, the app needs to be kept open to work.";
 "Onboarding.PogoInstructions.secondaryBody" = "To access power saver mode:";
@@ -59,21 +59,25 @@
 "Onboarding.PogoInstructions.footerText" = "This saves battery, by letting the app scan with the phone’s display turned off.";
 "Onboarding.PogoInstructions.footerButtonTitle" = "I'll keep this in mind";
 
-//General
+// MARK: - General
+"General.GenericError.title" = "Oops";
+"General.GenericError.body" = "Something went wrong, please try again.";
+"General.GenericError.dismiss_action" = "Ok";
+
 "General.cancel" = "Cancel";
 
-//Monitoring, Health Check
+// MARK: - Monitoring, Health Check
 "Monitoring.HealthCheck.title" = "How do you feel today?";
 "Monitoring.HealthCheck.subtitle" = "Keep a track of your symptoms.";
 "Monitoring.HealthCheck.feelingWell" = "I'm feeling good";
 "Monitoring.HealthCheck.feelingSick" = "I'm not quite feeling right";
 
-//Monitoring, Feeling Well
+// MARK: - Monitoring, Feeling Well
 "Monitoring.FeelingWell.title" = "OK, great!";
 "Monitoring.FeelingWell.subtitle" = "Blah blah blah";
 "Monitoring.FeelingWell.okClose" = "OK";
 
-//Help
+// MARK: - Help
 "Help.View.title" = "Help";
 "Help.Error.title" = "Something went wrong";
 "Help.Error.dismiss" = "Dismiss";
