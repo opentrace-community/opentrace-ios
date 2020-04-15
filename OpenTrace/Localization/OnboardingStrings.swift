@@ -31,5 +31,57 @@ extension DisplayStrings {
 
 		static let codeHasExpired = "Onboarding.CodeHasExpired".localized
 
+		enum Intro {
+			static let header = "Onboarding.Intro.header".localized
+			static let primaryBody = "Onboarding.Intro.primaryBody".localized
+			static let secondaryBody = "Onboarding.Intro.secondaryBody".localized
+			static let footerButtonTitle = "Onboarding.Intro.footerButtonTitle".localized
+		}
+
+		enum HowItWorks {
+			static let header = "Onboarding.HowItWorks.header".localized
+			static let body = "Onboarding.HowItWorks.body".localized
+			static let footerButtonTitle = "Onboarding.HowItWorks.footerButtonTitle".localized
+		}
+
+		enum Constent {
+			static let header = "Onboarding.Constent.header".localized
+			static let primaryBody = "Onboarding.Constent.primaryBody".localized
+			static let secondaryBody = "Onboarding.Constent.secondaryBody".localized
+			static let preceedingPrivacyButtonTitle = "Onboarding.Constent.preceedingPrivacyButtonTitle".localized
+			static let privacyButtonTitle = "Onboarding.Constent.privacyButtonTitle".localized
+			static let footerButtonTitle = "Onboarding.Constent.footerButtonTitle".localized
+		}
+
+		enum Permissions {
+			static let header = "Onboarding.Permissions.header".localized
+			static let primaryBody = "Onboarding.Permissions.primaryBody".localized
+			static let secondaryBody = "Onboarding.Permissions.secondaryBody".localized
+			static let tertiaryBody = "Onboarding.Permissions.tertiaryBody".localized
+			static let footerButtonTitle = "Onboarding.Permissions.footerButtonTitle".localized
+		}
+
+		enum TurnOnBluetooth {
+			static let header = "Onboarding.TurnOnBluetooth.header".localized
+			static let primaryBody = "Onboarding.TurnOnBluetooth.primaryBody".localized
+			static let secondaryBody = "Onboarding.TurnOnBluetooth.secondaryBody".localized
+			static let footerButtonTitle = "Onboarding.TurnOnBluetooth.footerButtonTitle".localized
+		}
+
+		enum PermissionsComplete {
+			static let header = "Onboarding.PermissionsComplete.header".localized
+			static let body = "Onboarding.PermissionsComplete.body".localized
+			static let footerButtonTitle = "Onboarding.PermissionsComplete.footerButtonTitle".localized
+		}
+
+		enum PogoInstructions {
+			static let header = "Onboarding.PogoInstructions.header".localized
+			static let primaryBody = "Onboarding.PogoInstructions.primaryBody".localized
+			static let secondaryBody = "Onboarding.PogoInstructions.secondaryBody".localized
+			static let faceDown = "Onboarding.PogoInstructions.faceDown".localized
+			static let upsideDown = "Onboarding.PogoInstructions.upsideDown".localized
+			static let footerText = "Onboarding.PogoInstructions.footerText".localized
+			static let footerButtonTitle = "Onboarding.PogoInstructions.footerButtonTitle".localized
+		}
 	}
 }

@@ -5,9 +5,15 @@
 import UIKit
 import FirebaseAuth
 
-class HowItWorksViewController: UIViewController {
+final class HowItWorksViewController: UIViewController {
 
-    @IBAction func greatBtnOnClick(_ sender: UIButton) {
+	private typealias Copy = DisplayStrings.Onboarding.HowItWorks
+
+	@IBOutlet private var headerLabel: UILabel!
+	@IBOutlet private var bodyLabel: UILabel!
+	@IBOutlet private var greatBtn: UIButton!
+
+	@IBAction func greatBtnOnClick(_ sender: UIButton) {
 
         OnboardingManager.shared.completedIWantToHelp = true
 
@@ -20,9 +26,14 @@ class HowItWorksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		setup()
     }
+
+	private func setup() {
+		headerLabel.text = Copy.header
+		bodyLabel.text = Copy.body
+		greatBtn.setTitle(Copy.footerButtonTitle, for: .normal)
+	}
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
