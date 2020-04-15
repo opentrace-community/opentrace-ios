@@ -86,6 +86,8 @@
 		EA86679A24475159007FF257 /* HealthCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86679824475156007FF257 /* HealthCheckViewController.swift */; };
 		EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679924475156007FF257 /* HealthCheckViewController.xib */; };
 		EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86679C2447585C007FF257 /* MonitoringStrings.swift */; };
+		EA8667A1244761EF007FF257 /* FeelingWellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */; };
+		EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679F244761ED007FF257 /* FeelingWellViewController.xib */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0424474BF10009D266 /* SymptomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAED3E0224474BF10009D266 /* SymptomsViewController.xib */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
@@ -181,6 +183,8 @@
 		EA86679824475156007FF257 /* HealthCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckViewController.swift; sourceTree = "<group>"; };
 		EA86679924475156007FF257 /* HealthCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthCheckViewController.xib; sourceTree = "<group>"; };
 		EA86679C2447585C007FF257 /* MonitoringStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringStrings.swift; sourceTree = "<group>"; };
+		EA86679F244761ED007FF257 /* FeelingWellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeelingWellViewController.xib; sourceTree = "<group>"; };
+		EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingWellViewController.swift; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0224474BF10009D266 /* SymptomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsViewController.xib; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
@@ -566,10 +570,20 @@
 			path = HealthCheck;
 			sourceTree = "<group>";
 		};
+		EA86679E244761D6007FF257 /* FeelingWell */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */,
+				EA86679F244761ED007FF257 /* FeelingWellViewController.xib */,
+			);
+			path = FeelingWell;
+			sourceTree = "<group>";
+		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
 			isa = PBXGroup;
 			children = (
 				EA8667972447513A007FF257 /* HealthCheck */,
+				EA86679E244761D6007FF257 /* FeelingWell */,
 				EAED3E0524474C000009D266 /* Symptoms */,
 			);
 			path = Monitoring;
@@ -666,6 +680,7 @@
 				5D7DC342243E5789007180E9 /* Muli-LightItalic.ttf in Resources */,
 				EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */,
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
+				EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */,
 				7785BB05240E09C700802EBC /* ActivityIndicator.json in Resources */,
 				5D7DC345243E5789007180E9 /* Muli-Italic.ttf in Resources */,
 			);
@@ -849,6 +864,7 @@
 				7F2F0BA223EFFF75006D7404 /* PermissionsViewController.swift in Sources */,
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
+				EA8667A1244761EF007FF257 /* FeelingWellViewController.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
 				EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */,
 				CF0696952447386500206258 /* DetailCell.swift in Sources */,
