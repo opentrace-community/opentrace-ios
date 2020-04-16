@@ -51,6 +51,7 @@ class HomeViewController: UIViewController {
     }
 
 	func setup() {
+		// TODO: Localise strings once Sam's HomeStrings.swift is merged
 		titleLabel.text = "The Coronavirus COVID-19 Lockdown App"
 		titleLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
 		bodyLabel.text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium dolore mque lauda ntium esparanti dollo fiunti est forunti."
