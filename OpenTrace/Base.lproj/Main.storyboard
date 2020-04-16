@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,10 +43,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="01-casual-hero" translatesAutoresizingMaskIntoConstraints="NO" id="JYM-TW-Zxf">
-                                <rect key="frame" x="26" y="22" width="268" height="364"/>
+                                <rect key="frame" x="26" y="22" width="268" height="182"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2G-ck-rYV">
-                                <rect key="frame" x="24" y="497.5" width="272" height="118"/>
+                                <rect key="frame" x="24" y="315.5" width="272" height="118"/>
                                 <string key="text">If you had close contact with a COVID-19 case, we help the health authority call you more quickly, to provide guidance and care.
 </string>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX0-7p-Shs">
-                                <rect key="frame" x="24" y="448" width="272" height="96"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <state key="normal" title="I want to help" backgroundImage="button-gradient"/>
                                 <connections>
@@ -62,13 +62,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help stop the spread of COVID-19 by turning Bluetooth on" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00h-JA-MfK">
-                                <rect key="frame" x="24" y="385" width="272" height="88.5"/>
+                                <rect key="frame" x="24" y="203" width="272" height="88.5"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To protect those around you, the health authority may also ask you to share your data." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HD-UN-iTU">
-                                <rect key="frame" x="24" y="366.5" width="272" height="57.5"/>
+                                <rect key="frame" x="24" y="414.5" width="272" height="57.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -115,10 +115,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="bluetooth-phones" translatesAutoresizingMaskIntoConstraints="NO" id="Pxu-Q6-QrV">
-                                <rect key="frame" x="26" y="22" width="268" height="339"/>
+                                <rect key="frame" x="26" y="22" width="268" height="169.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML0-z9-4tI">
-                                <rect key="frame" x="24" y="414.5" width="272" height="236"/>
+                                <rect key="frame" x="24" y="245" width="272" height="236"/>
                                 <string key="text">We use Bluetooth signals to determine if you are near another OpenTrace user. 
 
 This proximity data is encrypted and stored only on your phone.
@@ -129,7 +129,7 @@ The health authority will seek your consent to upload the data, if it’s needed
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-ER-v0N">
-                                <rect key="frame" x="24" y="448" width="272" height="96"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <state key="normal" title="Great!!!" backgroundImage="button-gradient"/>
                                 <connections>
@@ -137,7 +137,7 @@ The health authority will seek your consent to upload the data, if it’s needed
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How OpenTrace works" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5f-cs-P3k">
-                                <rect key="frame" x="24" y="373" width="272" height="29.5"/>
+                                <rect key="frame" x="24" y="203.5" width="272" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -226,7 +226,7 @@ Use their number instead of yours.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="2mB-by-LSD" customClass="VariableHeightProgressView" customModule="OpenTrace" customModuleProvider="target">
-                                <rect key="frame" x="24" y="470" width="272" height="2"/>
+                                <rect key="frame" x="24" y="468" width="272" height="6"/>
                                 <color key="progressTintColor" red="0.26666666666666666" green="0.61568627450980395" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -341,10 +341,10 @@ Use their number instead of yours.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-3 progress" translatesAutoresizingMaskIntoConstraints="NO" id="mpe-kF-NFg">
-                                <rect key="frame" x="24" y="406" width="272" height="18"/>
+                                <rect key="frame" x="24" y="463" width="272" height="9"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-RW-yBL">
-                                <rect key="frame" x="24" y="448" width="272" height="96"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <state key="normal" title="Verify" backgroundImage="button-gradient">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -434,7 +434,7 @@ Use their number instead of yours.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9Z-d2-PXT">
-                                <rect key="frame" x="24" y="448" width="272" height="96"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <state key="normal" title="I agree" backgroundImage="button-gradient">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -445,13 +445,13 @@ Use their number instead of yours.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-3 progress" translatesAutoresizingMaskIntoConstraints="NO" id="5Ca-4b-yql">
-                                <rect key="frame" x="24" y="406" width="272" height="18"/>
+                                <rect key="frame" x="24" y="463" width="272" height="9"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smartphone" translatesAutoresizingMaskIntoConstraints="NO" id="wez-30-arq">
-                                <rect key="frame" x="28" y="114" width="23" height="48"/>
+                                <rect key="frame" x="28" y="138" width="23" height="24"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask-icon" translatesAutoresizingMaskIntoConstraints="NO" id="edk-WL-FB1">
-                                <rect key="frame" x="28" y="218" width="23" height="44"/>
+                                <rect key="frame" x="28" y="240" width="23" height="22"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZa-7l-4tI">
                                 <rect key="frame" x="67" y="240" width="221" height="142"/>
@@ -461,13 +461,13 @@ Use their number instead of yours.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read our" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-AB-ztf">
-                                <rect key="frame" x="24" y="371.5" width="57" height="19.5"/>
+                                <rect key="frame" x="24" y="428.5" width="57" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHp-qK-Q85">
-                                <rect key="frame" x="84" y="365" width="122" height="32"/>
+                                <rect key="frame" x="84" y="422" width="122" height="32"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
                                 <state key="normal" title="privacy safeguards">
                                     <color key="titleColor" red="0.0" green="0.18823529410000001" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -531,7 +531,7 @@ Use their number instead of yours.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-4P-Xbk">
-                                <rect key="frame" x="24" y="448" width="272" height="96"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <state key="normal" title="I turned on Bluetooth" backgroundImage="button-gradient">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -541,25 +541,25 @@ Use their number instead of yours.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-3 progress" translatesAutoresizingMaskIntoConstraints="NO" id="Xeb-By-Vdk">
-                                <rect key="frame" x="24" y="406" width="272" height="18"/>
+                                <rect key="frame" x="24" y="463" width="272" height="9"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-1" translatesAutoresizingMaskIntoConstraints="NO" id="jcN-AE-FsG">
-                                <rect key="frame" x="21" y="23" width="278" height="386"/>
+                                <rect key="frame" x="21" y="23" width="278" height="193"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on your Bluetooth" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-yZ-Jd3">
-                                <rect key="frame" x="24" y="412" width="272" height="29.5"/>
+                                <rect key="frame" x="24" y="219" width="272" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do this from Control Center or go to Settings." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjL-QF-W6s">
-                                <rect key="frame" x="24" y="449.5" width="272" height="47.5"/>
+                                <rect key="frame" x="24" y="256.5" width="272" height="47.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Then come back to the app to confirm." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ure-ju-qCc">
-                                <rect key="frame" x="24" y="509" width="272" height="47.5"/>
+                                <rect key="frame" x="24" y="316" width="272" height="47.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -611,7 +611,7 @@ Use their number instead of yours.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmj-3v-POB">
-                                <rect key="frame" x="24" y="448" width="272" height="96"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <state key="normal" title="Proceed" backgroundImage="button-gradient">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -622,13 +622,13 @@ Use their number instead of yours.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-3 progress" translatesAutoresizingMaskIntoConstraints="NO" id="7e7-aq-AdG">
-                                <rect key="frame" x="24" y="406" width="272" height="18"/>
+                                <rect key="frame" x="24" y="463" width="272" height="9"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-1" translatesAutoresizingMaskIntoConstraints="NO" id="cma-Te-Ut1">
-                                <rect key="frame" x="21" y="23" width="278" height="386"/>
+                                <rect key="frame" x="21" y="23" width="278" height="193"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kv0-mp-Xoy">
-                                <rect key="frame" x="24" y="518" width="272" height="71"/>
+                                <rect key="frame" x="24" y="325" width="272" height="71"/>
                                 <string key="text">1. Bluetooth
 2. Push notifications
 </string>
@@ -637,7 +637,7 @@ Use their number instead of yours.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-gl-umK">
-                                <rect key="frame" x="24" y="407" width="282" height="59"/>
+                                <rect key="frame" x="24" y="214" width="282" height="59"/>
                                 <string key="text">Set up app permissions
 </string>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
@@ -645,7 +645,7 @@ Use their number instead of yours.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oG-IT-1nY">
-                                <rect key="frame" x="24" y="622" width="272" height="38.5"/>
+                                <rect key="frame" x="24" y="429" width="272" height="38.5"/>
                                 <string key="text">Both are needed for the app to work.
 Your battery usage may increase.</string>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
@@ -653,7 +653,7 @@ Your battery usage may increase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npY-9G-r2u">
-                                <rect key="frame" x="24" y="455" width="272" height="71"/>
+                                <rect key="frame" x="24" y="262" width="272" height="71"/>
                                 <string key="text">Select ‘Yes’ for the next two screens to set up.
 </string>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
@@ -709,7 +709,7 @@ Your battery usage may increase.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwi-lK-bOF">
-                                <rect key="frame" x="24" y="448" width="272" height="96"/>
+                                <rect key="frame" x="24" y="496" width="272" height="48"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <state key="normal" title="Continue" backgroundImage="button-gradient">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -719,19 +719,19 @@ Your battery usage may increase.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-3 progress" translatesAutoresizingMaskIntoConstraints="NO" id="cwq-yP-cHH">
-                                <rect key="frame" x="24" y="406" width="272" height="18"/>
+                                <rect key="frame" x="24" y="463" width="272" height="9"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-accepted" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-xp-IaB">
-                                <rect key="frame" x="21" y="23" width="278" height="386"/>
+                                <rect key="frame" x="21" y="23" width="278" height="193"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App permissions are fully set up" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-yx-Tur">
-                                <rect key="frame" x="24" y="412" width="272" height="59"/>
+                                <rect key="frame" x="24" y="219" width="272" height="59"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please leave all settings on until the outbreak ends." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEf-6L-JIR">
-                                <rect key="frame" x="24" y="479" width="272" height="47.5"/>
+                                <rect key="frame" x="24" y="286" width="272" height="47.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -919,13 +919,13 @@ Your battery usage may increase.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1835.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1830.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-2s-72y" userLabel="Success Header View">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated: 10:10 pm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upc-i0-4H3">
-                                                        <rect key="frame" x="145" y="184.5" width="151" height="19.5"/>
+                                                        <rect key="frame" x="145" y="188.5" width="139" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="13"/>
                                                         <color key="textColor" red="0.062504105269999999" green="0.1856559217" blue="0.60788136719999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
@@ -968,13 +968,13 @@ Your battery usage may increase.</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Setup is incomplete" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93z-Iu-TSR">
-                                                        <rect key="frame" x="84" y="141.5" width="152" height="24"/>
+                                                        <rect key="frame" x="89" y="141.5" width="142" height="19"/>
                                                         <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help stop the virus spread by allowing all permissions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-nD-DpI">
-                                                        <rect key="frame" x="40" y="165.5" width="240" height="142"/>
+                                                        <rect key="frame" x="40" y="160.5" width="240" height="147"/>
                                                         <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -994,10 +994,10 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXJ-wP-bzJ" userLabel="App Permission Label View">
-                                                <rect key="frame" x="0.0" y="553.5" width="320" height="60"/>
+                                                <rect key="frame" x="0.0" y="553.5" width="320" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="App Permissions Status" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM2-pC-IPR">
-                                                        <rect key="frame" x="18" y="24" width="302" height="24"/>
+                                                        <rect key="frame" x="18" y="24" width="302" height="19"/>
                                                         <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1011,13 +1011,13 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NC9-B7-ZEn" userLabel="Bluetooth Permission On Section">
-                                                <rect key="frame" x="0.0" y="613.5" width="320" height="86"/>
+                                                <rect key="frame" x="0.0" y="608.5" width="320" height="86"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8B-yK-zPc" userLabel="Bluetooth Permission On Bar">
                                                         <rect key="frame" x="16" y="0.0" width="288" height="74"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth: On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkG-8h-L41">
-                                                                <rect key="frame" x="16" y="16" width="153.5" height="42"/>
+                                                                <rect key="frame" x="16" y="16" width="143" height="42"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1078,13 +1078,13 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tx3-h9-HD9" userLabel="Bluetooth Permission Off Section">
-                                                <rect key="frame" x="0.0" y="699.5" width="320" height="86"/>
+                                                <rect key="frame" x="0.0" y="694.5" width="320" height="86"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNn-4p-s3i" userLabel="Bluetooth Permission Off Bar">
                                                         <rect key="frame" x="16" y="0.0" width="288" height="74"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Bluetooth: Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpF-lX-utx">
-                                                                <rect key="frame" x="16" y="16" width="155" height="42"/>
+                                                                <rect key="frame" x="16" y="16" width="143" height="42"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1145,13 +1145,13 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epu-AT-8fq" userLabel="Bluetooth Status On Section">
-                                                <rect key="frame" x="0.0" y="785.5" width="320" height="180"/>
+                                                <rect key="frame" x="0.0" y="780.5" width="320" height="180"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICq-T2-I96" userLabel="Bluetooth Status Bar On">
                                                         <rect key="frame" x="16" y="0.0" width="288" height="168"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth: On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byz-Ld-DQp">
-                                                                <rect key="frame" x="16" y="16" width="107" height="136"/>
+                                                                <rect key="frame" x="16" y="16" width="99.5" height="136"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1212,13 +1212,13 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRB-vh-VZ7" userLabel="Bluetooth Status  Off Section">
-                                                <rect key="frame" x="0.0" y="965.5" width="320" height="180"/>
+                                                <rect key="frame" x="0.0" y="960.5" width="320" height="180"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMY-Vd-8r5" userLabel="Bluetooth Status Bar Off">
                                                         <rect key="frame" x="16" y="0.0" width="288" height="168"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth: Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1S-u0-WAI">
-                                                                <rect key="frame" x="16" y="16" width="108.5" height="136"/>
+                                                                <rect key="frame" x="16" y="16" width="100" height="136"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1279,13 +1279,13 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhY-nY-ipb" userLabel="PN Permission On Section">
-                                                <rect key="frame" x="0.0" y="1145.5" width="320" height="86"/>
+                                                <rect key="frame" x="0.0" y="1140.5" width="320" height="86"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32R-I8-GMD" userLabel="PN Permission On Bar">
                                                         <rect key="frame" x="16" y="0.0" width="288" height="74"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications: On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcv-Er-8qy">
-                                                                <rect key="frame" x="16" y="16" width="171" height="42"/>
+                                                                <rect key="frame" x="16" y="16" width="160.5" height="42"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1346,13 +1346,13 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPu-AG-NHf" userLabel="PN Permission Off Section">
-                                                <rect key="frame" x="0.0" y="1231.5" width="320" height="86"/>
+                                                <rect key="frame" x="0.0" y="1226.5" width="320" height="86"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frd-Eh-ET5" userLabel="PN Permission Off Bar">
                                                         <rect key="frame" x="16" y="0.0" width="288" height="74"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications: Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6z-fL-CBE">
-                                                                <rect key="frame" x="16" y="16" width="173" height="42"/>
+                                                                <rect key="frame" x="16" y="16" width="160.5" height="42"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1413,25 +1413,25 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRJ-w0-WBm" userLabel="Stop Spread Message">
-                                                <rect key="frame" x="0.0" y="1317.5" width="320" height="277"/>
+                                                <rect key="frame" x="0.0" y="1312.5" width="320" height="277"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-Xq-0Iq" userLabel="Stop Spread Bar">
                                                         <rect key="frame" x="16" y="16" width="288" height="249"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How you can help stop the spread of COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1I-gM-V0v">
-                                                                <rect key="frame" x="16" y="16" width="256" height="47.5"/>
+                                                                <rect key="frame" x="16" y="16" width="256" height="37.5"/>
                                                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep app open in power saver mode, especially in meetings, public spaces, and public transport." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV2-xp-47d">
-                                                                <rect key="frame" x="16" y="87.5" width="256" height="94.5"/>
+                                                                <rect key="frame" x="16" y="77.5" width="256" height="75"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-U5-ZkO">
-                                                                <rect key="frame" x="16" y="196.5" width="258" height="31"/>
+                                                                <rect key="frame" x="16" y="167" width="258" height="60.5"/>
                                                                 <state key="normal">
                                                                     <attributedString key="attributedTitle">
                                                                         <fragment content="Use power saver mode">
@@ -1503,19 +1503,19 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-Ue-XyY" userLabel="Monitor Section">
-                                                <rect key="frame" x="0.0" y="1594.5" width="320" height="127.5"/>
+                                                <rect key="frame" x="0.0" y="1589.5" width="320" height="127.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fC-KL-P0P" userLabel="Monitor Bar">
                                                         <rect key="frame" x="16" y="12" width="288" height="103.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track daily monitoring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS3-re-S60" userLabel="Track daily monitoring">
-                                                                <rect key="frame" x="41" y="14" width="172.5" height="24"/>
+                                                                <rect key="frame" x="41" y="14" width="157.5" height="19"/>
                                                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                                                 <color key="textColor" red="0.089108936489999999" green="0.23694762589999999" blue="0.6823945642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Keep a track of how you're feeling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srY-Bi-yla" userLabel="Keep a track of how you're feeling">
-                                                                <rect key="frame" x="41" y="42" width="229" height="47.5"/>
+                                                                <rect key="frame" x="41" y="37" width="229" height="52.5"/>
                                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1583,40 +1583,43 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJW-Fc-oY0" userLabel="Share Section">
-                                                <rect key="frame" x="0.0" y="1722" width="320" height="113.5"/>
+                                                <rect key="frame" x="0.0" y="1717" width="320" height="113.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWY-40-H8G" userLabel="Share Bar">
                                                         <rect key="frame" x="16" y="12" width="288" height="89.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share this app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VB-oc-qKW">
-                                                                <rect key="frame" x="41" y="14" width="112" height="24"/>
-                                                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
-                                                                <color key="textColor" red="0.089108936489999999" green="0.23694762589999999" blue="0.6823945642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share this app" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VB-oc-qKW">
+                                                                <rect key="frame" x="40" y="17" width="111.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-Z3-x65">
-                                                                <rect key="frame" x="16" y="15" width="17" height="34.5"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="shareBlack" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-Z3-x65">
+                                                                <rect key="frame" x="15" y="17" width="17" height="17"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="17" id="NUO-pQ-Tiz"/>
+                                                                    <constraint firstAttribute="height" constant="17" id="geS-kp-Q1N"/>
+                                                                </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ask friends and family to help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vD-4L-kMa">
-                                                                <rect key="frame" x="40" y="42" width="230" height="33.5"/>
-                                                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
+                                                                <rect key="frame" x="40" y="44.5" width="230" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.90616923569999996" green="0.92901295419999996" blue="0.96471208330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
-                                                            <constraint firstItem="1vD-4L-kMa" firstAttribute="top" secondItem="2VB-oc-qKW" secondAttribute="bottom" constant="4" id="Cgh-zb-TVa"/>
-                                                            <constraint firstItem="DRO-Z3-x65" firstAttribute="top" secondItem="hWY-40-H8G" secondAttribute="top" constant="15" id="Crd-Ji-lHC"/>
-                                                            <constraint firstItem="2VB-oc-qKW" firstAttribute="leading" secondItem="DRO-Z3-x65" secondAttribute="trailing" constant="8" id="VBV-p3-hIl"/>
+                                                            <constraint firstItem="1vD-4L-kMa" firstAttribute="leading" secondItem="2VB-oc-qKW" secondAttribute="leading" id="Bmx-6T-IEa"/>
+                                                            <constraint firstItem="1vD-4L-kMa" firstAttribute="top" secondItem="2VB-oc-qKW" secondAttribute="bottom" constant="8" id="Cgh-zb-TVa"/>
+                                                            <constraint firstItem="2VB-oc-qKW" firstAttribute="leading" secondItem="DRO-Z3-x65" secondAttribute="trailing" constant="8" id="H9C-9B-MXk"/>
+                                                            <constraint firstItem="DRO-Z3-x65" firstAttribute="leading" secondItem="hWY-40-H8G" secondAttribute="leading" constant="15" id="XRe-6I-FKN"/>
                                                             <constraint firstAttribute="trailing" secondItem="1vD-4L-kMa" secondAttribute="trailing" constant="18" id="bpf-WM-vcC"/>
+                                                            <constraint firstItem="DRO-Z3-x65" firstAttribute="top" secondItem="2VB-oc-qKW" secondAttribute="top" id="cE7-rb-By0"/>
                                                             <constraint firstAttribute="bottom" secondItem="1vD-4L-kMa" secondAttribute="bottom" constant="14" id="ggz-DN-lDz"/>
-                                                            <constraint firstItem="1vD-4L-kMa" firstAttribute="leading" secondItem="DRO-Z3-x65" secondAttribute="trailing" constant="7" id="hci-kK-0PW"/>
-                                                            <constraint firstItem="DRO-Z3-x65" firstAttribute="leading" secondItem="hWY-40-H8G" secondAttribute="leading" constant="16" id="jQ9-hA-Bci"/>
                                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2VB-oc-qKW" secondAttribute="trailing" constant="20" symbolic="YES" id="qXi-st-jak"/>
-                                                            <constraint firstItem="2VB-oc-qKW" firstAttribute="top" secondItem="hWY-40-H8G" secondAttribute="top" constant="14" id="t1B-b1-PWN"/>
-                                                            <constraint firstAttribute="bottom" secondItem="DRO-Z3-x65" secondAttribute="bottom" constant="40" id="uam-gg-0CR"/>
+                                                            <constraint firstItem="2VB-oc-qKW" firstAttribute="top" secondItem="hWY-40-H8G" secondAttribute="top" constant="17" id="t1B-b1-PWN"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1650,10 +1653,10 @@ Your battery usage may increase.</string>
                                                                 <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
+                                                                <real key="value" value="2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" red="0.71372549019999998" green="0.79215686269999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
@@ -1732,7 +1735,7 @@ Your battery usage may increase.</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-4849" y="3375"/>
+            <point key="canvasLocation" x="-4853" y="3322"/>
         </scene>
         <!--Help-->
         <scene sceneID="HcO-vc-K7U">
@@ -1762,7 +1765,7 @@ Your battery usage may increase.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZH9-jw-L27">
-                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -2083,7 +2086,7 @@ Your battery usage may increase.</string>
         <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="pogopics" width="270" height="170"/>
         <image name="redcross" width="22" height="22"/>
-        <image name="share" width="17" height="17"/>
+        <image name="shareBlack" width="17" height="17"/>
         <image name="small tick" width="22" height="22"/>
         <image name="smartphone" width="24" height="24"/>
     </resources>
