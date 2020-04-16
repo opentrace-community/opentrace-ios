@@ -39,7 +39,12 @@ class MessageViewController: UIViewController {
 		subtitleLabel.text = subtitleText
 		finishButton.setTitle(footerButtonText, for: .normal)
 		headerImage.image = image
+		navigationItem.rightBarButtonItem = .init(image: UIImage(named: "dismissCross")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(dismissButtonTapped))
     }
+
+	@objc private func dismissButtonTapped() {
+		dismiss(animated: true)
+	}
 
     @IBAction func didTapFinish(_ sender: Any) {
         buttonAction?(self)

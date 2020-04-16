@@ -576,6 +576,7 @@
 		CF82AF332447532200081964 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EA86679E244761D6007FF257 /* MessageViewController */,
 				CF82AF342447539400081964 /* StyledButton.swift */,
 				CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */,
 				CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */,
@@ -593,20 +594,19 @@
 			path = HealthCheck;
 			sourceTree = "<group>";
 		};
-		EA86679E244761D6007FF257 /* FeelingWell */ = {
+		EA86679E244761D6007FF257 /* MessageViewController */ = {
 			isa = PBXGroup;
 			children = (
 				EA8667A0244761ED007FF257 /* MessageViewController.swift */,
 				EA86679F244761ED007FF257 /* MessageViewController.xib */,
 			);
-			path = FeelingWell;
+			path = MessageViewController;
 			sourceTree = "<group>";
 		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
 			isa = PBXGroup;
 			children = (
 				EA8667972447513A007FF257 /* HealthCheck */,
-				EA86679E244761D6007FF257 /* FeelingWell */,
 				EAED3E0524474C000009D266 /* Symptoms */,
 			);
 			path = Monitoring;
