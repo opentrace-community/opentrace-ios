@@ -6,21 +6,12 @@ import CoreData
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var screenStack: UIStackView!
-    @IBOutlet weak var bluetoothStatusOffView: UIView!
-    @IBOutlet weak var bluetoothStatusOnView: UIView!
-    @IBOutlet weak var bluetoothPermissionOffView: UIView!
-    @IBOutlet weak var bluetoothPermissionOnView: UIView!
-    @IBOutlet weak var pushNotificationOnView: UIView!
-    @IBOutlet weak var pushNotificationOffView: UIView!
-    @IBOutlet weak var incompleteHeaderView: UIView!
-    @IBOutlet weak var successHeaderView: UIView!
     @IBOutlet weak var shareView: UIView!
-    @IBOutlet weak var animationView: AnimationView!
-    @IBOutlet weak var lastUpdatedLabel: UILabel!
-    @IBOutlet weak var appPermissionsLabel: UIView!
-    @IBOutlet weak var powerSaverCardView: UIView!
+	@IBOutlet var titleLabel: UILabel!
+	@IBOutlet var bodyLabel: UILabel!
+	@IBOutlet var trackingInfoButton: UIButton!
 
-    var fetchedResultsController: NSFetchedResultsController<Encounter>?
+	var fetchedResultsController: NSFetchedResultsController<Encounter>?
 
     var allPermissionOn = true
     var bleAuthorized = true
@@ -38,7 +29,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         observeNotifications()
-        animationView.loopMode = LottieLoopMode.playOnce
+		setup()
     }
 
     func observeNotifications() {
@@ -58,6 +49,21 @@ class HomeViewController: UIViewController {
     @objc private func applicationDidBecomeActive() {
         readPermissionsAndUpdateViews()
     }
+
+	func setup() {
+		titleLabel.text = "The Coronavirus COVID-19 Lockdown App"
+		titleLabel.font = UIFont.boldSystemFont(ofSize: 28)
+		bodyLabel.text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium dolore mque lauda ntium esparanti dollo fiunti est forunti."
+		bodyLabel.font = UIFont.systemFont(ofSize: 14)
+		let buttonTitle = NSAttributedString(string: "Check what we are tracking",
+											 attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+														  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
+														  NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single])
+		trackingInfoButton.setTitle("Check what we are tracking", for: .normal)
+		trackingInfoButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+//		trackingInfoButton.setAttributedTitle(buttonTitle, for: .normal)
+
+	}
 
     private func togglePermissionViews() {
         togglePushNotificationsStatusView()
@@ -81,32 +87,15 @@ class HomeViewController: UIViewController {
     }
 
     private func toggleIncompleteHeaderView() {
-        successHeaderView.isVisible = self.allPermissionOn
-        powerSaverCardView.isVisible = self.allPermissionOn
-        incompleteHeaderView.isVisible = !self.allPermissionOn
-        appPermissionsLabel.isVisible = !self.allPermissionOn
     }
 
     private func toggleBluetoothStatusView() {
-        bluetoothStatusOnView.isVisible = !self.allPermissionOn && self.blePoweredOn
-        bluetoothStatusOffView.isVisible = !self.allPermissionOn && !self.blePoweredOn
     }
 
     private func toggleBluetoothPermissionStatusView() {
-        bluetoothPermissionOnView.isVisible = !self.allPermissionOn && self.bleAuthorized
-        bluetoothPermissionOffView.isVisible = !self.allPermissionOn && !self.bleAuthorized
     }
 
     private func togglePushNotificationsStatusView() {
-        pushNotificationOnView.isVisible = !self.allPermissionOn && self.pushNotificationGranted
-        pushNotificationOffView.isVisible = !self.allPermissionOn && !self.pushNotificationGranted
-    }
-
-    @IBAction func onHeroTapped(_ sender: UITapGestureRecognizer) {
-        Logger.DLog("tapped")
-        #if DEBUG
-        self.performSegue(withIdentifier: "HomeToDebugSegue", sender: self)
-        #endif
     }
 
 	@IBAction func TrackMyConditionButtonTapped() {
@@ -121,10 +110,6 @@ class HomeViewController: UIViewController {
         activity.popoverPresentationController?.sourceView = shareView
 
         present(activity, animated: true, completion: nil)
-    }
-
-    @IBAction func onPowerSaverButtonTapped(_ sender: Any) {
-
     }
 
     @objc
@@ -160,33 +145,10 @@ class HomeViewController: UIViewController {
 
         do {
             try fetchedResultsController?.performFetch()
-            setInitialLastUpdatedTime()
         } catch let error as NSError {
             print("Could not perform fetch. \(error), \(error.userInfo)")
         }
 
-    }
-
-    func setInitialLastUpdatedTime() {
-        guard let encounters = fetchedResultsController?.fetchedObjects else {
-            return
-        }
-        guard encounters.count > 0 else {
-            return
-        }
-        let firstEncounter = encounters[0]
-        updateLastUpdatedTime(date: firstEncounter.timestamp!)
-    }
-
-    func updateLastUpdatedTime(date: Date) {
-        let formatter = DateFormatter()
-        formatter.timeStyle = .short
-        formatter.dateStyle = .none
-        lastUpdatedLabel.text = "Last updated: \(formatter.string(from: date))"
-    }
-
-    func playActivityAnimation() {
-        animationView.play()
     }
 }
 
@@ -223,12 +185,9 @@ extension HomeViewController: NSFetchedResultsControllerDelegate {
         case .insert:
             let encounter = anObject as! Encounter
             if ![Encounter.Event.scanningStarted.rawValue, Encounter.Event.scanningStopped.rawValue].contains(encounter.msg) {
-                self.playActivityAnimation()
             }
-            self.updateLastUpdatedTime(date: Date())
             break
         default:
-            self.updateLastUpdatedTime(date: Date())
             break
         }
     }
