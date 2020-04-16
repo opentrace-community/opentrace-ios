@@ -24,20 +24,20 @@ class BluetraceManager {
     }
 
     func presentBluetoothAlert(_ bluetoothStateString: String) {
-//        #if DEBUG
-//        let alert = UIAlertController(title: "Bluetooth Issue: "+bluetoothStateString+" on "+DeviceInfo.getModel()+" iOS: "+UIDevice.current.systemVersion, message: "Please screenshot this message and send to support!", preferredStyle: .alert)
-//
-//        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-//
-//        DispatchQueue.main.async {
-//            var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
-//            while topController?.presentedViewController != nil {
-//                topController = topController?.presentedViewController
-//            }
-//
-//            topController?.present(alert, animated: true)
-//        }
-//        #endif
+        #if DEBUG
+        let alert = UIAlertController(title: "Bluetooth Issue: "+bluetoothStateString+" on "+DeviceInfo.getModel()+" iOS: "+UIDevice.current.systemVersion, message: "Please screenshot this message and send to support!", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+        DispatchQueue.main.async {
+            var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
+            while topController?.presentedViewController != nil {
+                topController = topController?.presentedViewController
+            }
+
+            topController?.present(alert, animated: true)
+        }
+        #endif
 
         #if RELEASE
         let alert = UIAlertController(title: "App restart required for Bluetooth to restart!", message: "Press Ok to exit the app!", preferredStyle: .alert)
