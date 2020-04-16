@@ -5,6 +5,7 @@ force_cast: warning
 force_try: warning
 
 disabled_rules:
+  - trailing_whitespace
   - type_name
   - trailing_comma
   - identifier_name
@@ -65,3 +66,4 @@ line_length:
   # just because of style problems
   error: 300
   ignores_urls: true
+

@@ -16,10 +16,6 @@ class SymptomsViewController: UIViewController {
     @IBOutlet private var finishButton: UIButton!
     @IBOutlet private var symptomsList: UIStackView!
     
-    convenience init() {
-        self.init(nibName: String(describing: SymptomsViewController.self), bundle: Bundle(for: SymptomsViewController.self))
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,7 +41,7 @@ class SymptomsViewController: UIViewController {
     }
 
     @IBAction private func didTapFinish(_ sender: Any) {
-        showAdvice()
+        showContactForm()
         return
         let symptoms = symptomsList.arrangedSubviews.compactMap { $0 as? BinaryQuestionControl }
         let unanswered = symptoms.filter { $0.answer == nil }
@@ -81,6 +77,7 @@ class SymptomsViewController: UIViewController {
     }
         
     private func showContactForm() {
-        
+        let contactController = ContactFormViewController()
+        navigationController?.pushViewController(contactController, animated: true)
     }
 }

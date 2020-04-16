@@ -14,10 +14,6 @@ class FeelingWellViewController: UIViewController {
     @IBOutlet private var subtitleLabel: UILabel!
     @IBOutlet private var finishButton: UIButton!
 
-    convenience init() {
-        self.init(nibName: String(describing: FeelingWellViewController.self), bundle: Bundle(for: FeelingWellViewController.self))
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

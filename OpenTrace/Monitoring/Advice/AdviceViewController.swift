@@ -21,10 +21,6 @@ class AdviceViewController: UIViewController {
     @IBOutlet private var finishButton: UIButton!
     @IBOutlet private var adviceList: UIStackView!
     
-    convenience init() {
-        self.init(nibName: String(describing: AdviceViewController.self), bundle: Bundle(for: AdviceViewController.self))
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +28,7 @@ class AdviceViewController: UIViewController {
         titleLabel.text = Copy.title
         subtitleLabel.text = Copy.subtitle
         closingStatement.text = Copy.closingStatement
-        finishButton.setTitle(Copy.submit, for: .normal)
+        finishButton.setTitle(Copy.okClose, for: .normal)
 
         // TODO: this will come from the backend, or at least from hardcoded JSON
         [

@@ -103,6 +103,8 @@
 		EA8667B924489BD0007FF257 /* AdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667B824489BD0007FF257 /* AdviceView.swift */; };
 		EA8667BB24489BD8007FF257 /* AdviceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667BA24489BD8007FF257 /* AdviceView.xib */; };
 		EA8667BD2448A0EE007FF257 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667BC2448A0EE007FF257 /* UIView+Additions.swift */; };
+		EA8667C12448B0C6007FF257 /* ContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */; };
+		EA8667C22448B0CB007FF257 /* ContactFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
@@ -214,6 +216,8 @@
 		EA8667B824489BD0007FF257 /* AdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceView.swift; sourceTree = "<group>"; };
 		EA8667BA24489BD8007FF257 /* AdviceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdviceView.xib; sourceTree = "<group>"; };
 		EA8667BC2448A0EE007FF257 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewController.swift; sourceTree = "<group>"; };
+		EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactFormViewController.xib; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -651,6 +655,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EA8667BE2448AF58007FF257 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */,
+				EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +671,7 @@
 				EA86679E244761D6007FF257 /* FeelingWell */,
 				EAED3E0524474C000009D266 /* Symptoms */,
 				EA8667AE24489934007FF257 /* Advice */,
+				EA8667BE2448AF58007FF257 /* Contact */,
 			);
 			path = Monitoring;
 			sourceTree = "<group>";
@@ -758,6 +772,7 @@
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
 				EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */,
 				7785BB05240E09C700802EBC /* ActivityIndicator.json in Resources */,
+				EA8667C22448B0CB007FF257 /* ContactFormViewController.xib in Resources */,
 				EA8667B724489BAA007FF257 /* TitleView.xib in Resources */,
 				EA8667BB24489BD8007FF257 /* AdviceView.xib in Resources */,
 				5D7DC345243E5789007180E9 /* Muli-Italic.ttf in Resources */,
@@ -923,6 +938,7 @@
 				5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */,
 				CF5855C824460B1300D5F625 /* String+Localization.swift in Sources */,
 				5D8B248B23F146C500DBB74D /* PhoneNumberViewController.swift in Sources */,
+				EA8667C12448B0C6007FF257 /* ContactFormViewController.swift in Sources */,
 				5DC7B8D3242B8D87008E1715 /* BluetraceUtils.swift in Sources */,
 				30BE1CB123F134D0005DCE4F /* Encounter+EncounterRecord.swift in Sources */,
 				EA8667BD2448A0EE007FF257 /* UIView+Additions.swift in Sources */,
