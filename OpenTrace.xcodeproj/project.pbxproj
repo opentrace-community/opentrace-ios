@@ -114,6 +114,8 @@
 		EA8667D32448DF07007FF257 /* AdviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667D22448DF07007FF257 /* AdviceManager.swift */; };
 		EA8667D62448DF56007FF257 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667D52448DF56007FF257 /* Advice.swift */; };
 		EA8667D72448E1A1007FF257 /* Advice1.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8667CE2448DE40007FF257 /* Advice1.json */; };
+		EA8667DA2448E4A2007FF257 /* ContactFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667D92448E4A2007FF257 /* ContactFormFieldView.swift */; };
+		EA8667DC2448E4AC007FF257 /* ContactFormFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667DB2448E4AC007FF257 /* ContactFormFieldView.xib */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
@@ -234,6 +236,8 @@
 		EA8667D02448DEEE007FF257 /* Advice2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Advice2.json; sourceTree = "<group>"; };
 		EA8667D22448DF07007FF257 /* AdviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceManager.swift; sourceTree = "<group>"; };
 		EA8667D52448DF56007FF257 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		EA8667D92448E4A2007FF257 /* ContactFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormFieldView.swift; sourceTree = "<group>"; };
+		EA8667DB2448E4AC007FF257 /* ContactFormFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactFormFieldView.xib; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -676,6 +680,7 @@
 		EA8667BE2448AF58007FF257 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				EA8667D82448E485007FF257 /* Views */,
 				EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */,
 				EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */,
 			);
@@ -701,6 +706,15 @@
 				EA8667D02448DEEE007FF257 /* Advice2.json */,
 			);
 			path = AdviceManager;
+			sourceTree = "<group>";
+		};
+		EA8667D82448E485007FF257 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667D92448E4A2007FF257 /* ContactFormFieldView.swift */,
+				EA8667DB2448E4AC007FF257 /* ContactFormFieldView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
@@ -802,6 +816,7 @@
 				5D7DC33E243E5789007180E9 /* Muli-SemiBold.ttf in Resources */,
 				5D7DC33C243E5789007180E9 /* Muli-BoldItalic.ttf in Resources */,
 				5D7DC340243E5789007180E9 /* Muli-Bold.ttf in Resources */,
+				EA8667DC2448E4AC007FF257 /* ContactFormFieldView.xib in Resources */,
 				5DD41D4723DCB03D00FD4AB0 /* LaunchScreen.storyboard in Resources */,
 				5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */,
 				5D7DC344243E5789007180E9 /* Muli-ExtraLightItalic.ttf in Resources */,
@@ -812,8 +827,7 @@
 				EA8667AC24485DFC007FF257 /* BinaryQuestionControl.xib in Resources */,
 				5D7DC342243E5789007180E9 /* Muli-LightItalic.ttf in Resources */,
 				EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */,
-				EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */,
-				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
+				EA8667A2244761F5007FF257 /* MessageViewController.xib in Resources */,
 				EA8667A2244761F5007FF257 /* MessageViewController.xib in Resources */,
 				7785BB05240E09C700802EBC /* ActivityIndicator.json in Resources */,
 				EA8667C22448B0CB007FF257 /* ContactFormViewController.xib in Resources */,
@@ -1017,6 +1031,7 @@
 				CF82AF352447539400081964 /* StyledButton.swift in Sources */,
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
+				EA8667DA2448E4A2007FF257 /* ContactFormFieldView.swift in Sources */,
 				EA8667A1244761EF007FF257 /* MessageViewController.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
 				EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */,

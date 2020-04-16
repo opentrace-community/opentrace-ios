@@ -24,10 +24,24 @@ class ContactFormViewController: UIViewController {
         subtitleLabel.text = Copy.subtitle
         closingStatement.text = Copy.closingStatement
         finishButton.setTitle(Copy.submit, for: .normal)
+        
+        [
+            "First Name",
+            "Last Name",
+            "Mobile Phone Number",
+            "Email",
+            "Postcode",
+        ].forEach { placeholder in
+            let view = ContactFormFieldView.with(placeholder: placeholder)
+            fieldsList.addArrangedSubview(view)
+        }
     }
 
     @IBAction private func didTapFinish(_ sender: Any) {
-        let feelingWellViewController = FeelingWellViewController()
-        navigationController?.pushViewController(feelingWellViewController, animated: true)
+        let controller = MessageViewController()
+        controller.configure(with: .thanksForInfo, onFooterButtonTap: { vc in
+            vc.dismiss(animated: true)
+        })
+        navigationController?.pushViewController(controller, animated: true)
     }
 }

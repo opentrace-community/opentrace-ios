@@ -31,6 +31,14 @@ final class StyledTextField: UITextField {
 												   attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
 																NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
 	}
+    
+    override var placeholder: String? {
+        didSet {
+            attributedPlaceholder = NSAttributedString(string: placeholder ?? "",
+                                                       attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                                                    NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)])
+        }
+    }
 
 	override func textRect(forBounds bounds: CGRect) -> CGRect {
 		return bounds.inset(by: padding)

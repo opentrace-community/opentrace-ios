@@ -56,5 +56,12 @@ extension DisplayStrings {
 
             static let submit = DisplayStrings.General.submit
         }
+
+        enum ThanksForInfo {
+            static let title = "Monitoring.ThanksForInfo.title".localized
+            static let subtitle = "Monitoring.ThanksForInfo.subtitle".localized
+
+            static let okClose = DisplayStrings.General.ok
+        }
     }
 }
