@@ -72,6 +72,7 @@ extension HelpViewController {
 			accessoryView = nil
 			titleLabel.text = ""
 			subTitleLabel.text = ""
+			isSelected = false
 		}
 
 	}
