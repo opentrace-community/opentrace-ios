@@ -72,7 +72,7 @@ extension HelpViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		if let url = dataSource[indexPath.section].rows[indexPath.row].url {
+		if let url = dataSource[indexPath.section - 1].rows[indexPath.row].url {
 			let safariViewController = SFSafariViewController(url: url)
 			present(safariViewController, animated: true)
 		}

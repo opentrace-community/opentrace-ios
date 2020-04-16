@@ -21,7 +21,6 @@ extension HelpViewController {
 				if model?.urlString != nil {
 					let image = UIImage(named: "discIndicator")
 					let indicatorImageView = UIImageView(image: image)
-//					indicatorImageView.transform = CGAffineTransform(rotationAngle: .init(-Double.pi/2))
 					accessoryView = indicatorImageView
 				}
 			}
@@ -66,6 +65,13 @@ extension HelpViewController {
 
 		required init?(coder: NSCoder) {
 			fatalError("init(coder:) has not been implemented")
+		}
+
+		override func prepareForReuse() {
+			super.prepareForReuse()
+			accessoryView = nil
+			titleLabel.text = ""
+			subTitleLabel.text = ""
 		}
 
 	}
