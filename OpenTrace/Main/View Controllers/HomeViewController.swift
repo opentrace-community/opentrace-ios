@@ -52,13 +52,15 @@ class HomeViewController: UIViewController {
 
 	func setup() {
 		titleLabel.text = "The Coronavirus COVID-19 Lockdown App"
+		titleLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
 		bodyLabel.text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium dolore mque lauda ntium esparanti dollo fiunti est forunti."
+		bodyLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
 		let buttonTitle = NSAttributedString(string: "Check what we are tracking",
 											 attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
-														  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
+														  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
 														  NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single])
 		trackingInfoButton.setTitle("Check what we are tracking", for: .normal)
-		trackingInfoButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+		trackingInfoButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
 //		trackingInfoButton.setAttributedTitle(buttonTitle, for: .normal)
 
 	}
