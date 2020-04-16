@@ -81,6 +81,8 @@
 		CF82AF302447432A00081964 /* HelpContent.json in Resources */ = {isa = PBXBuildFile; fileRef = CF82AF2F2447432A00081964 /* HelpContent.json */; };
 		CF82AF352447539400081964 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82AF342447539400081964 /* StyledButton.swift */; };
 		CFB9BE3C2447719C005A7CBC /* TransparentNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */; };
+		CFB9BE3E2447A6E2005A7CBC /* DropDownTextFIeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */; };
+		CFB9BE40244850B8005A7CBC /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */; };
 		D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8824348A7300E4F52F /* Bluetrace.swift */; };
 		D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */; };
 		D8828AFF243DE9340008854F /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
@@ -177,6 +179,8 @@
 		CF82AF2F2447432A00081964 /* HelpContent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HelpContent.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		CF82AF342447539400081964 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
 		CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavController.swift; sourceTree = "<group>"; };
+		CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextFIeld.swift; sourceTree = "<group>"; };
+		CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		D81F6C8824348A7300E4F52F /* Bluetrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetrace.swift; sourceTree = "<group>"; };
 		D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceProtocol.swift; sourceTree = "<group>"; };
 		D8D3100A243C7ECD00D760B0 /* BluetraceV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceV2.swift; sourceTree = "<group>"; };
@@ -567,6 +571,8 @@
 			children = (
 				CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */,
 				CF82AF342447539400081964 /* StyledButton.swift */,
+				CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */,
+				CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -813,6 +819,7 @@
 				5D8DD06723E329A200E097EF /* tracer.xcdatamodeld in Sources */,
 				872DCEA9243DD1C00014B07E /* Logger.swift in Sources */,
 				37CDA247244759630085A56C /* UIAlertController+Additions.swift in Sources */,
+				CFB9BE3E2447A6E2005A7CBC /* DropDownTextFIeld.swift in Sources */,
 				30E91BE923EFE514002D592A /* UploadDataVC.swift in Sources */,
 				7FEC361523F16A1E00127AFB /* UIViewExtension.swift in Sources */,
 				5D269C0B23E22CC400ADF2DE /* DeviceInfo.swift in Sources */,
@@ -852,6 +859,7 @@
 				C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */,
 				EA86679A24475159007FF257 /* HealthCheckViewController.swift in Sources */,
 				CF5855CA24460B2D00D5F625 /* DisplayStrings.swift in Sources */,
+				CFB9BE40244850B8005A7CBC /* StyledTextField.swift in Sources */,
 				5D5F83AD23F023F600770DEF /* EncounterMessageManager.swift in Sources */,
 				5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */,
 				C56CF43F23F18A15006B05B0 /* ConsentViewController.swift in Sources */,
