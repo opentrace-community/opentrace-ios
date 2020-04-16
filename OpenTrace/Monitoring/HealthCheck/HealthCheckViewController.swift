@@ -33,12 +33,15 @@ class HealthCheckViewController: UIViewController {
     }
 
     @IBAction func didTapFeelingWell(_ sender: Any) {
-        let feelingWellViewController = FeelingWellViewController()
-        navigationController?.pushViewController(feelingWellViewController, animated: true)
+		let controller = MessageViewController()
+		controller.configure(with: .feelingGood, onFooterButtonTap: { vc in
+			vc.dismiss(animated: true)
+		})
+        navigationController?.pushViewController(controller, animated: true)
     }
 
     @IBAction func didTapFeelingSick(_ sender: Any) {
-        let symptomsViewController = SymptomsViewController()
-        navigationController?.pushViewController(symptomsViewController, animated: true)
+        let controller = SymptomsViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
 }

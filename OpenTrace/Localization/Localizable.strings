@@ -99,6 +99,10 @@
 "Monitoring.ContactForm.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 "Monitoring.ContactForm.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 
+// MARK: - Monitoring, Thanks for info
+"Monitoring.ThanksForInfo.title" = "Thanks for your info";
+"Monitoring.ThanksForInfo.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+
 // MARK: - Help
 "Help.View.title" = "Help";
 "Help.Error.title" = "Something went wrong";
