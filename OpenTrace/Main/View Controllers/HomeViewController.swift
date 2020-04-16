@@ -64,13 +64,6 @@ class HomeViewController: UIViewController {
 
 	}
 
-    private func togglePermissionViews() {
-        togglePushNotificationsStatusView()
-        toggleBluetoothStatusView()
-        toggleBluetoothPermissionStatusView()
-        toggleIncompleteHeaderView()
-    }
-
     private func readPermissionsAndUpdateViews() {
 
         blePoweredOn = BluetraceManager.shared.isBluetoothOn()
@@ -80,21 +73,7 @@ class HomeViewController: UIViewController {
             self.pushNotificationGranted = pnsGranted
 
             self.allPermissionOn = self.blePoweredOn && self.bleAuthorized && self.pushNotificationGranted
-
-            self.togglePermissionViews()
         }
-    }
-
-    private func toggleIncompleteHeaderView() {
-    }
-
-    private func toggleBluetoothStatusView() {
-    }
-
-    private func toggleBluetoothPermissionStatusView() {
-    }
-
-    private func togglePushNotificationsStatusView() {
     }
 
 	@IBAction func TrackMyConditionButtonTapped() {
