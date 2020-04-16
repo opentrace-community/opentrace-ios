@@ -12,7 +12,7 @@ class DecisionManager {
     
     enum Decision {
         case errorIncomplete
-        case noAction, advice, contact
+        case advice1, advice2, contact
     }
     
     private let symptoms: Symptoms
@@ -38,11 +38,9 @@ class DecisionManager {
         case symptoms.thresholdContact...:
             return .contact
         case symptoms.thresholdSeverity2...:
-            return .advice
-        case symptoms.thresholdSeverity1...:
-            return .advice // TODO: there might be two different severities of advice
+            return .advice2
         default:
-            return .noAction
+            return .advice1
         }
     }
     

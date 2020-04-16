@@ -16,7 +16,6 @@ struct Symptoms: Decodable {
         let noScore: Int
     }
     
-    let thresholdSeverity1: Int
     let thresholdSeverity2: Int
     let thresholdContact: Int
     let questions: [Question]

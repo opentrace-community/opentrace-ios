@@ -1,11 +1,11 @@
 {
-    "thresholdSeverity1": 10,
-    "thresholdSeverity2": 100,
-    "thresholdContact": 200,
+    "thresholdSeverity1": 0,
+    "thresholdSeverity2": 200,
+    "thresholdContact": 500,
     "questions": [
         {
             "text": "Do you have a headache?",
-            "yesScore": 10,
+            "yesScore": 0,
             "noScore": 0
         },
         {
@@ -15,27 +15,27 @@
         },
         {
             "text": "If you have a fever, is it over 38 degrees?",
-            "yesScore": 200,
+            "yesScore": 300,
             "noScore": 0
         },
         {
             "text": "Do you have a persistent cough?",
-            "yesScore": 10,
+            "yesScore": 0,
             "noScore": 0
         },
         {
             "text": "Are you experiencing unusual shortness of breath?",
-            "yesScore": 200,
+            "yesScore": 100,
             "noScore": 0
         },
         {
             "text": "Do you have a sore throat?",
-            "yesScore": 10,
+            "yesScore": 0,
             "noScore": 0
         },
         {
             "text": "Do you have unusual strong muscle pains?",
-            "yesScore": 10,
+            "yesScore": 0,
             "noScore": 0
         }
     ]

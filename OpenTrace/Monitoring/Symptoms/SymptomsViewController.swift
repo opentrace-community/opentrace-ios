@@ -46,9 +46,9 @@ class SymptomsViewController: UIViewController {
         case .errorIncomplete:
             presentErrorIncomplete()
             return
-        case .noAction:
-            next = FeelingWellViewController()
-        case .advice:
+        case .advice1:
+            next = AdviceViewController()
+        case .advice2:
             next = AdviceViewController()
         case .contact:
             next = ContactFormViewController()
