@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zG-EN-pX5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zG-EN-pX5">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -232,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="-286" y="-2245"/>
         </scene>
-        <!--Upload Data-->
+        <!--Infected-->
         <scene sceneID="ZiS-ep-CD9">
             <objects>
                 <viewController id="sro-IG-RPf" customClass="UploadDataToNoteViewController" customModule="OpenTrace" sceneMemberID="viewController">
@@ -255,7 +255,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap ‘Next’ only if a contact tracer tells you to do so" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-E5-kIB">
-                                <rect key="frame" x="24" y="505.66666666666669" width="366" height="53.333333333333314"/>
+                                <rect key="frame" x="24" y="517" width="366" height="42"/>
                                 <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -269,7 +269,7 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For use by the health authority" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2P-Nw-zNc">
-                                <rect key="frame" x="24" y="40.000000000000007" width="369" height="82.666666666666686"/>
+                                <rect key="frame" x="24" y="39.999999999999993" width="369" height="65.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="28"/>
                                 <color key="textColor" red="0.2195851207" green="0.2196223736" blue="0.2195769846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -291,7 +291,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mGt-GF-1QI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Upload Data" image="ic-upload" selectedImage="ic-upload-selected" id="Y1B-Ag-Xtw"/>
+                    <tabBarItem key="tabBarItem" title="Infected" image="tabIconInfected" selectedImage="tabIconInfected-selected" id="Y1B-Ag-Xtw"/>
                     <navigationItem key="navigationItem" id="9vc-Zh-P5M"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -480,9 +480,9 @@
         <image name="ic-back" width="10.666666984558105" height="17"/>
         <image name="ic-done" width="67" height="67"/>
         <image name="ic-retry" width="24" height="24"/>
-        <image name="ic-upload" width="24" height="24"/>
-        <image name="ic-upload-selected" width="24" height="24"/>
         <image name="opentrace-logo" width="1024" height="1024"/>
+        <image name="tabIconInfected" width="25" height="25"/>
+        <image name="tabIconInfected-selected" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yV5-kg-MgT"/>

@@ -89,8 +89,8 @@
 		EA86679A24475159007FF257 /* HealthCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86679824475156007FF257 /* HealthCheckViewController.swift */; };
 		EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679924475156007FF257 /* HealthCheckViewController.xib */; };
 		EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86679C2447585C007FF257 /* MonitoringStrings.swift */; };
-		EA8667A1244761EF007FF257 /* FeelingWellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */; };
-		EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679F244761ED007FF257 /* FeelingWellViewController.xib */; };
+		EA8667A1244761EF007FF257 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A0244761ED007FF257 /* MessageViewController.swift */; };
+		EA8667A2244761F5007FF257 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679F244761ED007FF257 /* MessageViewController.xib */; };
 		EA8667A4244769CB007FF257 /* HomeStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A3244769CB007FF257 /* HomeStrings.swift */; };
 		EA8667A724476DB9007FF257 /* SymptomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667A624476DB4007FF257 /* SymptomsViewController.xib */; };
 		EA8667AC24485DFC007FF257 /* BinaryQuestionControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667AB24485DFC007FF257 /* BinaryQuestionControl.xib */; };
@@ -212,8 +212,8 @@
 		EA86679824475156007FF257 /* HealthCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckViewController.swift; sourceTree = "<group>"; };
 		EA86679924475156007FF257 /* HealthCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthCheckViewController.xib; sourceTree = "<group>"; };
 		EA86679C2447585C007FF257 /* MonitoringStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringStrings.swift; sourceTree = "<group>"; };
-		EA86679F244761ED007FF257 /* FeelingWellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeelingWellViewController.xib; sourceTree = "<group>"; };
-		EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingWellViewController.swift; sourceTree = "<group>"; };
+		EA86679F244761ED007FF257 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		EA8667A0244761ED007FF257 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		EA8667A3244769CB007FF257 /* HomeStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrings.swift; sourceTree = "<group>"; };
 		EA8667A624476DB4007FF257 /* SymptomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsViewController.xib; sourceTree = "<group>"; };
 		EA8667A924485DEF007FF257 /* BinaryQuestionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryQuestionControl.swift; sourceTree = "<group>"; };
@@ -615,6 +615,7 @@
 		CF82AF332447532200081964 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EA86679E244761D6007FF257 /* MessageViewController */,
 				CF82AF342447539400081964 /* StyledButton.swift */,
 				CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */,
 				CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */,
@@ -632,13 +633,13 @@
 			path = HealthCheck;
 			sourceTree = "<group>";
 		};
-		EA86679E244761D6007FF257 /* FeelingWell */ = {
+		EA86679E244761D6007FF257 /* MessageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */,
-				EA86679F244761ED007FF257 /* FeelingWellViewController.xib */,
+				EA8667A0244761ED007FF257 /* MessageViewController.swift */,
+				EA86679F244761ED007FF257 /* MessageViewController.xib */,
 			);
-			path = FeelingWell;
+			path = MessageViewController;
 			sourceTree = "<group>";
 		};
 		EA8667A824485DB9007FF257 /* BinaryQuestionControl */ = {
@@ -706,7 +707,6 @@
 			isa = PBXGroup;
 			children = (
 				EA8667972447513A007FF257 /* HealthCheck */,
-				EA86679E244761D6007FF257 /* FeelingWell */,
 				EAED3E0524474C000009D266 /* Symptoms */,
 				EA8667AE24489934007FF257 /* Advice */,
 				EA8667BE2448AF58007FF257 /* Contact */,
@@ -813,6 +813,8 @@
 				5D7DC342243E5789007180E9 /* Muli-LightItalic.ttf in Resources */,
 				EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */,
 				EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */,
+				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
+				EA8667A2244761F5007FF257 /* MessageViewController.xib in Resources */,
 				7785BB05240E09C700802EBC /* ActivityIndicator.json in Resources */,
 				EA8667C22448B0CB007FF257 /* ContactFormViewController.xib in Resources */,
 				EA8667B724489BAA007FF257 /* TitleView.xib in Resources */,
@@ -1015,7 +1017,7 @@
 				CF82AF352447539400081964 /* StyledButton.swift in Sources */,
 				7F36305F23F7F81400CC6E1D /* PushNotificationConstants.swift in Sources */,
 				B615C5A923FA403500345969 /* UIViewController + Extension.swift in Sources */,
-				EA8667A1244761EF007FF257 /* FeelingWellViewController.swift in Sources */,
+				EA8667A1244761EF007FF257 /* MessageViewController.swift in Sources */,
 				5D8DD06223E319B300E097EF /* Encounter+CoreDataProperties.swift in Sources */,
 				EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */,
 				CF0696952447386500206258 /* DetailCell.swift in Sources */,
