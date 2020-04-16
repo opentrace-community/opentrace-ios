@@ -1,7 +1,9 @@
 import Foundation
 import FirebaseFunctions
+import FirebaseMessaging
+import FirebaseInstanceID
 
-class EncounterMessageManager {
+class EncounterMessageManager: NSObject {
     let userDefaultsTempIdKey = "BROADCAST_MSG"
     let userDefaultsTempIdArrayKey = "BROAD_MSG_ARRAY"
     let userDefaultsAdvtKey = "ADVT_DATA"
@@ -126,8 +128,19 @@ class EncounterMessageManager {
     }
 
     func fetchBatchTempIdsFromFirebase(onComplete: ((Error?, ([[String: Any]], Date)?) -> Void)?) {
+        InstanceID.instanceID().instanceID { [weak self] (result, error) in
+            if error != nil {
+                onComplete?(error, nil)
+            } else if let result = result {
+                self?.fetchBatchTempIdsFromFirebase(withToken: result.token, onComplete: onComplete)
+            }
+        }
+    }
+
+    func fetchBatchTempIdsFromFirebase(withToken token: String, onComplete: ((Error?, ([[String: Any]], Date)?) -> Void)?) {
         Logger.DLog("Fetching Batch of tempIds from firebase")
-        functions.httpsCallable("getTempIDs").call { (result, error) in
+
+        functions.httpsCallable("getTempIDs").call(["pushID": token]) { (result, error) in
             // Handle error
             guard error == nil else {
                 if let error = error as NSError? {
