@@ -11,6 +11,8 @@ import Foundation
 extension DisplayStrings {
 
 	enum General {
+        static let ok = "General.ok".localized
+        static let submit = "General.submit".localized
         static let cancel = "General.cancel".localized
         
         enum GenericError {

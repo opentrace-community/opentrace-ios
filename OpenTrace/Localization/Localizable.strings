@@ -63,7 +63,8 @@
 "General.GenericError.title" = "Oops";
 "General.GenericError.body" = "Something went wrong, please try again.";
 "General.GenericError.dismiss_action" = "Ok";
-
+"General.ok" = "OK";
+"General.submit" = "Submit";
 "General.cancel" = "Cancel";
 
 // MARK: - Home
@@ -78,13 +79,11 @@
 // MARK: - Monitoring, Feeling Well
 "Monitoring.FeelingWell.title" = "OK, great!";
 "Monitoring.FeelingWell.subtitle" = "Follow the standard precautions. Keep coming back to the app to report how you’re feeling.";
-"Monitoring.FeelingWell.okClose" = "OK";
 
 // MARK: - Monitoring, Track symptoms
 "Monitoring.TrackSymptoms.title" = "Let’s find out more about your condition";
 "Monitoring.TrackSymptoms.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 "Monitoring.TrackSymptoms.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
-"Monitoring.TrackSymptoms.submit" = "Submit";
 
 // MARK: - Help
 "Help.View.title" = "Help";
