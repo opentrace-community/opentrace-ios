@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -191,7 +191,7 @@ The health authority will seek your consent to upload the data, if it’s needed
                                 </userDefinedRuntimeAttributes>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-g5-oMO">
-                                <rect key="frame" x="24" y="496" width="272" height="48"/>
+                                <rect key="frame" x="24" y="448" width="272" height="96"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <state key="normal" title="Get OTP" backgroundImage="button-gradient">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -226,7 +226,7 @@ Use their number instead of yours.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="2mB-by-LSD" customClass="VariableHeightProgressView" customModule="OpenTrace" customModuleProvider="target">
-                                <rect key="frame" x="24" y="470" width="272" height="2"/>
+                                <rect key="frame" x="24" y="420" width="272" height="6"/>
                                 <color key="progressTintColor" red="0.26666666666666666" green="0.61568627450980395" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -777,7 +777,7 @@ Your battery usage may increase.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pogopics" translatesAutoresizingMaskIntoConstraints="NO" id="ss1-5N-ym7">
-                                <rect key="frame" x="26" y="22" width="268" height="170"/>
+                                <rect key="frame" x="26" y="22" width="268" height="340"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rda-kZ-idO">
                                 <rect key="frame" x="25" y="496" width="272" height="48"/>
@@ -788,13 +788,13 @@ Your battery usage may increase.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone users, take note!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-XG-DLg">
-                                <rect key="frame" x="24" y="202" width="272" height="29.5"/>
+                                <rect key="frame" x="24" y="372" width="272" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbd-1k-8Po">
-                                <rect key="frame" x="24" y="243.5" width="272" height="38.5"/>
+                                <rect key="frame" x="24" y="413.5" width="272" height="38.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="On iPhone, the app needs to be kept open to work.">
                                         <attributes>
@@ -806,19 +806,19 @@ Your battery usage may increase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To access power saver mode:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdU-iA-P2V">
-                                <rect key="frame" x="24" y="294" width="272" height="24"/>
+                                <rect key="frame" x="24" y="464" width="272" height="24"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This saves battery, by letting the app scan with the phone’s display turned off." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-30-OTz">
-                                <rect key="frame" x="24" y="443.5" width="272" height="38.5"/>
+                                <rect key="frame" x="24" y="395.5" width="272" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUt-So-yPD">
-                                <rect key="frame" x="24" y="330" width="272" height="19.5"/>
+                                <rect key="frame" x="24" y="500" width="272" height="19.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="1. Turn your phone face down, or">
                                         <attributes>
@@ -830,7 +830,7 @@ Your battery usage may increase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfZ-h1-H4F">
-                                <rect key="frame" x="24" y="349.5" width="272" height="19.5"/>
+                                <rect key="frame" x="24" y="519.5" width="272" height="19.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="2. Keep it upside down in your pocket">
                                         <attributes>
@@ -891,11 +891,13 @@ Your battery usage may increase.</string>
             <objects>
                 <tabBarController storyboardIdentifier="main" title="Main" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="JXd-F4-xFZ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="KJs-39-72q"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UVc-Te-1Na">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" itemPositioning="fill" id="UVc-Te-1Na">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.44690561290000003" green="0.78907400370000003" blue="0.74509769680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.44690561290000003" green="0.78907400370000003" blue="0.74509769680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="yl1-rG-jXE" kind="relationship" relationship="viewControllers" id="HXs-fH-0Xe"/>
@@ -907,7 +909,7 @@ Your battery usage may increase.</string>
             </objects>
             <point key="canvasLocation" x="-5856" y="3376"/>
         </scene>
-        <!--Home-->
+        <!--Monitor-->
         <scene sceneID="ExA-0f-AvY">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="yl1-rG-jXE" customClass="HomeViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
@@ -1694,7 +1696,7 @@ Your battery usage may increase.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D2I-UZ-Ply"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="ic-home" selectedImage="ic-home-selected" id="ldq-ma-pwg"/>
+                    <tabBarItem key="tabBarItem" title="Monitor" image="tabIconMonitor" selectedImage="tabIconMonitor-selected" id="ldq-ma-pwg"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="animationView" destination="Vqi-aS-dj1" id="QA2-fO-GRM"/>
@@ -1738,7 +1740,7 @@ Your battery usage may increase.</string>
         <scene sceneID="HcO-vc-K7U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="dMQ-hp-I22" customClass="HelpNavController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Help" image="ic-help" selectedImage="ic-help-selected" id="deh-eO-0VD"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="tabIconHelp" selectedImage="ic-help-selected" id="deh-eO-0VD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="27D-GO-jEp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
@@ -1758,11 +1760,11 @@ Your battery usage may increase.</string>
             <objects>
                 <viewController id="Vo2-KP-JHY" customClass="HelpViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSr-jE-Vfw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZH9-jw-L27">
-                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -2074,10 +2076,7 @@ Your battery usage may increase.</string>
         <image name="bluetooth-phones" width="246" height="169.5"/>
         <image name="button-gradient" width="272" height="48"/>
         <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="ic-help" width="24" height="24"/>
         <image name="ic-help-selected" width="24" height="24"/>
-        <image name="ic-home" width="24" height="24"/>
-        <image name="ic-home-selected" width="24" height="24"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="mask-icon" width="22" height="22"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
@@ -2086,8 +2085,12 @@ Your battery usage may increase.</string>
         <image name="share" width="17" height="17"/>
         <image name="small tick" width="22" height="22"/>
         <image name="smartphone" width="24" height="24"/>
+        <image name="tabIconHelp" width="25" height="25"/>
+        <image name="tabIconMonitor" width="25" height="25"/>
+        <image name="tabIconMonitor-selected" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="HXs-fH-0Xe"/>
         <segue reference="CQO-uA-7m9"/>
         <segue reference="12k-kx-ORG"/>
         <segue reference="pTP-Q1-0dt"/>
