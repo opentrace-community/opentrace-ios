@@ -16,19 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YaE-uH-wGA">
-                                <rect key="frame" x="74" y="0.0" width="51" height="112"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lauchGovernmentSeal" translatesAutoresizingMaskIntoConstraints="NO" id="YaE-uH-wGA">
+                                <rect key="frame" x="28" y="0.0" width="265" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="85J-dd-wBE"/>
-                                    <constraint firstAttribute="width" constant="51" id="r8i-zQ-jhT"/>
+                                    <constraint firstAttribute="width" constant="265" id="r8i-zQ-jhT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Government of the Netherlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-aR-0Nv">
-                                <rect key="frame" x="138" y="61" width="166" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchMainImage" translatesAutoresizingMaskIntoConstraints="NO" id="bpb-zG-PxF">
                                 <rect key="frame" x="40" y="134" width="240" height="271"/>
                                 <constraints>
@@ -44,7 +38,7 @@ Lockdown Advice </string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="El3-3v-jeM">
-                                <rect key="frame" x="0.0" y="539" width="320" height="29"/>
+                                <rect key="frame" x="0.0" y="504" width="320" height="64"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchK+C" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-dm-y8l">
                                         <rect key="frame" x="36" y="42" width="134" height="31"/>
@@ -58,25 +52,23 @@ Lockdown Advice </string>
                                 <constraints>
                                     <constraint firstItem="yfW-dm-y8l" firstAttribute="leading" secondItem="El3-3v-jeM" secondAttribute="leading" constant="36" id="JVu-qw-iNu"/>
                                     <constraint firstItem="yfW-dm-y8l" firstAttribute="top" secondItem="El3-3v-jeM" secondAttribute="top" constant="42" id="OLd-KT-paA"/>
+                                    <constraint firstAttribute="height" priority="500" constant="164" id="btJ-qC-gez"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="El3-3v-jeM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0ZD-q1-Px1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RDj-aR-0Nv" secondAttribute="trailing" constant="16" id="F8g-j6-H6i"/>
                             <constraint firstItem="El3-3v-jeM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fux-em-eVc"/>
-                            <constraint firstItem="RDj-aR-0Nv" firstAttribute="leading" secondItem="YaE-uH-wGA" secondAttribute="trailing" constant="13" id="ILb-J6-zuM"/>
-                            <constraint firstItem="El3-3v-jeM" firstAttribute="top" secondItem="dp8-2F-IAz" secondAttribute="bottom" constant="55" id="Lkm-q4-H3C"/>
                             <constraint firstItem="bpb-zG-PxF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MXK-vO-Y0m"/>
                             <constraint firstItem="dp8-2F-IAz" firstAttribute="top" secondItem="bpb-zG-PxF" secondAttribute="bottom" constant="12" id="Vb6-71-aGm"/>
-                            <constraint firstItem="YaE-uH-wGA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WiU-Hg-cbU"/>
+                            <constraint firstItem="YaE-uH-wGA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WiU-Hg-cbU"/>
                             <constraint firstItem="dp8-2F-IAz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZlP-7o-s7L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpb-zG-PxF" secondAttribute="trailing" constant="40" id="cXm-8J-Ehw"/>
                             <constraint firstItem="bpb-zG-PxF" firstAttribute="top" secondItem="YaE-uH-wGA" secondAttribute="bottom" constant="22" id="h2k-6h-ZJ3"/>
-                            <constraint firstItem="El3-3v-jeM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jEZ-Wk-eSr"/>
-                            <constraint firstItem="RDj-aR-0Nv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="lHE-9z-qdL"/>
-                            <constraint firstItem="YaE-uH-wGA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="qub-WN-hce"/>
+                            <constraint firstAttribute="trailing" secondItem="YaE-uH-wGA" secondAttribute="trailing" constant="27" id="iun-N1-lhk"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="jEZ-Wk-eSr"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dp8-2F-IAz" secondAttribute="bottom" constant="20" id="yPg-Xi-5eu"/>
                             <constraint firstItem="bpb-zG-PxF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="zqk-QR-aiU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -88,6 +80,7 @@ Lockdown Advice </string>
         </scene>
     </scenes>
     <resources>
+        <image name="lauchGovernmentSeal" width="265" height="128"/>
         <image name="launchK+C" width="148" height="32"/>
         <image name="launchMainImage" width="282" height="270"/>
     </resources>
