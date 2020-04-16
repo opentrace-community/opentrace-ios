@@ -1017,7 +1017,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
-				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
+				FIREBASE_STORAGE_URL = "gs://intelligent-lockdown-274213.appspot.com";
 				INFOPLIST_FILE = OpenTrace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1047,7 +1047,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
-				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
+				FIREBASE_STORAGE_URL = "gs://intelligent-lockdown-274213.appspot.com";
 				INFOPLIST_FILE = OpenTrace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
