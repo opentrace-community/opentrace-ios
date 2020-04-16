@@ -38,14 +38,15 @@ class SymptomsViewController: UIViewController {
             "Are you experiencing unusual fatigue?",
         ].forEach { question in
             let viewModel = BinaryQuestionControl.Model(question: question, answerTrue: "Yes", answerFalse: "No")
-            let nib = UINib(nibName: String(describing: BinaryQuestionControl.self), bundle: Bundle(for: BinaryQuestionControl.self))
-            let view = nib.instantiate(withOwner: nil, options: nil).first as! BinaryQuestionControl
+            let view = BinaryQuestionControl.loadFromNib()
             view.configure(with: viewModel)
             symptomsList.addArrangedSubview(view)
         }
     }
 
     @IBAction private func didTapFinish(_ sender: Any) {
+        showAdvice()
+        return
         let symptoms = symptomsList.arrangedSubviews.compactMap { $0 as? BinaryQuestionControl }
         let unanswered = symptoms.filter { $0.answer == nil }
         guard unanswered.count == 0 else {
@@ -68,14 +69,15 @@ class SymptomsViewController: UIViewController {
         case 200...:
             showContactForm()
         case 100...200:
-            showTips()
+            showAdvice()
         default:
-            showTips()
+            showAdvice()
         }
     }
         
-    private func showTips() {
-        
+    private func showAdvice() {
+        let adviceController = AdviceViewController()
+        navigationController?.pushViewController(adviceController, animated: true)
     }
         
     private func showContactForm() {

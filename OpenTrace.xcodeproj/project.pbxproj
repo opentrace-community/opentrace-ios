@@ -96,6 +96,13 @@
 		EA8667A724476DB9007FF257 /* SymptomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667A624476DB4007FF257 /* SymptomsViewController.xib */; };
 		EA8667AC24485DFC007FF257 /* BinaryQuestionControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667AB24485DFC007FF257 /* BinaryQuestionControl.xib */; };
 		EA8667AD2448639C007FF257 /* BinaryQuestionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A924485DEF007FF257 /* BinaryQuestionControl.swift */; };
+		EA8667B1244899EE007FF257 /* AdviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667B0244899E9007FF257 /* AdviceViewController.xib */; };
+		EA8667B2244899F2007FF257 /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667AF244899E9007FF257 /* AdviceViewController.swift */; };
+		EA8667B524489B93007FF257 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667B424489B93007FF257 /* TitleView.swift */; };
+		EA8667B724489BAA007FF257 /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667B624489BAA007FF257 /* TitleView.xib */; };
+		EA8667B924489BD0007FF257 /* AdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667B824489BD0007FF257 /* AdviceView.swift */; };
+		EA8667BB24489BD8007FF257 /* AdviceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667BA24489BD8007FF257 /* AdviceView.xib */; };
+		EA8667BD2448A0EE007FF257 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667BC2448A0EE007FF257 /* UIView+Additions.swift */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
@@ -200,6 +207,13 @@
 		EA8667A624476DB4007FF257 /* SymptomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsViewController.xib; sourceTree = "<group>"; };
 		EA8667A924485DEF007FF257 /* BinaryQuestionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryQuestionControl.swift; sourceTree = "<group>"; };
 		EA8667AB24485DFC007FF257 /* BinaryQuestionControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BinaryQuestionControl.xib; sourceTree = "<group>"; };
+		EA8667AF244899E9007FF257 /* AdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
+		EA8667B0244899E9007FF257 /* AdviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdviceViewController.xib; sourceTree = "<group>"; };
+		EA8667B424489B93007FF257 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		EA8667B624489BAA007FF257 /* TitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleView.xib; sourceTree = "<group>"; };
+		EA8667B824489BD0007FF257 /* AdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceView.swift; sourceTree = "<group>"; };
+		EA8667BA24489BD8007FF257 /* AdviceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdviceView.xib; sourceTree = "<group>"; };
+		EA8667BC2448A0EE007FF257 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				37CDA246244759630085A56C /* UIAlertController+Additions.swift */,
+				EA8667BC2448A0EE007FF257 /* UIView+Additions.swift */,
 			);
 			path = UIHelpers;
 			sourceTree = "<group>";
@@ -615,12 +630,34 @@
 			path = BinaryQuestionControl;
 			sourceTree = "<group>";
 		};
+		EA8667AE24489934007FF257 /* Advice */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667B324489B40007FF257 /* Views */,
+				EA8667AF244899E9007FF257 /* AdviceViewController.swift */,
+				EA8667B0244899E9007FF257 /* AdviceViewController.xib */,
+			);
+			path = Advice;
+			sourceTree = "<group>";
+		};
+		EA8667B324489B40007FF257 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667B424489B93007FF257 /* TitleView.swift */,
+				EA8667B624489BAA007FF257 /* TitleView.xib */,
+				EA8667B824489BD0007FF257 /* AdviceView.swift */,
+				EA8667BA24489BD8007FF257 /* AdviceView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
 			isa = PBXGroup;
 			children = (
 				EA8667972447513A007FF257 /* HealthCheck */,
 				EA86679E244761D6007FF257 /* FeelingWell */,
 				EAED3E0524474C000009D266 /* Symptoms */,
+				EA8667AE24489934007FF257 /* Advice */,
 			);
 			path = Monitoring;
 			sourceTree = "<group>";
@@ -704,6 +741,7 @@
 				30BE1CAD23F119FD005DCE4F /* Localizable.strings in Resources */,
 				5D7DC33F243E5789007180E9 /* Muli-Light.ttf in Resources */,
 				EA8667A724476DB9007FF257 /* SymptomsViewController.xib in Resources */,
+				EA8667B1244899EE007FF257 /* AdviceViewController.xib in Resources */,
 				5D7DC341243E5789007180E9 /* Muli-Semi-BoldItalic.ttf in Resources */,
 				5D7DC33E243E5789007180E9 /* Muli-SemiBold.ttf in Resources */,
 				5D7DC33C243E5789007180E9 /* Muli-BoldItalic.ttf in Resources */,
@@ -720,6 +758,8 @@
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
 				EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */,
 				7785BB05240E09C700802EBC /* ActivityIndicator.json in Resources */,
+				EA8667B724489BAA007FF257 /* TitleView.xib in Resources */,
+				EA8667BB24489BD8007FF257 /* AdviceView.xib in Resources */,
 				5D7DC345243E5789007180E9 /* Muli-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -846,6 +886,7 @@
 			files = (
 				D8828AFF243DE9340008854F /* HowItWorksViewController.swift in Sources */,
 				872DCEA7243DBDDF0014B07E /* BlueTraceLocalNotifications.swift in Sources */,
+				EA8667B924489BD0007FF257 /* AdviceView.swift in Sources */,
 				B615C5A723F8EB1700345969 /* UIProgressView + Extension.swift in Sources */,
 				87260F2E243D9C51009C6E14 /* PogoManager.swift in Sources */,
 				B6932CEA2426288E003D1810 /* UploadDataStep2VC.swift in Sources */,
@@ -862,6 +903,7 @@
 				30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */,
 				5D8DD05A23E2F08400E097EF /* ContactViewController.swift in Sources */,
 				C58D817923F16C3900345771 /* TurnOnBluetoothViewController.swift in Sources */,
+				EA8667B2244899F2007FF257 /* AdviceViewController.swift in Sources */,
 				EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */,
 				5D8DD05C23E2F0A700E097EF /* LogViewController.swift in Sources */,
 				5D5F83B023F045A800770DEF /* HomeViewController.swift in Sources */,
@@ -883,6 +925,7 @@
 				5D8B248B23F146C500DBB74D /* PhoneNumberViewController.swift in Sources */,
 				5DC7B8D3242B8D87008E1715 /* BluetraceUtils.swift in Sources */,
 				30BE1CB123F134D0005DCE4F /* Encounter+EncounterRecord.swift in Sources */,
+				EA8667BD2448A0EE007FF257 /* UIView+Additions.swift in Sources */,
 				30BE1CB523F15D47005DCE4F /* OTPViewController.swift in Sources */,
 				5D8DD06123E319B300E097EF /* Encounter+CoreDataClass.swift in Sources */,
 				5D269C0D23E2958F00ADF2DE /* BluetraceManager.swift in Sources */,
@@ -913,6 +956,7 @@
 				EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */,
 				CF0696952447386500206258 /* DetailCell.swift in Sources */,
 				CF5855CC244612D700D5F625 /* OnboardingStrings.swift in Sources */,
+				EA8667B524489B93007FF257 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,19 +40,19 @@
                                     <rect key="frame" x="0.0" y="211" width="414" height="685"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-UQ-5yX">
-                                            <rect key="frame" x="16" y="16" width="382" height="183"/>
+                                            <rect key="frame" x="16" y="16" width="382" height="167"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-ep-Mej" userLabel="Subtitle Label">
-                                            <rect key="frame" x="16" y="215" width="382" height="17"/>
+                                            <rect key="frame" x="16" y="199" width="382" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-Na-cxW">
-                                            <rect key="frame" x="22" y="248" width="370" height="300"/>
+                                            <rect key="frame" x="16" y="232" width="382" height="300"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="300" placeholder="YES" id="i9b-3X-k3w"/>
                                             </constraints>
@@ -76,14 +76,14 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="hMy-Na-cxW" secondAttribute="trailing" constant="22" id="0dQ-qV-cCf"/>
+                                        <constraint firstAttribute="trailing" secondItem="hMy-Na-cxW" secondAttribute="trailing" constant="16" id="0dQ-qV-cCf"/>
                                         <constraint firstItem="N5f-ZW-bsV" firstAttribute="leading" secondItem="x6x-UQ-5yX" secondAttribute="leading" id="2oW-5m-sND"/>
-                                        <constraint firstItem="4ea-uf-HuE" firstAttribute="top" secondItem="hMy-Na-cxW" secondAttribute="bottom" constant="16" id="6fu-Q2-ZOF"/>
+                                        <constraint firstItem="4ea-uf-HuE" firstAttribute="top" secondItem="hMy-Na-cxW" secondAttribute="bottom" constant="32" id="6fu-Q2-ZOF"/>
                                         <constraint firstItem="hMy-Na-cxW" firstAttribute="top" secondItem="L9q-ep-Mej" secondAttribute="bottom" constant="16" id="Jl4-sf-bbI"/>
                                         <constraint firstItem="L9q-ep-Mej" firstAttribute="top" secondItem="x6x-UQ-5yX" secondAttribute="bottom" constant="16" id="JqS-Ps-9fq"/>
                                         <constraint firstAttribute="bottom" secondItem="N5f-ZW-bsV" secondAttribute="bottom" constant="44" id="Qwd-XE-A9b"/>
                                         <constraint firstItem="N5f-ZW-bsV" firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" id="Z5a-FX-HKl"/>
-                                        <constraint firstItem="hMy-Na-cxW" firstAttribute="leading" secondItem="jxb-za-xZi" secondAttribute="leading" constant="22" id="cEp-mA-Df2"/>
+                                        <constraint firstItem="hMy-Na-cxW" firstAttribute="leading" secondItem="jxb-za-xZi" secondAttribute="leading" constant="16" id="cEp-mA-Df2"/>
                                         <constraint firstItem="N5f-ZW-bsV" firstAttribute="top" secondItem="4ea-uf-HuE" secondAttribute="bottom" constant="16" id="dAE-xz-mFj"/>
                                         <constraint firstItem="x6x-UQ-5yX" firstAttribute="top" secondItem="jxb-za-xZi" secondAttribute="top" constant="16" id="e3G-RO-Dzf"/>
                                         <constraint firstItem="4ea-uf-HuE" firstAttribute="leading" secondItem="x6x-UQ-5yX" secondAttribute="leading" id="eyh-hi-vH6"/>

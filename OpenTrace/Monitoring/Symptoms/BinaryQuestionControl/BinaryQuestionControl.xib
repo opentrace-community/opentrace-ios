@@ -15,13 +15,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnp-c4-gFa">
-                    <rect key="frame" x="0.0" y="32" width="447" height="109"/>
+                    <rect key="frame" x="0.0" y="32" width="447" height="125"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0Y-9p1" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="157" width="100" height="44"/>
+                    <rect key="frame" x="0.0" y="173" width="100" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="BgP-Pk-1Ny"/>
                         <constraint firstAttribute="width" constant="100" id="Hsu-h5-wuD"/>
@@ -32,7 +32,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wur-Cg-flI" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
-                    <rect key="frame" x="122" y="157" width="100" height="44"/>
+                    <rect key="frame" x="122" y="173" width="100" height="44"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="didTapRight:" destination="iN0-l3-epB" eventType="touchUpInside" id="j7c-we-4fC"/>
@@ -42,7 +42,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Wur-Cg-flI" firstAttribute="width" secondItem="UPA-0Y-9p1" secondAttribute="width" id="6lf-TT-NTP"/>
-                <constraint firstAttribute="bottom" secondItem="UPA-0Y-9p1" secondAttribute="bottom" constant="32" id="IMV-0P-rB7"/>
+                <constraint firstAttribute="bottom" secondItem="UPA-0Y-9p1" secondAttribute="bottom" constant="16" id="IMV-0P-rB7"/>
                 <constraint firstItem="UPA-0Y-9p1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IbW-bE-r04"/>
                 <constraint firstItem="Wur-Cg-flI" firstAttribute="bottom" secondItem="UPA-0Y-9p1" secondAttribute="bottom" id="Ioq-bP-Maj"/>
                 <constraint firstItem="UPA-0Y-9p1" firstAttribute="top" secondItem="Wnp-c4-gFa" secondAttribute="bottom" constant="16" id="J6c-5I-Xyt"/>

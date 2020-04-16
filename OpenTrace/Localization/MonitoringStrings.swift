@@ -34,5 +34,13 @@ extension DisplayStrings {
 
             static let submit = DisplayStrings.General.submit
         }
+
+        enum Advice {
+            static let title = "Monitoring.Advice.title".localized
+            static let subtitle = "Monitoring.Advice.subtitle".localized
+            static let closingStatement = "Monitoring.Advice.closingStatement".localized
+
+            static let submit = DisplayStrings.General.submit
+        }
     }
 }
