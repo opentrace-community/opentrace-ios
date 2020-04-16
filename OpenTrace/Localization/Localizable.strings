@@ -85,6 +85,16 @@
 "Monitoring.TrackSymptoms.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 "Monitoring.TrackSymptoms.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 
+// MARK: - Monitoring, Advice
+"Monitoring.Advice.title" = "Advice and tips to keep you safe and sound";
+"Monitoring.Advice.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+"Monitoring.Advice.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+
+// MARK: - Monitoring, Contact Form
+"Monitoring.ContactForm.title" = "Please enter your details";
+"Monitoring.ContactForm.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+"Monitoring.ContactForm.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+
 // MARK: - Help
 "Help.View.title" = "Help";
 "Help.Error.title" = "Something went wrong";

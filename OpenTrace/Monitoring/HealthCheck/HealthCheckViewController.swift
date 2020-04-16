@@ -15,10 +15,6 @@ class HealthCheckViewController: UIViewController {
     @IBOutlet private var wellButton: StyledButton!
     @IBOutlet private var sickButton: StyledButton!
 
-    convenience init() {
-        self.init(nibName: String(describing: HealthCheckViewController.self), bundle: Bundle(for: HealthCheckViewController.self))
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: DisplayStrings.General.cancel, style: .plain, target: self, action: #selector(cancel))

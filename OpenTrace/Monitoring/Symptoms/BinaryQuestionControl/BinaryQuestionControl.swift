@@ -33,8 +33,8 @@ class BinaryQuestionControl: UIView {
         titleLabel.text = model.question
         trueButton.setTitle(model.answerTrue, for: .normal)
         falseButton.setTitle(model.answerFalse, for: .normal)
-        trueButton.appearance = .primaryHollow
-        falseButton.appearance = .primaryHollow
+        trueButton.appearance = .primaryHollowRadio
+        falseButton.appearance = .primaryHollowRadio
     }
     
     @IBAction private func didTapLeft(_ sender: UIButton) {
