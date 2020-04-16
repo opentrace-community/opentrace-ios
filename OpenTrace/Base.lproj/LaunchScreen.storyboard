@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,16 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="splash-screen-logo" translatesAutoresizingMaskIntoConstraints="NO" id="DXK-xw-ZIO">
-                                <rect key="frame" x="80" y="112" width="161" height="263"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lauchGovernmentSeal" translatesAutoresizingMaskIntoConstraints="NO" id="YaE-uH-wGA">
+                                <rect key="frame" x="28" y="0.0" width="265" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="85J-dd-wBE"/>
+                                    <constraint firstAttribute="width" constant="265" id="r8i-zQ-jhT"/>
+                                </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchMainImage" translatesAutoresizingMaskIntoConstraints="NO" id="bpb-zG-PxF">
+                                <rect key="frame" x="40" y="134" width="240" height="271"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="271" id="1qn-wh-pl1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-2F-IAz">
+                                <rect key="frame" x="40" y="417" width="264" height="129"/>
+                                <string key="text">Coronavirus
+Lockdown Advice </string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="El3-3v-jeM">
+                                <rect key="frame" x="0.0" y="566" width="320" height="2"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchK+C" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-dm-y8l">
+                                        <rect key="frame" x="36" y="42" width="134" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="134" id="1Cb-io-6Q3"/>
+                                            <constraint firstAttribute="height" constant="31" id="vl3-Ak-QsA"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yfW-dm-y8l" firstAttribute="leading" secondItem="El3-3v-jeM" secondAttribute="leading" constant="36" id="JVu-qw-iNu"/>
+                                    <constraint firstItem="yfW-dm-y8l" firstAttribute="top" secondItem="El3-3v-jeM" secondAttribute="top" constant="42" id="OLd-KT-paA"/>
+                                    <constraint firstAttribute="height" priority="500" constant="164" id="btJ-qC-gez"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="DXK-xw-ZIO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="XXh-Ko-JYx"/>
-                            <constraint firstItem="DXK-xw-ZIO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="hNr-Qw-m5W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DXK-xw-ZIO" secondAttribute="bottom" constant="193" id="uR1-YY-1PT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DXK-xw-ZIO" secondAttribute="trailing" constant="79" id="xMJ-pw-mK1"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0ZD-q1-Px1"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fux-em-eVc"/>
+                            <constraint firstItem="bpb-zG-PxF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MXK-vO-Y0m"/>
+                            <constraint firstItem="dp8-2F-IAz" firstAttribute="top" secondItem="bpb-zG-PxF" secondAttribute="bottom" constant="12" id="Vb6-71-aGm"/>
+                            <constraint firstItem="YaE-uH-wGA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WiU-Hg-cbU"/>
+                            <constraint firstAttribute="trailing" secondItem="dp8-2F-IAz" secondAttribute="trailing" constant="16" id="Xgu-8S-Sae"/>
+                            <constraint firstItem="dp8-2F-IAz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZlP-7o-s7L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpb-zG-PxF" secondAttribute="trailing" constant="40" id="cXm-8J-Ehw"/>
+                            <constraint firstItem="bpb-zG-PxF" firstAttribute="top" secondItem="YaE-uH-wGA" secondAttribute="bottom" constant="22" id="h2k-6h-ZJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="YaE-uH-wGA" secondAttribute="trailing" constant="27" id="iun-N1-lhk"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="jEZ-Wk-eSr"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dp8-2F-IAz" secondAttribute="bottom" constant="20" id="yPg-Xi-5eu"/>
+                            <constraint firstItem="bpb-zG-PxF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="zqk-QR-aiU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,6 +81,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash-screen-logo" width="370" height="263"/>
+        <image name="lauchGovernmentSeal" width="265" height="128"/>
+        <image name="launchK+C" width="148" height="32"/>
+        <image name="launchMainImage" width="282" height="270"/>
     </resources>
 </document>
