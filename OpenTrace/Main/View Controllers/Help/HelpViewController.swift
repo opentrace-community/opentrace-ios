@@ -43,9 +43,12 @@ final class HelpViewController: UIViewController {
 
 extension HelpViewController: UITableViewDelegate, UITableViewDataSource {
 
-	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return dataSource[section].title
+	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		let view = HelpSectionHeaderView()
+		view.title = dataSource[section].title
+		return view
 	}
+
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return dataSource.count
 	}

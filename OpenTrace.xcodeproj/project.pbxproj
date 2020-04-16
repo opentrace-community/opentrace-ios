@@ -83,6 +83,7 @@
 		CFB9BE3C2447719C005A7CBC /* TransparentNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */; };
 		CFB9BE3E2447A6E2005A7CBC /* DropDownTextFIeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */; };
 		CFB9BE40244850B8005A7CBC /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */; };
+		CFDB0F882448D3C0003FD7C1 /* SectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB0F872448D3C0003FD7C1 /* SectionHeaderCell.swift */; };
 		D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8824348A7300E4F52F /* Bluetrace.swift */; };
 		D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */; };
 		D8828AFF243DE9340008854F /* HowItWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEB6812423AE2E00D99925 /* HowItWorksViewController.swift */; };
@@ -186,6 +187,7 @@
 		CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavController.swift; sourceTree = "<group>"; };
 		CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextFIeld.swift; sourceTree = "<group>"; };
 		CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
+		CFDB0F872448D3C0003FD7C1 /* SectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCell.swift; sourceTree = "<group>"; };
 		D81F6C8824348A7300E4F52F /* Bluetrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetrace.swift; sourceTree = "<group>"; };
 		D81F6C8B24348CC200E4F52F /* BluetraceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceProtocol.swift; sourceTree = "<group>"; };
 		D8D3100A243C7ECD00D760B0 /* BluetraceV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetraceV2.swift; sourceTree = "<group>"; };
@@ -558,6 +560,7 @@
 				CF06969124471E5200206258 /* HelpViewController.swift */,
 				CF82AF2F2447432A00081964 /* HelpContent.json */,
 				CF0696942447386500206258 /* DetailCell.swift */,
+				CFDB0F872448D3C0003FD7C1 /* SectionHeaderCell.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -860,6 +863,7 @@
 				B605A7B12427429D008BA819 /* PlistHelper.swift in Sources */,
 				5DC7B8D1242B8536008E1715 /* BluetraceConfig.swift in Sources */,
 				30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */,
+				CFDB0F882448D3C0003FD7C1 /* SectionHeaderCell.swift in Sources */,
 				5D8DD05A23E2F08400E097EF /* ContactViewController.swift in Sources */,
 				C58D817923F16C3900345771 /* TurnOnBluetoothViewController.swift in Sources */,
 				EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */,
