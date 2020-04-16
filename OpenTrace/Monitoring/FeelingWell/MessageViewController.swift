@@ -13,21 +13,49 @@ class MessageViewController: UIViewController {
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
     @IBOutlet private var finishButton: UIButton!
+	@IBOutlet private var headerImage: UIImageView!
 
-    convenience init() {
+	private var titleText: String?
+	private var subtitleText: String?
+	private var footerButtonText: String?
+	private var buttonAction: ((UIViewController) -> Void)?
+	private var image: UIImage?
+
+	convenience init() {
         self.init(nibName: String(describing: MessageViewController.self), bundle: Bundle(for: MessageViewController.self))
     }
 
+	func configure(with viewModel: ViewModel, onFooterButtonTap buttonAction: @escaping (UIViewController) -> Void) {
+		titleText = viewModel.title
+		subtitleText = viewModel.subTitle
+		footerButtonText = viewModel.footerButtonTitle
+		image = viewModel.image
+		self.buttonAction = buttonAction
+	}
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        typealias Copy = DisplayStrings.Monitoring.FeelingWell
-        titleLabel.text = Copy.title
-        subtitleLabel.text = Copy.subtitle
-        finishButton.setTitle(Copy.okClose, for: .normal)
+		titleLabel.text = titleText
+		subtitleLabel.text = subtitleText
+		finishButton.setTitle(footerButtonText, for: .normal)
+		headerImage.image = image
     }
 
     @IBAction func didTapFinish(_ sender: Any) {
-        dismiss(animated: true)
+        buttonAction?(self)
     }
+}
+
+extension MessageViewController {
+
+	typealias FeelingWellCopy = DisplayStrings.Monitoring.FeelingWell
+
+	struct ViewModel {
+		let image: UIImage?
+		let title: String
+		let subTitle: String
+		let footerButtonTitle: String
+
+		static let feelingGood = ViewModel(image: UIImage(named: "sceneFeelGood"), title: FeelingWellCopy.title, subTitle: FeelingWellCopy.subtitle, footerButtonTitle: FeelingWellCopy.okClose)
+	}
 }

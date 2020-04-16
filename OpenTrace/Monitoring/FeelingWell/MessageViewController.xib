@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController" customModule="OpenTrace" customModuleProvider="target">
             <connections>
                 <outlet property="finishButton" destination="N5f-ZW-bsV" id="b0D-HL-bNG"/>
+                <outlet property="headerImage" destination="eij-oL-WsC" id="ylO-7R-4zL"/>
                 <outlet property="subtitleLabel" destination="4ea-uf-HuE" id="sXG-vb-lYy"/>
                 <outlet property="titleLabel" destination="x6x-UQ-5yX" id="S2E-Qa-f1v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -28,7 +29,7 @@
                             <rect key="frame" x="0.0" y="44" width="414" height="896"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sceneFeelGood" translatesAutoresizingMaskIntoConstraints="NO" id="eij-oL-WsC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414.00000000000006" height="229"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="229" id="OUn-Lb-if8"/>
