@@ -24,7 +24,7 @@ extension DisplayStrings {
             static let title = "Monitoring.FeelingWell.title".localized
             static let subtitle = "Monitoring.FeelingWell.subtitle".localized
 
-            static let okClose = "Monitoring.FeelingWell.okClose".localized
+            static let okClose = DisplayStrings.General.ok
         }
 
         enum TrackSymptoms {
@@ -32,7 +32,7 @@ extension DisplayStrings {
             static let subtitle = "Monitoring.TrackSymptoms.subtitle".localized
             static let closingStatement = "Monitoring.TrackSymptoms.closingStatement".localized
 
-            static let submit = "Monitoring.TrackSymptoms.submit".localized
+            static let submit = DisplayStrings.General.submit
         }
     }
 }
