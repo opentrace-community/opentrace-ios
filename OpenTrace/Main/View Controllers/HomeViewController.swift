@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pushNotificationOffView: UIView!
     @IBOutlet weak var incompleteHeaderView: UIView!
     @IBOutlet weak var successHeaderView: UIView!
-    @IBOutlet weak var monitorView: UIView!
+    @IBOutlet weak var monitorButton: StyledButton!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var lastUpdatedLabel: UILabel!
@@ -40,6 +40,8 @@ class HomeViewController: UIViewController {
 
         observeNotifications()
         animationView.loopMode = LottieLoopMode.playOnce
+        
+        monitorButton.setTitle(DisplayStrings.Home.startMonitoring, for: .normal)
     }
 
     func observeNotifications() {
@@ -110,7 +112,7 @@ class HomeViewController: UIViewController {
         #endif
     }
 
-    @IBAction func onMonitorTapped(_ sender: UITapGestureRecognizer) {
+    @IBAction func onMonitorTapped(_ sender: UIButton) {
         let healthCheckViewController = HealthCheckViewController()
         let navigationController = TransparentNavController(rootViewController: healthCheckViewController)
         present(navigationController, animated: true)

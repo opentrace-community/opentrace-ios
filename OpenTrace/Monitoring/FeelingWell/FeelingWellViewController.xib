@@ -2,16 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SymptomsViewController" customModule="OpenTrace">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeelingWellViewController" customModule="OpenTrace" customModuleProvider="target">
             <connections>
-                <outlet property="closingStatement" destination="4ea-uf-HuE" id="XQN-yl-2wF"/>
-                <outlet property="finishButton" destination="N5f-ZW-bsV" id="IzY-3M-KvJ"/>
-                <outlet property="subtitleLabel" destination="L9q-ep-Mej" id="dxS-gr-zsa"/>
+                <outlet property="finishButton" destination="N5f-ZW-bsV" id="b0D-HL-bNG"/>
+                <outlet property="subtitleLabel" destination="4ea-uf-HuE" id="sXG-vb-lYy"/>
                 <outlet property="titleLabel" destination="x6x-UQ-5yX" id="S2E-Qa-f1v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,42 +27,30 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mgl-Rl-RYy">
                             <rect key="frame" x="0.0" y="44" width="414" height="896"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sceneDoctors" translatesAutoresizingMaskIntoConstraints="NO" id="eij-oL-WsC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="211"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sceneFeelGood" translatesAutoresizingMaskIntoConstraints="NO" id="eij-oL-WsC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="211" id="OUn-Lb-if8"/>
+                                        <constraint firstAttribute="height" constant="229" id="OUn-Lb-if8"/>
                                     </constraints>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-za-xZi">
-                                    <rect key="frame" x="0.0" y="211" width="414" height="685"/>
+                                    <rect key="frame" x="0.0" y="229" width="414" height="667"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-UQ-5yX">
-                                            <rect key="frame" x="16" y="16" width="382" height="183"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Feeling great title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-UQ-5yX">
+                                            <rect key="frame" x="16" y="16" width="382" height="514"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-ep-Mej" userLabel="Subtitle Label">
-                                            <rect key="frame" x="16" y="215" width="382" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-Na-cxW">
-                                            <rect key="frame" x="22" y="248" width="370" height="300"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="300" id="i9b-3X-k3w"/>
-                                            </constraints>
-                                        </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Closing statement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-uf-HuE" userLabel="Closing Statement Label">
-                                            <rect key="frame" x="16" y="564" width="382" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Feeling great subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-uf-HuE">
+                                            <rect key="frame" x="16" y="546" width="382" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-ZW-bsV" userLabel="Finish" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
-                                            <rect key="frame" x="16" y="597" width="382" height="44"/>
+                                            <rect key="frame" x="16" y="579" width="382" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="cpr-An-sJH"/>
                                             </constraints>
@@ -74,20 +62,14 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="hMy-Na-cxW" secondAttribute="trailing" constant="22" id="0dQ-qV-cCf"/>
                                         <constraint firstItem="N5f-ZW-bsV" firstAttribute="leading" secondItem="x6x-UQ-5yX" secondAttribute="leading" id="2oW-5m-sND"/>
-                                        <constraint firstItem="4ea-uf-HuE" firstAttribute="top" secondItem="hMy-Na-cxW" secondAttribute="bottom" constant="16" id="6fu-Q2-ZOF"/>
-                                        <constraint firstItem="hMy-Na-cxW" firstAttribute="top" secondItem="L9q-ep-Mej" secondAttribute="bottom" constant="16" id="Jl4-sf-bbI"/>
-                                        <constraint firstItem="L9q-ep-Mej" firstAttribute="top" secondItem="x6x-UQ-5yX" secondAttribute="bottom" constant="16" id="JqS-Ps-9fq"/>
                                         <constraint firstAttribute="bottom" secondItem="N5f-ZW-bsV" secondAttribute="bottom" constant="44" id="Qwd-XE-A9b"/>
                                         <constraint firstItem="N5f-ZW-bsV" firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" id="Z5a-FX-HKl"/>
-                                        <constraint firstItem="hMy-Na-cxW" firstAttribute="leading" secondItem="jxb-za-xZi" secondAttribute="leading" constant="22" id="cEp-mA-Df2"/>
+                                        <constraint firstItem="4ea-uf-HuE" firstAttribute="top" secondItem="x6x-UQ-5yX" secondAttribute="bottom" constant="16" id="d9w-vG-Q5Q"/>
                                         <constraint firstItem="N5f-ZW-bsV" firstAttribute="top" secondItem="4ea-uf-HuE" secondAttribute="bottom" constant="16" id="dAE-xz-mFj"/>
                                         <constraint firstItem="x6x-UQ-5yX" firstAttribute="top" secondItem="jxb-za-xZi" secondAttribute="top" constant="16" id="e3G-RO-Dzf"/>
                                         <constraint firstItem="4ea-uf-HuE" firstAttribute="leading" secondItem="x6x-UQ-5yX" secondAttribute="leading" id="eyh-hi-vH6"/>
                                         <constraint firstItem="4ea-uf-HuE" firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" id="ff4-t4-Rql"/>
-                                        <constraint firstItem="L9q-ep-Mej" firstAttribute="leading" secondItem="x6x-UQ-5yX" secondAttribute="leading" id="moA-p0-Ngq"/>
-                                        <constraint firstItem="L9q-ep-Mej" firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" id="nao-ac-QzT"/>
                                         <constraint firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" constant="16" id="s4Q-OO-QZg"/>
                                         <constraint firstItem="x6x-UQ-5yX" firstAttribute="leading" secondItem="jxb-za-xZi" secondAttribute="leading" constant="16" id="vkB-zY-K9H"/>
                                     </constraints>
@@ -122,6 +104,6 @@
         </view>
     </objects>
     <resources>
-        <image name="sceneDoctors" width="284" height="211"/>
+        <image name="sceneFeelGood" width="239" height="229"/>
     </resources>
 </document>

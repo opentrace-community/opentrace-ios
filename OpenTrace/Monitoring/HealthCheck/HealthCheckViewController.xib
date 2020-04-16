@@ -26,32 +26,32 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mgl-Rl-RYy">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <rect key="frame" x="0.0" y="44" width="414" height="896"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eij-oL-WsC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sceneInside" translatesAutoresizingMaskIntoConstraints="NO" id="eij-oL-WsC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="240" id="OUn-Lb-if8"/>
+                                        <constraint firstAttribute="height" constant="214" id="OUn-Lb-if8"/>
                                     </constraints>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-za-xZi">
-                                    <rect key="frame" x="0.0" y="240" width="414" height="656"/>
+                                    <rect key="frame" x="0.0" y="214" width="414" height="682"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="How you feeling title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-UQ-5yX">
-                                            <rect key="frame" x="16" y="16" width="382" height="467.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="How you feeling title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-UQ-5yX">
+                                            <rect key="frame" x="22" y="16" width="370" height="469"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="How you feeling subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-uf-HuE">
-                                            <rect key="frame" x="16" y="499.5" width="382" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="How you feeling subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-uf-HuE">
+                                            <rect key="frame" x="22" y="501" width="370" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-ZW-bsV">
-                                            <rect key="frame" x="16" y="536" width="382" height="44"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-ZW-bsV" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
+                                            <rect key="frame" x="22" y="534" width="370" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="cpr-An-sJH"/>
                                             </constraints>
@@ -60,8 +60,8 @@
                                                 <action selector="didTapFeelingWell:" destination="-1" eventType="touchUpInside" id="o9s-Tg-8Nl"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N6-oq-h94">
-                                            <rect key="frame" x="16" y="596" width="382" height="44"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N6-oq-h94" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
+                                            <rect key="frame" x="22" y="594" width="370" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="ceB-ex-bBP"/>
                                             </constraints>
@@ -82,10 +82,10 @@
                                         <constraint firstItem="x6x-UQ-5yX" firstAttribute="top" secondItem="jxb-za-xZi" secondAttribute="top" constant="16" id="e3G-RO-Dzf"/>
                                         <constraint firstItem="4ea-uf-HuE" firstAttribute="leading" secondItem="x6x-UQ-5yX" secondAttribute="leading" id="eyh-hi-vH6"/>
                                         <constraint firstItem="4ea-uf-HuE" firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" id="ff4-t4-Rql"/>
-                                        <constraint firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" constant="16" id="s4Q-OO-QZg"/>
+                                        <constraint firstAttribute="trailing" secondItem="x6x-UQ-5yX" secondAttribute="trailing" constant="22" id="s4Q-OO-QZg"/>
                                         <constraint firstItem="6N6-oq-h94" firstAttribute="top" secondItem="N5f-ZW-bsV" secondAttribute="bottom" constant="16" id="scP-yl-f9V"/>
-                                        <constraint firstItem="x6x-UQ-5yX" firstAttribute="leading" secondItem="jxb-za-xZi" secondAttribute="leading" constant="16" id="vkB-zY-K9H"/>
-                                        <constraint firstAttribute="bottom" secondItem="6N6-oq-h94" secondAttribute="bottom" constant="16" id="x1M-Az-txI"/>
+                                        <constraint firstItem="x6x-UQ-5yX" firstAttribute="leading" secondItem="jxb-za-xZi" secondAttribute="leading" constant="22" id="vkB-zY-K9H"/>
+                                        <constraint firstAttribute="bottom" secondItem="6N6-oq-h94" secondAttribute="bottom" constant="44" id="x1M-Az-txI"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -96,7 +96,7 @@
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Mgl-Rl-RYy" secondAttribute="trailing" id="MuS-Np-gW0"/>
-                        <constraint firstItem="Mgl-Rl-RYy" firstAttribute="top" secondItem="gS0-Gb-8pl" secondAttribute="top" id="WI3-wt-UJG"/>
+                        <constraint firstItem="Mgl-Rl-RYy" firstAttribute="top" secondItem="gS0-Gb-8pl" secondAttribute="top" constant="44" id="WI3-wt-UJG"/>
                         <constraint firstAttribute="bottom" secondItem="Mgl-Rl-RYy" secondAttribute="bottom" id="qaL-fD-3D2"/>
                         <constraint firstItem="Mgl-Rl-RYy" firstAttribute="leading" secondItem="gS0-Gb-8pl" secondAttribute="leading" id="xgm-Jg-33a"/>
                     </constraints>
@@ -117,4 +117,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
+    <resources>
+        <image name="sceneInside" width="269" height="213"/>
+    </resources>
 </document>
