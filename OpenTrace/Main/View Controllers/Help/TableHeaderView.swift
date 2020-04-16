@@ -10,6 +10,8 @@ import UIKit
 
 final class TableHeaderView: UIView {
 
+	private typealias Copy = DisplayStrings.Help.Header
+
 	private let imageView = UIImageView()
 	private let titleLabel = UILabel()
 	private let subtitleLabel = UILabel()
@@ -30,10 +32,10 @@ final class TableHeaderView: UIView {
 			view.translatesAutoresizingMaskIntoConstraints = false
 		}
 
-		titleLabel.text = "Information about how we handle your data"
+		titleLabel.text = Copy.title
 		titleLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 24, weight: .bold)
 		titleLabel.numberOfLines = 0
-		subtitleLabel.text = "We take handling of your information serious that’s why we have parameters in place to protect you."
+		subtitleLabel.text = Copy.subtitle
 		subtitleLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .regular)
 		subtitleLabel.numberOfLines = 0
 		imageView.image = UIImage(named: "sceneHelp")
