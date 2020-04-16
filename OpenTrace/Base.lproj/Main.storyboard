@@ -919,61 +919,77 @@ Your battery usage may increase.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="463.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="671.5"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-ST-AZI">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sceneInsideHome" translatesAutoresizingMaskIntoConstraints="NO" id="6e9-gq-aFi">
+                                                        <rect key="frame" x="41" y="39" width="221" height="161"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="6e9-gq-aFi" secondAttribute="height" multiplier="276:201" id="whd-V8-JJJ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="6e9-gq-aFi" secondAttribute="bottom" constant="8" id="CYQ-6e-IPm"/>
+                                                    <constraint firstItem="6e9-gq-aFi" firstAttribute="leading" secondItem="sjV-ST-AZI" secondAttribute="leading" constant="41" id="Tcz-C9-bhR"/>
+                                                    <constraint firstItem="6e9-gq-aFi" firstAttribute="top" secondItem="sjV-ST-AZI" secondAttribute="top" constant="39" id="goL-kw-SA5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6e9-gq-aFi" secondAttribute="trailing" constant="58" id="uST-eX-87A"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRJ-w0-WBm" userLabel="Stop Spread Message">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="277"/>
+                                                <rect key="frame" x="0.0" y="208" width="320" height="277"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-Xq-0Iq" userLabel="Stop Spread Bar">
-                                                        <rect key="frame" x="16" y="16" width="288" height="249"/>
+                                                        <rect key="frame" x="22" y="16" width="276" height="249"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How you can help stop the spread of COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1I-gM-V0v">
-                                                                <rect key="frame" x="16" y="16" width="256" height="47.5"/>
-                                                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                                                <rect key="frame" x="0.0" y="16" width="276" height="100.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep app open in power saver mode, especially in meetings, public spaces, and public transport." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV2-xp-47d">
-                                                                <rect key="frame" x="16" y="87.5" width="256" height="94.5"/>
-                                                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
+                                                                <rect key="frame" x="0.0" y="140.5" width="276" height="50.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aol-e7-Y4n">
-                                                                <rect key="frame" x="16" y="198" width="256" height="43"/>
-                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                                                <state key="normal">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
+                                                                <rect key="frame" x="0.0" y="207" width="276" height="34"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                <state key="normal" title=""/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstItem="W1I-gM-V0v" firstAttribute="top" secondItem="4hN-Xq-0Iq" secondAttribute="top" constant="16" id="06f-qb-Pnr"/>
-                                                            <constraint firstItem="WV2-xp-47d" firstAttribute="leading" secondItem="4hN-Xq-0Iq" secondAttribute="leading" constant="16" id="2S8-DA-a5h"/>
-                                                            <constraint firstAttribute="trailing" secondItem="W1I-gM-V0v" secondAttribute="trailing" constant="16" id="IZS-Xg-Ifn"/>
-                                                            <constraint firstItem="W1I-gM-V0v" firstAttribute="leading" secondItem="4hN-Xq-0Iq" secondAttribute="leading" constant="16" id="OCc-u5-hI9"/>
+                                                            <constraint firstItem="WV2-xp-47d" firstAttribute="leading" secondItem="4hN-Xq-0Iq" secondAttribute="leading" id="2S8-DA-a5h"/>
+                                                            <constraint firstAttribute="trailing" secondItem="W1I-gM-V0v" secondAttribute="trailing" id="IZS-Xg-Ifn"/>
+                                                            <constraint firstItem="W1I-gM-V0v" firstAttribute="leading" secondItem="4hN-Xq-0Iq" secondAttribute="leading" id="OCc-u5-hI9"/>
                                                             <constraint firstItem="aol-e7-Y4n" firstAttribute="top" secondItem="WV2-xp-47d" secondAttribute="bottom" constant="16" id="ORr-qu-0ep"/>
-                                                            <constraint firstItem="aol-e7-Y4n" firstAttribute="leading" secondItem="4hN-Xq-0Iq" secondAttribute="leading" constant="16" id="arf-JJ-ZrJ"/>
+                                                            <constraint firstItem="aol-e7-Y4n" firstAttribute="leading" secondItem="4hN-Xq-0Iq" secondAttribute="leading" id="arf-JJ-ZrJ"/>
                                                             <constraint firstItem="WV2-xp-47d" firstAttribute="top" secondItem="W1I-gM-V0v" secondAttribute="bottom" constant="24" id="azW-ow-htZ"/>
-                                                            <constraint firstAttribute="trailing" secondItem="aol-e7-Y4n" secondAttribute="trailing" constant="16" id="fW1-g3-sHS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="aol-e7-Y4n" secondAttribute="trailing" id="fW1-g3-sHS"/>
                                                             <constraint firstAttribute="bottom" secondItem="aol-e7-Y4n" secondAttribute="bottom" constant="8" id="mcl-3I-BcV"/>
-                                                            <constraint firstAttribute="trailing" secondItem="WV2-xp-47d" secondAttribute="trailing" constant="16" id="rBS-sn-7V8"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WV2-xp-47d" secondAttribute="trailing" id="rBS-sn-7V8"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="4hN-Xq-0Iq" secondAttribute="trailing" constant="16" id="8U6-Y8-gX5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4hN-Xq-0Iq" secondAttribute="trailing" constant="22" id="8U6-Y8-gX5"/>
                                                     <constraint firstItem="4hN-Xq-0Iq" firstAttribute="top" secondItem="uRJ-w0-WBm" secondAttribute="top" constant="16" id="Dc8-oq-xbL"/>
                                                     <constraint firstAttribute="bottom" secondItem="4hN-Xq-0Iq" secondAttribute="bottom" constant="12" id="Pgi-KF-HSR"/>
-                                                    <constraint firstItem="4hN-Xq-0Iq" firstAttribute="leading" secondItem="uRJ-w0-WBm" secondAttribute="leading" constant="16" id="oYG-JF-k5B"/>
+                                                    <constraint firstItem="4hN-Xq-0Iq" firstAttribute="leading" secondItem="uRJ-w0-WBm" secondAttribute="leading" constant="22" id="oYG-JF-k5B"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-Ue-XyY" userLabel="Monitor Section">
-                                                <rect key="frame" x="0.0" y="277" width="320" height="73"/>
+                                                <rect key="frame" x="0.0" y="485" width="320" height="73"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-vL-uYZ" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="12" width="288" height="49"/>
+                                                        <rect key="frame" x="22" y="12" width="276" height="49"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="49" id="M9W-E0-nCQ"/>
                                                         </constraints>
@@ -984,17 +1000,17 @@ Your battery usage may increase.</string>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="a0B-vL-uYZ" firstAttribute="leading" secondItem="whv-Ue-XyY" secondAttribute="leading" constant="16" id="J30-Jt-kM3"/>
+                                                    <constraint firstItem="a0B-vL-uYZ" firstAttribute="leading" secondItem="whv-Ue-XyY" secondAttribute="leading" constant="22" id="J30-Jt-kM3"/>
                                                     <constraint firstAttribute="bottom" secondItem="a0B-vL-uYZ" secondAttribute="bottom" constant="12" id="O1b-Cf-S2y"/>
-                                                    <constraint firstAttribute="trailing" secondItem="a0B-vL-uYZ" secondAttribute="trailing" constant="16" id="W2d-df-9CE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="a0B-vL-uYZ" secondAttribute="trailing" constant="22" id="W2d-df-9CE"/>
                                                     <constraint firstItem="a0B-vL-uYZ" firstAttribute="top" secondItem="whv-Ue-XyY" secondAttribute="top" constant="12" id="xCT-tK-OPj"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJW-Fc-oY0" userLabel="Share Section">
-                                                <rect key="frame" x="0.0" y="350" width="320" height="113.5"/>
+                                                <rect key="frame" x="0.0" y="558" width="320" height="113.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWY-40-H8G" userLabel="Share Bar">
-                                                        <rect key="frame" x="16" y="12" width="288" height="89.5"/>
+                                                        <rect key="frame" x="22" y="12" width="276" height="89.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share this app" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VB-oc-qKW">
                                                                 <rect key="frame" x="40" y="17" width="111.5" height="19.5"/>
@@ -1010,7 +1026,7 @@ Your battery usage may increase.</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ask friends and family to help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vD-4L-kMa">
-                                                                <rect key="frame" x="40" y="44.5" width="230" height="31"/>
+                                                                <rect key="frame" x="40" y="44.5" width="218" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1075,8 +1091,8 @@ Your battery usage may increase.</string>
                                                 <constraints>
                                                     <constraint firstItem="hWY-40-H8G" firstAttribute="top" secondItem="DJW-Fc-oY0" secondAttribute="top" constant="12" id="Rkc-Kz-Ezp"/>
                                                     <constraint firstAttribute="bottom" secondItem="hWY-40-H8G" secondAttribute="bottom" constant="12" id="dpa-bd-VqC"/>
-                                                    <constraint firstItem="hWY-40-H8G" firstAttribute="leading" secondItem="DJW-Fc-oY0" secondAttribute="leading" constant="16" id="qQn-Xo-0Ih"/>
-                                                    <constraint firstAttribute="trailing" secondItem="hWY-40-H8G" secondAttribute="trailing" constant="16" id="rLu-eY-vMJ"/>
+                                                    <constraint firstItem="hWY-40-H8G" firstAttribute="leading" secondItem="DJW-Fc-oY0" secondAttribute="leading" constant="22" id="qQn-Xo-0Ih"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hWY-40-H8G" secondAttribute="trailing" constant="22" id="rLu-eY-vMJ"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1467,6 +1483,7 @@ Your battery usage may increase.</string>
         <image name="mask-icon" width="22" height="22"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="pogopics" width="270" height="170"/>
+        <image name="sceneInsideHome" width="276" height="201"/>
         <image name="shareBlack" width="17" height="17"/>
         <image name="smartphone" width="24" height="24"/>
     </resources>

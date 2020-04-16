@@ -52,9 +52,7 @@ class HomeViewController: UIViewController {
 
 	func setup() {
 		titleLabel.text = "The Coronavirus COVID-19 Lockdown App"
-		titleLabel.font = UIFont.boldSystemFont(ofSize: 28)
 		bodyLabel.text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium dolore mque lauda ntium esparanti dollo fiunti est forunti."
-		bodyLabel.font = UIFont.systemFont(ofSize: 14)
 		let buttonTitle = NSAttributedString(string: "Check what we are tracking",
 											 attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
 														  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
