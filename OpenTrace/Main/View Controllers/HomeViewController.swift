@@ -58,10 +58,8 @@ class HomeViewController: UIViewController {
 		let buttonTitle = NSAttributedString(string: "Check what we are tracking",
 											 attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
 														  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
-														  NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single])
-		trackingInfoButton.setTitle("Check what we are tracking", for: .normal)
-		trackingInfoButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-//		trackingInfoButton.setAttributedTitle(buttonTitle, for: .normal)
+														  NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue])
+		trackingInfoButton.setAttributedTitle(buttonTitle, for: .normal)
 
 	}
 
