@@ -569,10 +569,10 @@
 		CF82AF332447532200081964 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */,
 				CF82AF342447539400081964 /* StyledButton.swift */,
-				CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */,
 				CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */,
+				CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */,
+				CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
