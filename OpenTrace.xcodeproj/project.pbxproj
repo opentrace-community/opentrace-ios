@@ -80,6 +80,7 @@
 		CF82AF2C24473BE300081964 /* HelpStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82AF2B24473BE300081964 /* HelpStrings.swift */; };
 		CF82AF302447432A00081964 /* HelpContent.json in Resources */ = {isa = PBXBuildFile; fileRef = CF82AF2F2447432A00081964 /* HelpContent.json */; };
 		CF82AF352447539400081964 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82AF342447539400081964 /* StyledButton.swift */; };
+		CFB9BE3C2447719C005A7CBC /* TransparentNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */; };
 		CFB9BE3E2447A6E2005A7CBC /* DropDownTextFIeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */; };
 		CFB9BE40244850B8005A7CBC /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */; };
 		D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F6C8824348A7300E4F52F /* Bluetrace.swift */; };
@@ -177,6 +178,7 @@
 		CF82AF2B24473BE300081964 /* HelpStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpStrings.swift; sourceTree = "<group>"; };
 		CF82AF2F2447432A00081964 /* HelpContent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HelpContent.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		CF82AF342447539400081964 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
+		CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavController.swift; sourceTree = "<group>"; };
 		CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextFIeld.swift; sourceTree = "<group>"; };
 		CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		D81F6C8824348A7300E4F52F /* Bluetrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetrace.swift; sourceTree = "<group>"; };
@@ -568,8 +570,9 @@
 			isa = PBXGroup;
 			children = (
 				CF82AF342447539400081964 /* StyledButton.swift */,
-				CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */,
 				CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */,
+				CFB9BE3D2447A6E2005A7CBC /* DropDownTextFIeld.swift */,
+				CFB9BE3B2447719C005A7CBC /* TransparentNavController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -829,6 +832,7 @@
 				5D8DD05C23E2F0A700E097EF /* LogViewController.swift in Sources */,
 				5D5F83B023F045A800770DEF /* HomeViewController.swift in Sources */,
 				5D8DD05E23E2F0BA00E097EF /* InfoViewController.swift in Sources */,
+				CFB9BE3C2447719C005A7CBC /* TransparentNavController.swift in Sources */,
 				CF82AF2C24473BE300081964 /* HelpStrings.swift in Sources */,
 				7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */,
 				30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */,

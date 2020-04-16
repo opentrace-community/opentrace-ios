@@ -112,7 +112,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func onMonitorTapped(_ sender: UITapGestureRecognizer) {
         let healthCheckViewController = HealthCheckViewController()
-        let navigationController = UINavigationController(rootViewController: healthCheckViewController)
+        let navigationController = TransparentNavController(rootViewController: healthCheckViewController)
         present(navigationController, animated: true)
     }
 
