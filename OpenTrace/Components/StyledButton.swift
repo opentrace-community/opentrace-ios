@@ -16,6 +16,14 @@ final class StyledButton: UIButton {
 		}
 	}
 
+	override var isSelected: Bool {
+		didSet {
+			if appearance.isRadioButton {
+				backgroundColor = isSelected ? appearance.textColour : appearance.backgroundColour
+			}
+		}
+	}
+
 	private var borderLayer = CAShapeLayer()
 
 	override init(frame: CGRect) {
@@ -33,14 +41,17 @@ final class StyledButton: UIButton {
 		setupAppearance()
 		heightAnchor.constraint(equalToConstant: 56).isActive = true
 		titleLabel?.font = UIFont(descriptor: .preferredFontDescriptor(withTextStyle: .headline), size: 16)
+		tintColor = .clear
 	}
 
 	private func setupAppearance() {
 		backgroundColor = appearance.backgroundColour
-		borderColor = appearance.borderColor
-		setTitleColor(appearance.textColour, for: .normal)
-		layer.borderColor = appearance.borderColor.cgColor
+		layer.borderColor = appearance.borderColour.cgColor
 		layer.borderWidth = 2
+		setTitleColor(appearance.textColour, for: .normal)
+		if appearance.isRadioButton {
+			setTitleColor(appearance.backgroundColour, for: [.selected, .highlighted])
+		}
 	}
 }
 
@@ -48,10 +59,12 @@ extension StyledButton {
 
 	struct Appearance {
 		let backgroundColour: UIColor
-		let borderColor: UIColor
+		let borderColour: UIColor
 		let textColour: UIColor
+		let isRadioButton: Bool
 
-		static let primaryFill = Appearance(backgroundColour: .black, borderColor: .clear, textColour: .white)
-		static let primaryHollow = Appearance(backgroundColour: .white, borderColor: .black, textColour: .black)
+		static let primaryFill = Appearance(backgroundColour: .black, borderColour: .black, textColour: .white, isRadioButton: false)
+		static let primaryHollow = Appearance(backgroundColour: .white, borderColour: .black, textColour: .black, isRadioButton: false)
+		static let primaryHollowRadio = Appearance(backgroundColour: .white, borderColour: .black, textColour: .black, isRadioButton: true)
 	}
 }
