@@ -20,7 +20,6 @@ class MessageViewController: UIViewController {
 	private var footerButtonText: String?
 	private var buttonAction: ((UIViewController) -> Void)?
 	private var image: UIImage?
-	private var isDismissable = true
 
 	convenience init() {
         self.init(nibName: String(describing: MessageViewController.self), bundle: Bundle(for: MessageViewController.self))
@@ -32,7 +31,6 @@ class MessageViewController: UIViewController {
 		footerButtonText = viewModel.footerButtonTitle
 		image = viewModel.image
 		self.buttonAction = buttonAction
-		isDismissable = viewModel.isDismissable
 	}
 
     override func viewDidLoad() {
@@ -41,12 +39,6 @@ class MessageViewController: UIViewController {
 		subtitleLabel.text = subtitleText
 		finishButton.setTitle(footerButtonText, for: .normal)
 		headerImage.image = image
-		if isDismissable {
-			navigationItem.rightBarButtonItem = .init(image: UIImage(named: "dismissCross")?.withRenderingMode(.alwaysOriginal),
-												  style: .plain,
-												  target: self,
-												  action: #selector(dismissButtonTapped))
-		}
     }
 
 	@objc private func dismissButtonTapped() {
@@ -67,12 +59,10 @@ extension MessageViewController {
 		let title: String
 		let subTitle: String
 		let footerButtonTitle: String
-		let isDismissable: Bool
 
 		static let feelingGood = ViewModel(image: UIImage(named: "sceneFeelGood"),
 										   title: FeelingWellCopy.title,
 										   subTitle: FeelingWellCopy.subtitle,
-										   footerButtonTitle: FeelingWellCopy.okClose,
-										   isDismissable: true)
+										   footerButtonTitle: FeelingWellCopy.okClose)
 	}
 }
