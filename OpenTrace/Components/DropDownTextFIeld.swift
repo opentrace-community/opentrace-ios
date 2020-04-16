@@ -31,10 +31,9 @@ final class DropDownTextField: UITextField {
 	}
 
 	private func setupIconView() {
-		let iconImage = UIImage(named: "ic-back") //TODO: replace with correct asset
+		let iconImage = UIImage(named: "downChevron")
 		let iconImageView = UIImageView(image: iconImage)
 		let container = UIView(frame: .init(x: 0, y: 0, width: 40, height: 30))
-		iconImageView.transform = CGAffineTransform(rotationAngle: -.pi/2) //TODO: remove when correct asset is used
 		iconImageView.frame = container.frame
 		iconImageView.contentMode = .center
 		rightViewMode = .always
