@@ -33,6 +33,12 @@ extension DisplayStrings {
             static let closingStatement = "Monitoring.TrackSymptoms.closingStatement".localized
 
             static let submit = DisplayStrings.General.submit
+            
+            enum ErrorIncomplete {
+                static let title = "Monitoring.TrackSymptoms.ErrorIncomplete.title".localized
+                static let message = "Monitoring.TrackSymptoms.ErrorIncomplete.message".localized
+                static let okClose = DisplayStrings.General.ok
+            }
         }
 
         enum Advice {

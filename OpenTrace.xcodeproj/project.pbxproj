@@ -42,7 +42,6 @@
 		5DC7B8D1242B8536008E1715 /* BluetraceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7B8D0242B8536008E1715 /* BluetraceConfig.swift */; };
 		5DC7B8D3242B8D87008E1715 /* BluetraceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7B8D2242B8D87008E1715 /* BluetraceUtils.swift */; };
 		5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D3A23DCB03B00FD4AB0 /* AppDelegate.swift */; };
-		5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4023DCB03B00FD4AB0 /* Main.storyboard */; };
 		5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4323DCB03D00FD4AB0 /* Assets.xcassets */; };
 		5DD41D4723DCB03D00FD4AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4523DCB03D00FD4AB0 /* LaunchScreen.storyboard */; };
 		5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD41D4E23DCB05600FD4AB0 /* CentralController.swift */; };
@@ -106,6 +105,10 @@
 		EA8667C12448B0C6007FF257 /* ContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */; };
 		EA8667C22448B0CB007FF257 /* ContactFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */; };
 		EA8667C52448B491007FF257 /* DecisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667C42448B491007FF257 /* DecisionManager.swift */; };
+		EA8667C72448B77E007FF257 /* SymptomQuestions.json in Sources */ = {isa = PBXBuildFile; fileRef = EA8667C62448B77E007FF257 /* SymptomQuestions.json */; };
+		EA8667C82448BA79007FF257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4023DCB03B00FD4AB0 /* Main.storyboard */; };
+		EA8667C92448BA94007FF257 /* SymptomQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8667C62448B77E007FF257 /* SymptomQuestions.json */; };
+		EA8667CB2448BB4C007FF257 /* Symptoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667CA2448BB4C007FF257 /* Symptoms.swift */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
@@ -220,6 +223,8 @@
 		EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewController.swift; sourceTree = "<group>"; };
 		EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactFormViewController.xib; sourceTree = "<group>"; };
 		EA8667C42448B491007FF257 /* DecisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionManager.swift; sourceTree = "<group>"; };
+		EA8667C62448B77E007FF257 /* SymptomQuestions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SymptomQuestions.json; sourceTree = "<group>"; };
+		EA8667CA2448BB4C007FF257 /* Symptoms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptoms.swift; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -670,6 +675,8 @@
 			isa = PBXGroup;
 			children = (
 				EA8667C42448B491007FF257 /* DecisionManager.swift */,
+				EA8667CA2448BB4C007FF257 /* Symptoms.swift */,
+				EA8667C62448B77E007FF257 /* SymptomQuestions.json */,
 			);
 			path = DecisionManager;
 			sourceTree = "<group>";
@@ -762,6 +769,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8667C92448BA94007FF257 /* SymptomQuestions.json in Resources */,
 				B6932CE724260E2B003D1810 /* UploadData.storyboard in Resources */,
 				30BE1CAD23F119FD005DCE4F /* Localizable.strings in Resources */,
 				5D7DC33F243E5789007180E9 /* Muli-Light.ttf in Resources */,
@@ -776,11 +784,11 @@
 				5D7DC344243E5789007180E9 /* Muli-ExtraLightItalic.ttf in Resources */,
 				5D7DC33D243E5789007180E9 /* Muli-ExtraLight.ttf in Resources */,
 				CF82AF302447432A00081964 /* HelpContent.json in Resources */,
+				EA8667C82448BA79007FF257 /* Main.storyboard in Resources */,
 				5D7DC343243E5789007180E9 /* Muli-Regular.ttf in Resources */,
 				EA8667AC24485DFC007FF257 /* BinaryQuestionControl.xib in Resources */,
 				5D7DC342243E5789007180E9 /* Muli-LightItalic.ttf in Resources */,
 				EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */,
-				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
 				EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */,
 				7785BB05240E09C700802EBC /* ActivityIndicator.json in Resources */,
 				EA8667C22448B0CB007FF257 /* ContactFormViewController.xib in Resources */,
@@ -935,6 +943,7 @@
 				5D5F83B023F045A800770DEF /* HomeViewController.swift in Sources */,
 				5D8DD05E23E2F0BA00E097EF /* InfoViewController.swift in Sources */,
 				CFB9BE3C2447719C005A7CBC /* TransparentNavController.swift in Sources */,
+				EA8667CB2448BB4C007FF257 /* Symptoms.swift in Sources */,
 				CF82AF2C24473BE300081964 /* HelpStrings.swift in Sources */,
 				7F19B4DD23F565850071A11E /* PogoInstructionsViewController.swift in Sources */,
 				30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */,
@@ -963,6 +972,7 @@
 				5DD41D5323DD4CA400FD4AB0 /* PeripheralController.swift in Sources */,
 				C5D209FC23F4476F007233BE /* UITextViewFixed.swift in Sources */,
 				C585C83B23EEB99B0061B7C6 /* GradientButton.swift in Sources */,
+				EA8667C72448B77E007FF257 /* SymptomQuestions.json in Sources */,
 				EA86679A24475159007FF257 /* HealthCheckViewController.swift in Sources */,
 				CF5855CA24460B2D00D5F625 /* DisplayStrings.swift in Sources */,
 				CFB9BE40244850B8005A7CBC /* StyledTextField.swift in Sources */,
