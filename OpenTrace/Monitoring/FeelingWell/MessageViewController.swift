@@ -1,5 +1,5 @@
 //
-//  FeelingWellViewController.swift
+//  MessageViewController.swift
 //  OpenTrace
 //
 //  Created by Sam Dods on 15/04/2020.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class FeelingWellViewController: UIViewController {
+class MessageViewController: UIViewController {
 
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
     @IBOutlet private var finishButton: UIButton!
 
     convenience init() {
-        self.init(nibName: String(describing: FeelingWellViewController.self), bundle: Bundle(for: FeelingWellViewController.self))
+        self.init(nibName: String(describing: MessageViewController.self), bundle: Bundle(for: MessageViewController.self))
     }
 
     override func viewDidLoad() {
