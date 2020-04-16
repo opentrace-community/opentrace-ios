@@ -49,7 +49,9 @@ final class StyledButton: UIButton {
 		layer.borderColor = appearance.borderColour.cgColor
 		layer.borderWidth = 2
 		setTitleColor(appearance.textColour, for: .normal)
-		setTitleColor(appearance.backgroundColour, for: [.selected, .highlighted])
+		if appearance.isRadioButton {
+			setTitleColor(appearance.backgroundColour, for: [.selected, .highlighted])
+		}
 	}
 }
 
