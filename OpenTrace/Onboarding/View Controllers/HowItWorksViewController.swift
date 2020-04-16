@@ -18,10 +18,10 @@ final class HowItWorksViewController: UIViewController {
         OnboardingManager.shared.completedIWantToHelp = true
         #warning("TODO:- Show loading here when we have a decent loading UI")
         Auth.auth().signInAnonymously { [weak self] (result, error) in
-            if error != nil || result == nil {
-                self?.showError()
-                return
-            }
+//            if error != nil || result == nil {
+//                self?.showError()
+//                return
+//            }
             self?.performSegue(withIdentifier: "iWantToHelpToConsentSegue", sender: self)
         }
     }

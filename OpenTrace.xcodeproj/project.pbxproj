@@ -109,6 +109,11 @@
 		EA8667C82448BA79007FF257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD41D4023DCB03B00FD4AB0 /* Main.storyboard */; };
 		EA8667C92448BA94007FF257 /* SymptomQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8667C62448B77E007FF257 /* SymptomQuestions.json */; };
 		EA8667CB2448BB4C007FF257 /* Symptoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667CA2448BB4C007FF257 /* Symptoms.swift */; };
+		EA8667CF2448DE40007FF257 /* Advice1.json in Sources */ = {isa = PBXBuildFile; fileRef = EA8667CE2448DE40007FF257 /* Advice1.json */; };
+		EA8667D12448DEF6007FF257 /* Advice2.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8667D02448DEEE007FF257 /* Advice2.json */; };
+		EA8667D32448DF07007FF257 /* AdviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667D22448DF07007FF257 /* AdviceManager.swift */; };
+		EA8667D62448DF56007FF257 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667D52448DF56007FF257 /* Advice.swift */; };
+		EA8667D72448E1A1007FF257 /* Advice1.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8667CE2448DE40007FF257 /* Advice1.json */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
@@ -225,6 +230,10 @@
 		EA8667C42448B491007FF257 /* DecisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionManager.swift; sourceTree = "<group>"; };
 		EA8667C62448B77E007FF257 /* SymptomQuestions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SymptomQuestions.json; sourceTree = "<group>"; };
 		EA8667CA2448BB4C007FF257 /* Symptoms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptoms.swift; sourceTree = "<group>"; };
+		EA8667CE2448DE40007FF257 /* Advice1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Advice1.json; sourceTree = "<group>"; };
+		EA8667D02448DEEE007FF257 /* Advice2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Advice2.json; sourceTree = "<group>"; };
+		EA8667D22448DF07007FF257 /* AdviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceManager.swift; sourceTree = "<group>"; };
+		EA8667D52448DF56007FF257 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -644,6 +653,7 @@
 		EA8667AE24489934007FF257 /* Advice */ = {
 			isa = PBXGroup;
 			children = (
+				EA8667D42448DF3E007FF257 /* AdviceManager */,
 				EA8667B324489B40007FF257 /* Views */,
 				EA8667AF244899E9007FF257 /* AdviceViewController.swift */,
 				EA8667B0244899E9007FF257 /* AdviceViewController.xib */,
@@ -679,6 +689,17 @@
 				EA8667C62448B77E007FF257 /* SymptomQuestions.json */,
 			);
 			path = DecisionManager;
+			sourceTree = "<group>";
+		};
+		EA8667D42448DF3E007FF257 /* AdviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667D22448DF07007FF257 /* AdviceManager.swift */,
+				EA8667D52448DF56007FF257 /* Advice.swift */,
+				EA8667CE2448DE40007FF257 /* Advice1.json */,
+				EA8667D02448DEEE007FF257 /* Advice2.json */,
+			);
+			path = AdviceManager;
 			sourceTree = "<group>";
 		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
@@ -769,9 +790,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8667D72448E1A1007FF257 /* Advice1.json in Resources */,
 				EA8667C92448BA94007FF257 /* SymptomQuestions.json in Resources */,
 				B6932CE724260E2B003D1810 /* UploadData.storyboard in Resources */,
 				30BE1CAD23F119FD005DCE4F /* Localizable.strings in Resources */,
+				EA8667D12448DEF6007FF257 /* Advice2.json in Resources */,
 				5D7DC33F243E5789007180E9 /* Muli-Light.ttf in Resources */,
 				EA8667A724476DB9007FF257 /* SymptomsViewController.xib in Resources */,
 				EA8667B1244899EE007FF257 /* AdviceViewController.xib in Resources */,
@@ -950,6 +973,7 @@
 				30BE1CAF23F1349F005DCE4F /* EncounterRecord.swift in Sources */,
 				B60F8BE6242667CB0007A641 /* UploadDataStep1VC.swift in Sources */,
 				553AA5CE243EC91700EE326F /* OnboardingManager.swift in Sources */,
+				EA8667D32448DF07007FF257 /* AdviceManager.swift in Sources */,
 				C58D817723F169DB00345771 /* PermissionsCompleteViewController.swift in Sources */,
 				EA8667C52448B491007FF257 /* DecisionManager.swift in Sources */,
 				EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */,
@@ -977,12 +1001,14 @@
 				CF5855CA24460B2D00D5F625 /* DisplayStrings.swift in Sources */,
 				CFB9BE40244850B8005A7CBC /* StyledTextField.swift in Sources */,
 				5D5F83AD23F023F600770DEF /* EncounterMessageManager.swift in Sources */,
+				EA8667CF2448DE40007FF257 /* Advice1.json in Sources */,
 				5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */,
 				C56CF43F23F18A15006B05B0 /* ConsentViewController.swift in Sources */,
 				CF06969224471E5200206258 /* HelpViewController.swift in Sources */,
 				879EF841243609DA0061C75F /* UploadDataToNoteViewController.swift in Sources */,
 				557FD393243E4062006BDF38 /* DatabaseManager.swift in Sources */,
 				30BE1CAA23F108BA005DCE4F /* UploadFileData.swift in Sources */,
+				EA8667D62448DF56007FF257 /* Advice.swift in Sources */,
 				B65553542427512B0007F031 /* FirebaseAPIs.swift in Sources */,
 				D81F6C8C24348CC200E4F52F /* BluetraceProtocol.swift in Sources */,
 				7F2F0BA223EFFF75006D7404 /* PermissionsViewController.swift in Sources */,
