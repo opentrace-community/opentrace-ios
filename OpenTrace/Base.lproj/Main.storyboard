@@ -919,7 +919,7 @@ Your battery usage may increase.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1830.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1776"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-2s-72y" userLabel="Success Header View">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
@@ -1503,87 +1503,28 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-Ue-XyY" userLabel="Monitor Section">
-                                                <rect key="frame" x="0.0" y="1589.5" width="320" height="127.5"/>
+                                                <rect key="frame" x="0.0" y="1589.5" width="320" height="73"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fC-KL-P0P" userLabel="Monitor Bar">
-                                                        <rect key="frame" x="16" y="12" width="288" height="103.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track daily monitoring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS3-re-S60" userLabel="Track daily monitoring">
-                                                                <rect key="frame" x="41" y="14" width="157.5" height="19"/>
-                                                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
-                                                                <color key="textColor" red="0.089108936489999999" green="0.23694762589999999" blue="0.6823945642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Keep a track of how you're feeling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srY-Bi-yla" userLabel="Keep a track of how you're feeling">
-                                                                <rect key="frame" x="41" y="37" width="229" height="52.5"/>
-                                                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.5033083026640337" green="0.88227712563451777" blue="0.42657328031199976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <gestureRecognizers/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-vL-uYZ" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12" width="288" height="49"/>
                                                         <constraints>
-                                                            <constraint firstItem="srY-Bi-yla" firstAttribute="top" secondItem="jS3-re-S60" secondAttribute="bottom" constant="4" id="6gf-ic-ZJ9"/>
-                                                            <constraint firstAttribute="trailing" secondItem="srY-Bi-yla" secondAttribute="trailing" constant="18" id="6v5-fu-nx8"/>
-                                                            <constraint firstItem="jS3-re-S60" firstAttribute="top" secondItem="1fC-KL-P0P" secondAttribute="top" constant="14" id="853-d9-iWd"/>
-                                                            <constraint firstAttribute="bottom" secondItem="srY-Bi-yla" secondAttribute="bottom" constant="14" id="DVS-2J-Iom"/>
-                                                            <constraint firstItem="srY-Bi-yla" firstAttribute="leading" secondItem="jS3-re-S60" secondAttribute="leading" id="MCr-m8-MnA"/>
-                                                            <constraint firstItem="jS3-re-S60" firstAttribute="leading" secondItem="1fC-KL-P0P" secondAttribute="leading" constant="41" id="jIg-KH-vjj"/>
-                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jS3-re-S60" secondAttribute="trailing" constant="20" symbolic="YES" id="wZp-93-doP"/>
+                                                            <constraint firstAttribute="height" constant="49" id="M9W-E0-nCQ"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="12"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
-                                                                <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                                <size key="value" width="0.0" height="5"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                                <real key="value" value="0.10000000000000001"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                                <integer key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="12"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                                <real key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                                <size key="value" width="0.0" height="5"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" red="0.71372549019999998" green="0.79215686269999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
+                                                        <state key="normal" title="Track my condition"/>
                                                         <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="Fkt-UU-0tf" appends="YES" id="Nwp-NF-raD"/>
+                                                            <action selector="TrackMyConditionButtonTapped" destination="yl1-rG-jXE" eventType="touchUpInside" id="H5d-Hd-0Yk"/>
                                                         </connections>
-                                                    </view>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="1fC-KL-P0P" secondAttribute="bottom" constant="12" id="509-8t-Yn7"/>
-                                                    <constraint firstItem="1fC-KL-P0P" firstAttribute="top" secondItem="whv-Ue-XyY" secondAttribute="top" constant="12" id="H38-Fb-FiH"/>
-                                                    <constraint firstItem="1fC-KL-P0P" firstAttribute="leading" secondItem="whv-Ue-XyY" secondAttribute="leading" constant="16" id="Vl2-tW-5rg"/>
-                                                    <constraint firstAttribute="trailing" secondItem="1fC-KL-P0P" secondAttribute="trailing" constant="16" id="rwB-YH-StT"/>
+                                                    <constraint firstItem="a0B-vL-uYZ" firstAttribute="leading" secondItem="whv-Ue-XyY" secondAttribute="leading" constant="16" id="J30-Jt-kM3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="a0B-vL-uYZ" secondAttribute="bottom" constant="12" id="O1b-Cf-S2y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="a0B-vL-uYZ" secondAttribute="trailing" constant="16" id="W2d-df-9CE"/>
+                                                    <constraint firstItem="a0B-vL-uYZ" firstAttribute="top" secondItem="whv-Ue-XyY" secondAttribute="top" constant="12" id="xCT-tK-OPj"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJW-Fc-oY0" userLabel="Share Section">
-                                                <rect key="frame" x="0.0" y="1717" width="320" height="113.5"/>
+                                                <rect key="frame" x="0.0" y="1662.5" width="320" height="113.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWY-40-H8G" userLabel="Share Bar">
                                                         <rect key="frame" x="16" y="12" width="288" height="89.5"/>
@@ -1708,7 +1649,6 @@ Your battery usage may increase.</string>
                         <outlet property="bluetoothStatusOnView" destination="epu-AT-8fq" id="DxE-vG-04N"/>
                         <outlet property="incompleteHeaderView" destination="v11-1w-Wr9" id="P3r-t1-J6c"/>
                         <outlet property="lastUpdatedLabel" destination="upc-i0-4H3" id="tPL-P0-CFO"/>
-                        <outlet property="monitorView" destination="1fC-KL-P0P" id="AWy-CD-Cyt"/>
                         <outlet property="powerSaverCardView" destination="uRJ-w0-WBm" id="6cB-gc-2I7"/>
                         <outlet property="pushNotificationOffView" destination="DPu-AG-NHf" id="KTQ-Qc-q73"/>
                         <outlet property="pushNotificationOnView" destination="yhY-nY-ipb" id="xLu-fr-Mah"/>
@@ -1719,11 +1659,6 @@ Your battery usage may increase.</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJa-Mu-MXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Fkt-UU-0tf" userLabel="Tap Gesture Recognizer (Monitor)">
-                    <connections>
-                        <action selector="onMonitorTapped:" destination="yl1-rG-jXE" id="5D0-Bx-Omi"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="qhb-00-wD2" userLabel="Tap Gesture Recognizer (Share)">
                     <connections>
                         <action selector="onShareTapped:" destination="yl1-rG-jXE" id="Img-Bh-7dK"/>
