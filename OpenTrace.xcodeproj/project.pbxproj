@@ -105,6 +105,7 @@
 		EA8667BD2448A0EE007FF257 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667BC2448A0EE007FF257 /* UIView+Additions.swift */; };
 		EA8667C12448B0C6007FF257 /* ContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */; };
 		EA8667C22448B0CB007FF257 /* ContactFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */; };
+		EA8667C52448B491007FF257 /* DecisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667C42448B491007FF257 /* DecisionManager.swift */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
@@ -218,6 +219,7 @@
 		EA8667BC2448A0EE007FF257 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		EA8667BF2448AFA7007FF257 /* ContactFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewController.swift; sourceTree = "<group>"; };
 		EA8667C02448AFA7007FF257 /* ContactFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactFormViewController.xib; sourceTree = "<group>"; };
+		EA8667C42448B491007FF257 /* DecisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionManager.swift; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -664,6 +666,14 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
+		EA8667C32448B469007FF257 /* DecisionManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667C42448B491007FF257 /* DecisionManager.swift */,
+			);
+			path = DecisionManager;
+			sourceTree = "<group>";
+		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
 			isa = PBXGroup;
 			children = (
@@ -679,6 +689,7 @@
 		EAED3E0524474C000009D266 /* Symptoms */ = {
 			isa = PBXGroup;
 			children = (
+				EA8667C32448B469007FF257 /* DecisionManager */,
 				EA8667A824485DB9007FF257 /* BinaryQuestionControl */,
 				EAED3E0124474BF10009D266 /* SymptomsViewController.swift */,
 				EA8667A624476DB4007FF257 /* SymptomsViewController.xib */,
@@ -931,6 +942,7 @@
 				B60F8BE6242667CB0007A641 /* UploadDataStep1VC.swift in Sources */,
 				553AA5CE243EC91700EE326F /* OnboardingManager.swift in Sources */,
 				C58D817723F169DB00345771 /* PermissionsCompleteViewController.swift in Sources */,
+				EA8667C52448B491007FF257 /* DecisionManager.swift in Sources */,
 				EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */,
 				D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */,
 				EA8667A4244769CB007FF257 /* HomeStrings.swift in Sources */,
@@ -1119,6 +1131,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C5E7E594E7634084F94F030 /* Pods-OpenTrace.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -1149,6 +1162,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B9E9EDBFA7A442DC6067BF9 /* Pods-OpenTrace.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
