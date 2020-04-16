@@ -94,6 +94,8 @@
 		EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679F244761ED007FF257 /* FeelingWellViewController.xib */; };
 		EA8667A4244769CB007FF257 /* HomeStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A3244769CB007FF257 /* HomeStrings.swift */; };
 		EA8667A724476DB9007FF257 /* SymptomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667A624476DB4007FF257 /* SymptomsViewController.xib */; };
+		EA8667AC24485DFC007FF257 /* BinaryQuestionControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667AB24485DFC007FF257 /* BinaryQuestionControl.xib */; };
+		EA8667AD2448639C007FF257 /* BinaryQuestionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A924485DEF007FF257 /* BinaryQuestionControl.swift */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
@@ -196,6 +198,8 @@
 		EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingWellViewController.swift; sourceTree = "<group>"; };
 		EA8667A3244769CB007FF257 /* HomeStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrings.swift; sourceTree = "<group>"; };
 		EA8667A624476DB4007FF257 /* SymptomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsViewController.xib; sourceTree = "<group>"; };
+		EA8667A924485DEF007FF257 /* BinaryQuestionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryQuestionControl.swift; sourceTree = "<group>"; };
+		EA8667AB24485DFC007FF257 /* BinaryQuestionControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BinaryQuestionControl.xib; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -602,6 +606,15 @@
 			path = FeelingWell;
 			sourceTree = "<group>";
 		};
+		EA8667A824485DB9007FF257 /* BinaryQuestionControl */ = {
+			isa = PBXGroup;
+			children = (
+				EA8667A924485DEF007FF257 /* BinaryQuestionControl.swift */,
+				EA8667AB24485DFC007FF257 /* BinaryQuestionControl.xib */,
+			);
+			path = BinaryQuestionControl;
+			sourceTree = "<group>";
+		};
 		EAED3E0024474B910009D266 /* Monitoring */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,6 +628,7 @@
 		EAED3E0524474C000009D266 /* Symptoms */ = {
 			isa = PBXGroup;
 			children = (
+				EA8667A824485DB9007FF257 /* BinaryQuestionControl */,
 				EAED3E0124474BF10009D266 /* SymptomsViewController.swift */,
 				EA8667A624476DB4007FF257 /* SymptomsViewController.xib */,
 			);
@@ -700,6 +714,7 @@
 				5D7DC33D243E5789007180E9 /* Muli-ExtraLight.ttf in Resources */,
 				CF82AF302447432A00081964 /* HelpContent.json in Resources */,
 				5D7DC343243E5789007180E9 /* Muli-Regular.ttf in Resources */,
+				EA8667AC24485DFC007FF257 /* BinaryQuestionControl.xib in Resources */,
 				5D7DC342243E5789007180E9 /* Muli-LightItalic.ttf in Resources */,
 				EA86679B2447515F007FF257 /* HealthCheckViewController.xib in Resources */,
 				5DD41D4223DCB03B00FD4AB0 /* Main.storyboard in Resources */,
@@ -839,6 +854,7 @@
 				37CDA247244759630085A56C /* UIAlertController+Additions.swift in Sources */,
 				CFB9BE3E2447A6E2005A7CBC /* DropDownTextFIeld.swift in Sources */,
 				30E91BE923EFE514002D592A /* UploadDataVC.swift in Sources */,
+				EA8667AD2448639C007FF257 /* BinaryQuestionControl.swift in Sources */,
 				7FEC361523F16A1E00127AFB /* UIViewExtension.swift in Sources */,
 				5D269C0B23E22CC400ADF2DE /* DeviceInfo.swift in Sources */,
 				B605A7B12427429D008BA819 /* PlistHelper.swift in Sources */,
@@ -1049,7 +1065,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
-				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
+				FIREBASE_STORAGE_URL = "gs://intelligent-lockdown-274213.appspot.com";
 				INFOPLIST_FILE = OpenTrace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1079,7 +1095,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
-				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
+				FIREBASE_STORAGE_URL = "gs://intelligent-lockdown-274213.appspot.com";
 				INFOPLIST_FILE = OpenTrace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

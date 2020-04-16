@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BinaryQuestionControl" customModule="OpenTrace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="233"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnp-c4-gFa">
+                    <rect key="frame" x="0.0" y="32" width="447" height="109"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0Y-9p1" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="157" width="100" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="BgP-Pk-1Ny"/>
+                        <constraint firstAttribute="width" constant="100" id="Hsu-h5-wuD"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapLeft:" destination="iN0-l3-epB" eventType="touchUpInside" id="Iha-k6-buV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wur-Cg-flI" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
+                    <rect key="frame" x="122" y="157" width="100" height="44"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapRight:" destination="iN0-l3-epB" eventType="touchUpInside" id="j7c-we-4fC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wur-Cg-flI" firstAttribute="width" secondItem="UPA-0Y-9p1" secondAttribute="width" id="6lf-TT-NTP"/>
+                <constraint firstAttribute="bottom" secondItem="UPA-0Y-9p1" secondAttribute="bottom" constant="32" id="IMV-0P-rB7"/>
+                <constraint firstItem="UPA-0Y-9p1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IbW-bE-r04"/>
+                <constraint firstItem="Wur-Cg-flI" firstAttribute="bottom" secondItem="UPA-0Y-9p1" secondAttribute="bottom" id="Ioq-bP-Maj"/>
+                <constraint firstItem="UPA-0Y-9p1" firstAttribute="top" secondItem="Wnp-c4-gFa" secondAttribute="bottom" constant="16" id="J6c-5I-Xyt"/>
+                <constraint firstItem="Wur-Cg-flI" firstAttribute="leading" secondItem="UPA-0Y-9p1" secondAttribute="trailing" constant="22" id="L5G-Q3-SQU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wnp-c4-gFa" secondAttribute="trailing" id="MWr-JV-Xkp"/>
+                <constraint firstItem="Wnp-c4-gFa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="dPO-Fb-l1g"/>
+                <constraint firstItem="Wur-Cg-flI" firstAttribute="top" secondItem="UPA-0Y-9p1" secondAttribute="top" id="ouT-oR-LuT"/>
+                <constraint firstItem="Wnp-c4-gFa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vEt-kK-Fxw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftButton" destination="UPA-0Y-9p1" id="tjJ-2E-zUn"/>
+                <outlet property="rightButton" destination="Wur-Cg-flI" id="NsY-Ds-g4E"/>
+                <outlet property="titleLabel" destination="Wnp-c4-gFa" id="w4N-Vy-CjL"/>
+            </connections>
+            <point key="canvasLocation" x="-22.463768115942031" y="92.075892857142847"/>
+        </view>
+    </objects>
+</document>

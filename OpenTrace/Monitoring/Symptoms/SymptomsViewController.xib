@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +13,7 @@
                 <outlet property="closingStatement" destination="4ea-uf-HuE" id="XQN-yl-2wF"/>
                 <outlet property="finishButton" destination="N5f-ZW-bsV" id="IzY-3M-KvJ"/>
                 <outlet property="subtitleLabel" destination="L9q-ep-Mej" id="dxS-gr-zsa"/>
+                <outlet property="symptomsList" destination="hMy-Na-cxW" id="1VW-mo-O5N"/>
                 <outlet property="titleLabel" destination="x6x-UQ-5yX" id="S2E-Qa-f1v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -52,7 +54,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-Na-cxW">
                                             <rect key="frame" x="22" y="248" width="370" height="300"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="300" id="i9b-3X-k3w"/>
+                                                <constraint firstAttribute="height" constant="300" placeholder="YES" id="i9b-3X-k3w"/>
                                             </constraints>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Closing statement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-uf-HuE" userLabel="Closing Statement Label">
