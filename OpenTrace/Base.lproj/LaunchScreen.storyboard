@@ -25,7 +25,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Government of the Netherlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-aR-0Nv">
                                 <rect key="frame" x="138" y="61" width="166" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -43,26 +43,38 @@ Lockdown Advice </string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchK+C" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-dm-y8l">
-                                <rect key="frame" x="40" y="529" width="134" height="31"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="El3-3v-jeM">
+                                <rect key="frame" x="0.0" y="539" width="320" height="29"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchK+C" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-dm-y8l">
+                                        <rect key="frame" x="36" y="42" width="134" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="134" id="1Cb-io-6Q3"/>
+                                            <constraint firstAttribute="height" constant="31" id="vl3-Ak-QsA"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="1Cb-io-6Q3"/>
-                                    <constraint firstAttribute="height" constant="31" id="vl3-Ak-QsA"/>
+                                    <constraint firstItem="yfW-dm-y8l" firstAttribute="leading" secondItem="El3-3v-jeM" secondAttribute="leading" constant="36" id="JVu-qw-iNu"/>
+                                    <constraint firstItem="yfW-dm-y8l" firstAttribute="top" secondItem="El3-3v-jeM" secondAttribute="top" constant="42" id="OLd-KT-paA"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0ZD-q1-Px1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RDj-aR-0Nv" secondAttribute="trailing" constant="16" id="F8g-j6-H6i"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fux-em-eVc"/>
                             <constraint firstItem="RDj-aR-0Nv" firstAttribute="leading" secondItem="YaE-uH-wGA" secondAttribute="trailing" constant="13" id="ILb-J6-zuM"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="top" secondItem="dp8-2F-IAz" secondAttribute="bottom" constant="55" id="Lkm-q4-H3C"/>
                             <constraint firstItem="bpb-zG-PxF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MXK-vO-Y0m"/>
                             <constraint firstItem="dp8-2F-IAz" firstAttribute="top" secondItem="bpb-zG-PxF" secondAttribute="bottom" constant="12" id="Vb6-71-aGm"/>
                             <constraint firstItem="YaE-uH-wGA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WiU-Hg-cbU"/>
-                            <constraint firstItem="yfW-dm-y8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZXX-Bs-CPg"/>
                             <constraint firstItem="dp8-2F-IAz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZlP-7o-s7L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpb-zG-PxF" secondAttribute="trailing" constant="40" id="cXm-8J-Ehw"/>
                             <constraint firstItem="bpb-zG-PxF" firstAttribute="top" secondItem="YaE-uH-wGA" secondAttribute="bottom" constant="22" id="h2k-6h-ZJ3"/>
-                            <constraint firstItem="yfW-dm-y8l" firstAttribute="top" secondItem="dp8-2F-IAz" secondAttribute="bottom" constant="45" id="it1-oJ-gff"/>
+                            <constraint firstItem="El3-3v-jeM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jEZ-Wk-eSr"/>
                             <constraint firstItem="RDj-aR-0Nv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="lHE-9z-qdL"/>
                             <constraint firstItem="YaE-uH-wGA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="qub-WN-hce"/>
                             <constraint firstItem="bpb-zG-PxF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="zqk-QR-aiU"/>
@@ -76,7 +88,7 @@ Lockdown Advice </string>
         </scene>
     </scenes>
     <resources>
-        <image name="launchK+C" width="134" height="28"/>
+        <image name="launchK+C" width="148" height="32"/>
         <image name="launchMainImage" width="282" height="270"/>
     </resources>
 </document>
