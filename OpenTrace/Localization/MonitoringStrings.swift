@@ -11,6 +11,7 @@ import Foundation
 extension DisplayStrings {
 
 	enum Monitoring {
+        
         enum HealthCheck {
             static let title = "Monitoring.HealthCheck.title".localized
             static let subtitle = "Monitoring.HealthCheck.subtitle".localized
@@ -24,6 +25,14 @@ extension DisplayStrings {
             static let subtitle = "Monitoring.FeelingWell.subtitle".localized
 
             static let okClose = "Monitoring.FeelingWell.okClose".localized
+        }
+
+        enum TrackSymptoms {
+            static let title = "Monitoring.TrackSymptoms.title".localized
+            static let subtitle = "Monitoring.TrackSymptoms.subtitle".localized
+            static let closingStatement = "Monitoring.TrackSymptoms.closingStatement".localized
+
+            static let submit = "Monitoring.TrackSymptoms.submit".localized
         }
     }
 }

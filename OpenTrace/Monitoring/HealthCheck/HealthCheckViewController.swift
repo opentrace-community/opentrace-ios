@@ -12,8 +12,8 @@ class HealthCheckViewController: UIViewController {
 
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
-    @IBOutlet private var wellButton: UIButton!
-    @IBOutlet private var sickButton: UIButton!
+    @IBOutlet private var wellButton: StyledButton!
+    @IBOutlet private var sickButton: StyledButton!
 
     convenience init() {
         self.init(nibName: String(describing: HealthCheckViewController.self), bundle: Bundle(for: HealthCheckViewController.self))
@@ -28,6 +28,8 @@ class HealthCheckViewController: UIViewController {
         subtitleLabel.text = Copy.subtitle
         wellButton.setTitle(Copy.feelingWell, for: .normal)
         sickButton.setTitle(Copy.feelingSick, for: .normal)
+        wellButton.appearance = .primaryHollow
+        sickButton.appearance = .primaryHollow
     }
 
     @objc private func cancel() {
@@ -35,13 +37,8 @@ class HealthCheckViewController: UIViewController {
     }
 
     @IBAction func didTapFeelingWell(_ sender: Any) {
-        // TODO: Replace alert with separate screen
-        typealias Copy = DisplayStrings.Monitoring.FeelingWell
-        let alert = UIAlertController(title: Copy.title, message: Copy.subtitle, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Copy.okClose, style: .default, handler: { [weak self] _ in
-            self?.dismiss(animated: true)
-        }))
-        present(alert, animated: true)
+        let feelingWellViewController = FeelingWellViewController()
+        navigationController?.pushViewController(feelingWellViewController, animated: true)
     }
 
     @IBAction func didTapFeelingSick(_ sender: Any) {
