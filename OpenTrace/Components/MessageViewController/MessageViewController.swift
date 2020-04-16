@@ -39,7 +39,10 @@ class MessageViewController: UIViewController {
 		subtitleLabel.text = subtitleText
 		finishButton.setTitle(footerButtonText, for: .normal)
 		headerImage.image = image
-		navigationItem.rightBarButtonItem = .init(image: UIImage(named: "dismissCross")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(dismissButtonTapped))
+		navigationItem.rightBarButtonItem = .init(image: UIImage(named: "dismissCross")?.withRenderingMode(.alwaysOriginal),
+												  style: .plain,
+												  target: self,
+												  action: #selector(dismissButtonTapped))
     }
 
 	@objc private func dismissButtonTapped() {
@@ -61,6 +64,9 @@ extension MessageViewController {
 		let subTitle: String
 		let footerButtonTitle: String
 
-		static let feelingGood = ViewModel(image: UIImage(named: "sceneFeelGood"), title: FeelingWellCopy.title, subTitle: FeelingWellCopy.subtitle, footerButtonTitle: FeelingWellCopy.okClose)
+		static let feelingGood = ViewModel(image: UIImage(named: "sceneFeelGood"),
+										   title: FeelingWellCopy.title,
+										   subTitle: FeelingWellCopy.subtitle,
+										   footerButtonTitle: FeelingWellCopy.okClose)
 	}
 }
