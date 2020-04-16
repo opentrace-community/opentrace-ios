@@ -45,6 +45,11 @@ final class HelpViewController: UIViewController {
 
 extension HelpViewController: UITableViewDelegate, UITableViewDataSource {
 
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		let showShadow = scrollView.contentOffset.y > 0
+		setNavbarToBackgroundColour(withShadow: showShadow)
+	}
+
 	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 		if section == 0 {  return TableHeaderView() }
 		let view = SectionHeaderView()
