@@ -10,7 +10,7 @@ import UIKit
 
 extension HelpViewController {
 
-	final class HelpSectionHeaderView: UIView {
+	final class SectionHeaderView: UIView {
 
 		let label = UILabel()
 
