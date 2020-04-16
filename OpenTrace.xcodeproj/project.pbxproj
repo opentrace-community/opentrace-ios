@@ -89,8 +89,9 @@
 		EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86679C2447585C007FF257 /* MonitoringStrings.swift */; };
 		EA8667A1244761EF007FF257 /* FeelingWellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */; };
 		EA8667A2244761F5007FF257 /* FeelingWellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA86679F244761ED007FF257 /* FeelingWellViewController.xib */; };
+		EA8667A4244769CB007FF257 /* HomeStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8667A3244769CB007FF257 /* HomeStrings.swift */; };
+		EA8667A724476DB9007FF257 /* SymptomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8667A624476DB4007FF257 /* SymptomsViewController.xib */; };
 		EAED3E0324474BF10009D266 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0124474BF10009D266 /* SymptomsViewController.swift */; };
-		EAED3E0424474BF10009D266 /* SymptomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAED3E0224474BF10009D266 /* SymptomsViewController.xib */; };
 		EAED3E0724474F310009D266 /* GeneralStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAED3E0624474F310009D266 /* GeneralStrings.swift */; };
 /* End PBXBuildFile section */
 
@@ -187,8 +188,9 @@
 		EA86679C2447585C007FF257 /* MonitoringStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringStrings.swift; sourceTree = "<group>"; };
 		EA86679F244761ED007FF257 /* FeelingWellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeelingWellViewController.xib; sourceTree = "<group>"; };
 		EA8667A0244761ED007FF257 /* FeelingWellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingWellViewController.swift; sourceTree = "<group>"; };
+		EA8667A3244769CB007FF257 /* HomeStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrings.swift; sourceTree = "<group>"; };
+		EA8667A624476DB4007FF257 /* SymptomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsViewController.xib; sourceTree = "<group>"; };
 		EAED3E0124474BF10009D266 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
-		EAED3E0224474BF10009D266 /* SymptomsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsViewController.xib; sourceTree = "<group>"; };
 		EAED3E0624474F310009D266 /* GeneralStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -558,6 +560,7 @@
 				CF5855C924460B2D00D5F625 /* DisplayStrings.swift */,
 				EAED3E0624474F310009D266 /* GeneralStrings.swift */,
 				EA86679C2447585C007FF257 /* MonitoringStrings.swift */,
+				EA8667A3244769CB007FF257 /* HomeStrings.swift */,
 				CF5855CB244612D700D5F625 /* OnboardingStrings.swift */,
 				CF82AF2B24473BE300081964 /* HelpStrings.swift */,
 			);
@@ -604,7 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				EAED3E0124474BF10009D266 /* SymptomsViewController.swift */,
-				EAED3E0224474BF10009D266 /* SymptomsViewController.xib */,
+				EA8667A624476DB4007FF257 /* SymptomsViewController.xib */,
 			);
 			path = Symptoms;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				B6932CE724260E2B003D1810 /* UploadData.storyboard in Resources */,
 				30BE1CAD23F119FD005DCE4F /* Localizable.strings in Resources */,
 				5D7DC33F243E5789007180E9 /* Muli-Light.ttf in Resources */,
+				EA8667A724476DB9007FF257 /* SymptomsViewController.xib in Resources */,
 				5D7DC341243E5789007180E9 /* Muli-Semi-BoldItalic.ttf in Resources */,
 				5D7DC33E243E5789007180E9 /* Muli-SemiBold.ttf in Resources */,
 				5D7DC33C243E5789007180E9 /* Muli-BoldItalic.ttf in Resources */,
@@ -684,7 +688,6 @@
 				5DD41D4723DCB03D00FD4AB0 /* LaunchScreen.storyboard in Resources */,
 				5DD41D4423DCB03D00FD4AB0 /* Assets.xcassets in Resources */,
 				5D7DC344243E5789007180E9 /* Muli-ExtraLightItalic.ttf in Resources */,
-				EAED3E0424474BF10009D266 /* SymptomsViewController.xib in Resources */,
 				5D7DC33D243E5789007180E9 /* Muli-ExtraLight.ttf in Resources */,
 				CF82AF302447432A00081964 /* HelpContent.json in Resources */,
 				5D7DC343243E5789007180E9 /* Muli-Regular.ttf in Resources */,
@@ -846,6 +849,7 @@
 				C58D817723F169DB00345771 /* PermissionsCompleteViewController.swift in Sources */,
 				EA86679D2447585C007FF257 /* MonitoringStrings.swift in Sources */,
 				D81F6C8924348A7300E4F52F /* Bluetrace.swift in Sources */,
+				EA8667A4244769CB007FF257 /* HomeStrings.swift in Sources */,
 				B60F8BE4242659810007A641 /* UILabelExtension.swift in Sources */,
 				5DD41D3B23DCB03B00FD4AB0 /* AppDelegate.swift in Sources */,
 				CF5855C824460B1300D5F625 /* String+Localization.swift in Sources */,

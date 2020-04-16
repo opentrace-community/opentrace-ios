@@ -12,8 +12,7 @@ class FeelingWellViewController: UIViewController {
 
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
-    @IBOutlet private var wellButton: UIButton!
-    @IBOutlet private var sickButton: UIButton!
+    @IBOutlet private var finishButton: UIButton!
 
     convenience init() {
         self.init(nibName: String(describing: FeelingWellViewController.self), bundle: Bundle(for: FeelingWellViewController.self))
@@ -21,31 +20,14 @@ class FeelingWellViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: DisplayStrings.General.cancel, style: .plain, target: self, action: #selector(cancel))
 
-        typealias Copy = DisplayStrings.Monitoring.HealthCheck
+        typealias Copy = DisplayStrings.Monitoring.FeelingWell
         titleLabel.text = Copy.title
         subtitleLabel.text = Copy.subtitle
-        wellButton.setTitle(Copy.feelingWell, for: .normal)
-        sickButton.setTitle(Copy.feelingSick, for: .normal)
+        finishButton.setTitle(Copy.okClose, for: .normal)
     }
 
-    @objc private func cancel() {
+    @IBAction func didTapFinish(_ sender: Any) {
         dismiss(animated: true)
-    }
-
-    @IBAction func didTapFeelingWell(_ sender: Any) {
-        // TODO: Replace alert with separate screen
-        typealias Copy = DisplayStrings.Monitoring.FeelingWell
-        let alert = UIAlertController(title: Copy.title, message: Copy.subtitle, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Copy.okClose, style: .default, handler: { [weak self] _ in
-            self?.dismiss(animated: true)
-        }))
-        present(alert, animated: true)
-    }
-
-    @IBAction func didTapFeelingSick(_ sender: Any) {
-        let symptomsViewController = SymptomsViewController()
-        navigationController?.pushViewController(symptomsViewController, animated: true)
     }
 }
