@@ -10,13 +10,13 @@
     {
         "question": "What do my housemates do?",
         "recommendations": [
-            "If you have housemates, they also can't go outside. If they don't experience any sympthoms they can go grocery shopping."
+            "If you have housemates, they also can't go outside. If they don't experience any symptoms they can go grocery shopping."
         ]
     },
     {
         "question": "When can I go back outside?",
         "recommendations": [
-            "If no one had symptomps for more than 24 hours, you can go back outside."
+            "If no one had symptoms for more than 24 hours, you can go back outside."
         ]
     },
     {
