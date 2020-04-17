@@ -12,6 +12,11 @@ extension DisplayStrings {
 
 	enum Home {
         
+        static let title = "Home.title".localized
+        static let subtitle = "Home.subtitle".localized
+        static let checkWhatTracking = "Home.checkWhatTracking".localized
         static let startMonitoring = "Home.startMonitoring".localized
+        static let shareTitle = "Home.shareTitle".localized
+        static let shareSubtitle = "Home.shareSubtitle".localized
     }
 }

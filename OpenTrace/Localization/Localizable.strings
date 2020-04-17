@@ -68,7 +68,12 @@
 "General.cancel" = "Cancel";
 
 // MARK: - Home
+"Home.title" = "The Coronavirus COVID-19 Lockdown App";
+"Home.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium dolore mque lauda ntium esparanti dollo fiunti est forunti.";
+"Home.checkWhatTracking" = "Check what we are tracking";
 "Home.startMonitoring" = "Track my condition";
+"Home.shareTitle" = "Share this app";
+"Home.shareSubtitle" = "Ask friends and family to help.";
 
 // MARK: - Monitoring, Health Check
 "Monitoring.HealthCheck.title" = "How do you feel today?";

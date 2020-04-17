@@ -1130,6 +1130,8 @@ Your battery usage may increase.</string>
                         <outlet property="bodyLabel" destination="WV2-xp-47d" id="GK8-MN-tuf"/>
                         <outlet property="monitorButton" destination="LIK-i8-waN" id="E6F-mF-K25"/>
                         <outlet property="screenStack" destination="Eim-Z7-BkO" id="vQc-mn-6mJ"/>
+                        <outlet property="shareSubtitleLabel" destination="1vD-4L-kMa" id="FTX-fb-PDy"/>
+                        <outlet property="shareTitleLabel" destination="2VB-oc-qKW" id="HLi-th-fhi"/>
                         <outlet property="shareView" destination="hWY-40-H8G" id="Jjy-G2-9H6"/>
                         <outlet property="titleLabel" destination="W1I-gM-V0v" id="bnO-7j-VBr"/>
                         <outlet property="trackingInfoButton" destination="aol-e7-Y4n" id="xCT-Ic-ilA"/>

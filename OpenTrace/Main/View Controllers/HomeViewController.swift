@@ -8,7 +8,9 @@ class HomeViewController: UIViewController {
     @IBOutlet var screenStack: UIStackView!
     @IBOutlet var shareView: UIView!
 	@IBOutlet var titleLabel: UILabel!
-	@IBOutlet var bodyLabel: UILabel!
+    @IBOutlet var bodyLabel: UILabel!
+    @IBOutlet var shareTitleLabel: UILabel!
+    @IBOutlet var shareSubtitleLabel: UILabel!
     @IBOutlet var trackingInfoButton: UIButton!
     @IBOutlet var monitorButton: StyledButton!
 
@@ -52,17 +54,19 @@ class HomeViewController: UIViewController {
     }
 
 	func setup() {
-		// TODO: Localise strings once Sam's HomeStrings.swift is merged
-		titleLabel.text = "The Coronavirus COVID-19 Lockdown App"
+        typealias Copy = DisplayStrings.Home
+        titleLabel.text = Copy.title
 		titleLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
-		bodyLabel.text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium dolore mque lauda ntium esparanti dollo fiunti est forunti."
+        bodyLabel.text = Copy.subtitle
 		bodyLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-		let buttonTitle = NSAttributedString(string: "Check what we are tracking",
+        let buttonTitle = NSAttributedString(string: Copy.checkWhatTracking,
 											 attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
 														  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
 														  NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue])
         trackingInfoButton.setAttributedTitle(buttonTitle, for: .normal)
-        monitorButton.setTitle(DisplayStrings.Home.startMonitoring, for: .normal)
+        monitorButton.setTitle(Copy.startMonitoring, for: .normal)
+        shareTitleLabel.text = Copy.shareTitle
+        shareSubtitleLabel.text = Copy.shareSubtitle
 	}
 
     private func readPermissionsAndUpdateViews() {
