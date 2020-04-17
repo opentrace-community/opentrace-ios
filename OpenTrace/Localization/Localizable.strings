@@ -111,9 +111,10 @@
 
 //MARK: - Upload Data, Enter pin
 "UploadData.EnterPin.title" = "Please enter your pin";
-"UploadData.EnterPin.subHeading" = "";
+"UploadData.EnterPin.subHeading" = "Enter the pin you've received from the Health Authority";
 "UploadData.EnterPin.primary_cta" = "Upload data";
 "UploadData.EnterPin.disclaimer" = "By uploading you agree to share your bluetooth proximity of the last 21 days with Ministerie van Volksgezondheid, Welzijn en Sport. We do not collect any geolocation or personally identifiable information.";
+"UploadData.EnterPin.disclaimer_blod" = "We do not collect any geolocation or personally identifiable information.";
 "UploadData.EnterPin.invalid_pin" = "Invalid pin";
 
 

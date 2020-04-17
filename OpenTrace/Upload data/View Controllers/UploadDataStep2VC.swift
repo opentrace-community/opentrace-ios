@@ -34,6 +34,7 @@ final class UploadDataStep2VC: UIViewController {
         titleLabel.text = Copy.title
         subHeadingLabel.text = Copy.subHeading
         disclaimerLabel.text = Copy.disclaimer
+        disclaimerLabel.bold(text: Copy.disclaimerBold)
         primaryCTA.setTitle(Copy.primaryCTA, for: .normal)
     }
     

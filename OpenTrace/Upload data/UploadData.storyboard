@@ -304,7 +304,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-1q-WgQ" customClass="CodeInputView" customModule="OpenTrace" customModuleProvider="target">
-                                <rect key="frame" x="40" y="282.33333333333331" width="334" height="70"/>
+                                <rect key="frame" x="22" y="242.33333333333337" width="370" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="u0b-PM-ahA"/>
@@ -325,19 +325,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your pin " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ii5-wZ-hTn">
-                                <rect key="frame" x="22" y="112" width="370" height="28.666666666666657"/>
+                                <rect key="frame" x="22" y="72" width="370" height="28.666666666666671"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lby-nn-h3D">
-                                <rect key="frame" x="22" y="162.66666666666666" width="370" height="33.666666666666657"/>
+                                <rect key="frame" x="22" y="122.66666666666667" width="370" height="33.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG4-A4-emg">
-                                <rect key="frame" x="40" y="368.33333333333331" width="0.0" height="0.0"/>
+                                <rect key="frame" x="22" y="328.33333333333331" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -353,13 +353,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="54b-Km-PSA" firstAttribute="trailing" secondItem="24k-o7-Lgs" secondAttribute="trailing" constant="22" id="1av-Ss-rhe"/>
-                            <constraint firstItem="mKA-1q-WgQ" firstAttribute="leading" secondItem="54b-Km-PSA" secondAttribute="leading" constant="40" id="3QK-55-uNE"/>
                             <constraint firstItem="Lby-nn-h3D" firstAttribute="top" secondItem="ii5-wZ-hTn" secondAttribute="bottom" constant="22" id="6qB-hZ-sbG"/>
-                            <constraint firstItem="ii5-wZ-hTn" firstAttribute="top" secondItem="54b-Km-PSA" secondAttribute="top" constant="56" id="Chq-cB-ttK"/>
+                            <constraint firstItem="ii5-wZ-hTn" firstAttribute="top" secondItem="54b-Km-PSA" secondAttribute="top" constant="16" id="Chq-cB-ttK"/>
                             <constraint firstItem="xG4-A4-emg" firstAttribute="top" secondItem="mKA-1q-WgQ" secondAttribute="bottom" constant="16" id="DPE-lN-Iia"/>
                             <constraint firstItem="54b-Km-PSA" firstAttribute="trailing" secondItem="SnN-xQ-TMr" secondAttribute="trailing" constant="22" id="Fhk-ng-v0g"/>
                             <constraint firstItem="24k-o7-Lgs" firstAttribute="top" secondItem="SnN-xQ-TMr" secondAttribute="bottom" constant="20" id="Fva-MA-m5n"/>
                             <constraint firstItem="SnN-xQ-TMr" firstAttribute="leading" secondItem="54b-Km-PSA" secondAttribute="leading" constant="22" id="IZe-VF-MTZ"/>
+                            <constraint firstItem="mKA-1q-WgQ" firstAttribute="leading" secondItem="Lby-nn-h3D" secondAttribute="leading" id="RUV-rw-SCK"/>
                             <constraint firstItem="mKA-1q-WgQ" firstAttribute="top" secondItem="Lby-nn-h3D" secondAttribute="bottom" constant="86" id="Sy5-Xk-sLV"/>
                             <constraint firstItem="Lby-nn-h3D" firstAttribute="leading" secondItem="ii5-wZ-hTn" secondAttribute="leading" id="TNd-SU-k4U"/>
                             <constraint firstItem="54b-Km-PSA" firstAttribute="trailing" secondItem="ii5-wZ-hTn" secondAttribute="trailing" constant="22" id="ZqK-qS-KrW"/>

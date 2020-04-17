@@ -23,6 +23,7 @@ extension DisplayStrings {
             static let subHeading = "UploadData.EnterPin.subHeading".localized
             static let primaryCTA = "UploadData.EnterPin.primary_cta".localized
             static let disclaimer = "UploadData.EnterPin.disclaimer".localized
+            static let disclaimerBold = "UploadData.EnterPin.disclaimer_blod".localized
             static let invalidPin = "UploadData.EnterPin.invalid_pin".localized
         }
         
