@@ -20,14 +20,16 @@ final class UploadDataStep2VC: UIViewController {
     
     private typealias Copy = DisplayStrings.UploadData.EnterPin
 
-    var functions = Functions.functions(region: "europe-west2")
-    let storageUrl = PlistHelper.getvalueFromInfoPlist(withKey: "FIREBASE_STORAGE_URL") ?? ""
+    private var functions = Functions.functions(region: "europe-west2")
+    private let storageUrl = PlistHelper.getvalueFromInfoPlist(withKey: "FIREBASE_STORAGE_URL") ?? ""
+    private let loadingView = LoadingView()
 
     override func viewDidLoad() {
         _ = codeInputView.becomeFirstResponder()
         dismissKeyboardOnTap()
-        setTransparentNavBar()
+        setNavbarToBackgroundColour(withShadow: false)
         setCopy()
+        view.addAndPin(subview: loadingView)
     }
     
     private func setCopy() {
@@ -46,9 +48,10 @@ final class UploadDataStep2VC: UIViewController {
         sender.isEnabled = false
         self.uploadErrorMsgLbl.isHidden = true
         let code = codeInputView.text
-
+        loadingView.show()
         functions.httpsCallable("getUploadToken").call(code) { [unowned self] (result, error) in
             if let error = error as NSError? {
+                self.loadingView.hide()
                 sender.isEnabled = true
                 self.uploadErrorMsgLbl.text = DisplayStrings.General.GenericError.body
 
@@ -64,16 +67,18 @@ final class UploadDataStep2VC: UIViewController {
             }
 
             if let token = (result?.data as? [String: Any])?["token"] as? String {
-                self.uploadFile(token: token) { success in
+                self.uploadFile(token: token) { [weak self] success in
+                    self?.loadingView.hide()
                     if success {
-                        self.performSegue(withIdentifier: "showSuccessVCSegue", sender: nil)
+                        self?.performSegue(withIdentifier: "showSuccessVCSegue", sender: nil)
                     } else {
-                        self.uploadErrorMsgLbl.isHidden = false
-                        self.uploadErrorMsgLbl.text = DisplayStrings.General.GenericError.body
+                        self?.uploadErrorMsgLbl.isHidden = false
+                        self?.uploadErrorMsgLbl.text = DisplayStrings.General.GenericError.body
                         sender.isEnabled = true
                     }
                 }
             } else {
+                self.loadingView.hide()
                 self.uploadErrorMsgLbl.isHidden = false
                 self.uploadErrorMsgLbl.text = Copy.invalidPin
                 sender.isEnabled = true

@@ -16,6 +16,7 @@
 		30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BEA23EFEA0B002D592A /* CodeInputView.swift */; };
 		30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FADDAD23F6896C006C125F /* Encounter+Event.swift */; };
 		378E546124498F7C00AA8DAE /* UploadDataStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E546024498F7C00AA8DAE /* UploadDataStrings.swift */; };
+		378E54642449997F00AA8DAE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E54632449997F00AA8DAE /* LoadingView.swift */; };
 		37CDA247244759630085A56C /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDA246244759630085A56C /* UIAlertController+Additions.swift */; };
 		553AA5CE243EC91700EE326F /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553AA5CD243EC91700EE326F /* OnboardingManager.swift */; };
 		557FD393243E4062006BDF38 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FD392243E4062006BDF38 /* DatabaseManager.swift */; };
@@ -137,6 +138,7 @@
 		375E626A2445F1A1004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		375E626B2445F1A6004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		378E546024498F7C00AA8DAE /* UploadDataStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDataStrings.swift; sourceTree = "<group>"; };
+		378E54632449997F00AA8DAE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		37CDA246244759630085A56C /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		3C5E7E594E7634084F94F030 /* Pods-OpenTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTrace.debug.xcconfig"; path = "Target Support Files/Pods-OpenTrace/Pods-OpenTrace.debug.xcconfig"; sourceTree = "<group>"; };
 		553AA5CD243EC91700EE326F /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
@@ -293,6 +295,14 @@
 				375E626B2445F1A6004D45D3 /* GoogleService-Info.plist */,
 			);
 			path = STG;
+			sourceTree = "<group>";
+		};
+		378E54622449997300AA8DAE /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				378E54632449997F00AA8DAE /* LoadingView.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		37CDA2442447593F0085A56C /* Extensions */ = {
@@ -628,6 +638,7 @@
 		CF82AF332447532200081964 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				378E54622449997300AA8DAE /* LoadingView */,
 				EA86679E244761D6007FF257 /* MessageViewController */,
 				CF82AF342447539400081964 /* StyledButton.swift */,
 				CFB9BE3F244850B7005A7CBC /* StyledTextField.swift */,
@@ -1032,6 +1043,7 @@
 				5DD41D4F23DCB05600FD4AB0 /* CentralController.swift in Sources */,
 				C56CF43F23F18A15006B05B0 /* ConsentViewController.swift in Sources */,
 				CF06969224471E5200206258 /* HelpViewController.swift in Sources */,
+				378E54642449997F00AA8DAE /* LoadingView.swift in Sources */,
 				879EF841243609DA0061C75F /* UploadDataToNoteViewController.swift in Sources */,
 				557FD393243E4062006BDF38 /* DatabaseManager.swift in Sources */,
 				30BE1CAA23F108BA005DCE4F /* UploadFileData.swift in Sources */,
@@ -1126,7 +1138,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1181,7 +1193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1205,7 +1217,7 @@
 				DEVELOPMENT_TEAM = VG9R2N57GC;
 				FIREBASE_STORAGE_URL = "gs://intelligent-lockdown-274213.appspot.com";
 				INFOPLIST_FILE = OpenTrace/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1218,7 +1230,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "Intelligent Lockdown Prod";
 				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				V2_CHARACTERISTIC_ID = "D1034710-B11E-42F2-BCA3-F481177D5BB2";
 			};
 			name = Debug;
@@ -1236,7 +1248,7 @@
 				DEVELOPMENT_TEAM = VG9R2N57GC;
 				FIREBASE_STORAGE_URL = "gs://intelligent-lockdown-274213.appspot.com";
 				INFOPLIST_FILE = OpenTrace/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1250,7 +1262,7 @@
 				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				V2_CHARACTERISTIC_ID = "D1034710-B11E-42F2-BCA3-F481177D5BB2";
 			};
 			name = Release;

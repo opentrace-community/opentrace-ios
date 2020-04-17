@@ -16,7 +16,7 @@ final class UploadDataSuccessVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        setTransparentNavBar()
+        setNavbarToBackgroundColour(withShadow: false)
         setCopy()
     }
     
