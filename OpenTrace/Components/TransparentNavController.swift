@@ -21,7 +21,7 @@ final class TransparentNavController: UINavigationController {
 	}
 }
 
-private extension UIViewController {
+extension UIViewController {
 
 	func setTransparentNavBar() {
 		if #available(iOS 13.0, *) {
