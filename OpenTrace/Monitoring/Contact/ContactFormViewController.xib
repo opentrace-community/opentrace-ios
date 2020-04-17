@@ -10,9 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactFormViewController">
             <connections>
+                <outlet property="bottomConstraint" destination="qaL-fD-3D2" id="rqf-Ef-sML"/>
                 <outlet property="closingStatement" destination="4ea-uf-HuE" id="XQN-yl-2wF"/>
                 <outlet property="fieldsList" destination="hMy-Na-cxW" id="mNX-in-E7f"/>
                 <outlet property="finishButton" destination="N5f-ZW-bsV" id="IzY-3M-KvJ"/>
+                <outlet property="scrollView" destination="gS0-Gb-8pl" id="z0R-AF-wnr"/>
                 <outlet property="subtitleLabel" destination="L9q-ep-Mej" id="dxS-gr-zsa"/>
                 <outlet property="titleLabel" destination="x6x-UQ-5yX" id="S2E-Qa-f1v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -23,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-Gb-8pl">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-Gb-8pl">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mgl-Rl-RYy">

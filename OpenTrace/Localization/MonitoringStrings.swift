@@ -55,6 +55,12 @@ extension DisplayStrings {
             static let closingStatement = "Monitoring.ContactForm.closingStatement".localized
 
             static let submit = DisplayStrings.General.submit
+            
+            enum ErrorIncomplete {
+                static let title = "Monitoring.ContactForm.ErrorIncomplete.title".localized
+                static let message = "Monitoring.ContactForm.ErrorIncomplete.message".localized
+                static let okClose = DisplayStrings.General.ok
+            }
         }
 
         enum ThanksForInfo {
