@@ -14,6 +14,7 @@ final class UploadDataToNoteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setCopy()
     }
     
     private func setCopy() {

@@ -113,7 +113,7 @@
 "UploadData.EnterPin.title" = "Please enter your pin";
 "UploadData.EnterPin.subHeading" = "";
 "UploadData.EnterPin.primary_cta" = "Upload data";
-"UploadData.EnterPin.disclaimer" = "By uploading you agree to share your bluetooth proximity of the last 21 days with Ministerie van Volksgezondheid, Welzijn en Sport. We do not collect any geolocation or personally identifiable information. "";
+"UploadData.EnterPin.disclaimer" = "By uploading you agree to share your bluetooth proximity of the last 21 days with Ministerie van Volksgezondheid, Welzijn en Sport. We do not collect any geolocation or personally identifiable information.";
 "UploadData.EnterPin.invalid_pin" = "Invalid pin";
 
 
