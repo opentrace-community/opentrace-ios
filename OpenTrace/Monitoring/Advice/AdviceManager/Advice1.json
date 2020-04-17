@@ -1,0 +1,30 @@
+[
+    {
+        "question": "What do I do?",
+        "recommendations": [
+            "Stay home. Make sure you feel better.",
+            "Don't go shopping or have vistors.",
+            "Ask others to go shopping for you or deliver at home. Ask if someone else can walk the dog.",
+        ]
+    },
+    {
+        "question": "What do my housemates do?",
+        "recommendations": [
+            "If your housemates are feeling fine, the standard rules apply."
+        ]
+    },
+    {
+        "question": "When can I go back outside?",
+        "recommendations": [
+            "If you haven't had any symptoms for more than 24 hours, you can go back outside. "
+        ]
+    },
+    {
+        "question": "When do I call a GP?",
+        "recommendations": [
+            "Het is op dit moment niet nodig om je zorgen te maken. Houd je symptomen dagelijks bij. Je belt de huisarts als je zieker wordt, of je medische hulp nodig heeft, bijvoorbeeld als je hoge koorts krijgt of moeilijk ademt.",
+            "Ga niet naar de huisarts of het ziekenhuis toe, maar bel de huisarts."
+
+        ]
+    }
+]

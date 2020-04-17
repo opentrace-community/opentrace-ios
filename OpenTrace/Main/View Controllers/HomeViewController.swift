@@ -5,11 +5,12 @@ import CoreData
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var screenStack: UIStackView!
-    @IBOutlet weak var shareView: UIView!
+    @IBOutlet var screenStack: UIStackView!
+    @IBOutlet var shareView: UIView!
 	@IBOutlet var titleLabel: UILabel!
 	@IBOutlet var bodyLabel: UILabel!
-	@IBOutlet var trackingInfoButton: UIButton!
+    @IBOutlet var trackingInfoButton: UIButton!
+    @IBOutlet var monitorButton: StyledButton!
 
 	var fetchedResultsController: NSFetchedResultsController<Encounter>?
 
@@ -60,8 +61,8 @@ class HomeViewController: UIViewController {
 											 attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
 														  NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
 														  NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue])
-		trackingInfoButton.setAttributedTitle(buttonTitle, for: .normal)
-
+        trackingInfoButton.setAttributedTitle(buttonTitle, for: .normal)
+        monitorButton.setTitle(DisplayStrings.Home.startMonitoring, for: .normal)
 	}
 
     private func readPermissionsAndUpdateViews() {
@@ -76,7 +77,13 @@ class HomeViewController: UIViewController {
         }
     }
 
-	@IBAction func TrackMyConditionButtonTapped() {
+    @IBAction func onMonitorTapped(_ sender: UIButton) {
+        let healthCheckViewController = HealthCheckViewController()
+        let navigationController = TransparentNavController(rootViewController: healthCheckViewController)
+        present(navigationController, animated: true)
+    }
+
+	@IBAction func trackMyConditionButtonTapped() {
 		let healthCheckViewController = HealthCheckViewController()
 		let navigationController = TransparentNavController(rootViewController: healthCheckViewController)
 		present(navigationController, animated: true)

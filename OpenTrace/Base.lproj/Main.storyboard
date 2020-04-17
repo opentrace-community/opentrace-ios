@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Za-gw-wMf">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -891,11 +891,13 @@ Your battery usage may increase.</string>
             <objects>
                 <tabBarController storyboardIdentifier="main" title="Main" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="JXd-F4-xFZ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="KJs-39-72q"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UVc-Te-1Na">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" itemPositioning="fill" id="UVc-Te-1Na">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.44690561290000003" green="0.78907400370000003" blue="0.74509769680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.44690561290000003" green="0.78907400370000003" blue="0.74509769680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="yl1-rG-jXE" kind="relationship" relationship="viewControllers" id="HXs-fH-0Xe"/>
@@ -907,7 +909,7 @@ Your battery usage may increase.</string>
             </objects>
             <point key="canvasLocation" x="-5856" y="3376"/>
         </scene>
-        <!--Home-->
+        <!--Monitor-->
         <scene sceneID="ExA-0f-AvY">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="yl1-rG-jXE" customClass="HomeViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
@@ -919,7 +921,7 @@ Your battery usage may increase.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-Z7-BkO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="671.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="642.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-ST-AZI">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
@@ -964,6 +966,9 @@ Your battery usage may increase.</string>
                                                                 <state key="normal" title="">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="trackMyConditionButtonTapped" destination="yl1-rG-jXE" eventType="touchUpInside" id="7d1-sU-bCZ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -989,28 +994,28 @@ Your battery usage may increase.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-Ue-XyY" userLabel="Monitor Section">
-                                                <rect key="frame" x="0.0" y="485" width="320" height="73"/>
+                                                <rect key="frame" x="0.0" y="485" width="320" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-vL-uYZ" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
-                                                        <rect key="frame" x="22" y="12" width="276" height="49"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIK-i8-waN" customClass="StyledButton" customModule="OpenTrace" customModuleProvider="target">
+                                                        <rect key="frame" x="22" y="0.0" width="276" height="44"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="49" id="M9W-E0-nCQ"/>
+                                                            <constraint firstAttribute="height" constant="44" id="S3e-vq-nYt"/>
                                                         </constraints>
-                                                        <state key="normal" title="Track my condition"/>
+                                                        <state key="normal" title="TRACK CONDITION"/>
                                                         <connections>
-                                                            <action selector="TrackMyConditionButtonTapped" destination="yl1-rG-jXE" eventType="touchUpInside" id="H5d-Hd-0Yk"/>
+                                                            <action selector="onMonitorTapped:" destination="yl1-rG-jXE" eventType="touchUpInside" id="ylo-Ou-tg0"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="a0B-vL-uYZ" firstAttribute="leading" secondItem="whv-Ue-XyY" secondAttribute="leading" constant="22" id="J30-Jt-kM3"/>
-                                                    <constraint firstAttribute="bottom" secondItem="a0B-vL-uYZ" secondAttribute="bottom" constant="12" id="O1b-Cf-S2y"/>
-                                                    <constraint firstAttribute="trailing" secondItem="a0B-vL-uYZ" secondAttribute="trailing" constant="22" id="W2d-df-9CE"/>
-                                                    <constraint firstItem="a0B-vL-uYZ" firstAttribute="top" secondItem="whv-Ue-XyY" secondAttribute="top" constant="12" id="xCT-tK-OPj"/>
+                                                    <constraint firstItem="LIK-i8-waN" firstAttribute="top" secondItem="whv-Ue-XyY" secondAttribute="top" id="b8k-3b-rbH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LIK-i8-waN" secondAttribute="trailing" constant="22" id="f2b-dd-0M0"/>
+                                                    <constraint firstItem="LIK-i8-waN" firstAttribute="leading" secondItem="whv-Ue-XyY" secondAttribute="leading" constant="22" id="lFn-ob-CVs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LIK-i8-waN" secondAttribute="bottom" id="lrb-OV-Ccx"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJW-Fc-oY0" userLabel="Share Section">
-                                                <rect key="frame" x="0.0" y="558" width="320" height="113.5"/>
+                                                <rect key="frame" x="0.0" y="529" width="320" height="113.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWY-40-H8G" userLabel="Share Bar">
                                                         <rect key="frame" x="22" y="12" width="276" height="89.5"/>
@@ -1103,7 +1108,7 @@ Your battery usage may increase.</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Eim-Z7-BkO" secondAttribute="trailing" id="7GP-Gx-d2N"/>
-                                    <constraint firstAttribute="bottom" secondItem="Eim-Z7-BkO" secondAttribute="bottom" id="B6d-iH-YZW"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eim-Z7-BkO" secondAttribute="bottom" constant="32" id="B6d-iH-YZW"/>
                                     <constraint firstItem="Eim-Z7-BkO" firstAttribute="top" secondItem="mB8-0X-aox" secondAttribute="top" id="Eof-jB-mEP"/>
                                     <constraint firstItem="Eim-Z7-BkO" firstAttribute="width" secondItem="mB8-0X-aox" secondAttribute="width" id="MCe-bo-pjG"/>
                                     <constraint firstItem="Eim-Z7-BkO" firstAttribute="leading" secondItem="mB8-0X-aox" secondAttribute="leading" id="fDb-Mh-KGS"/>
@@ -1119,10 +1124,11 @@ Your battery usage may increase.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D2I-UZ-Ply"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="ic-home" selectedImage="ic-home-selected" id="ldq-ma-pwg"/>
+                    <tabBarItem key="tabBarItem" title="Monitor" image="iconNavMonitor" selectedImage="iconNavMonitor-selected" id="ldq-ma-pwg"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bodyLabel" destination="WV2-xp-47d" id="GK8-MN-tuf"/>
+                        <outlet property="monitorButton" destination="LIK-i8-waN" id="E6F-mF-K25"/>
                         <outlet property="screenStack" destination="Eim-Z7-BkO" id="vQc-mn-6mJ"/>
                         <outlet property="shareView" destination="hWY-40-H8G" id="Jjy-G2-9H6"/>
                         <outlet property="titleLabel" destination="W1I-gM-V0v" id="bnO-7j-VBr"/>
@@ -1143,7 +1149,7 @@ Your battery usage may increase.</string>
         <scene sceneID="HcO-vc-K7U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="dMQ-hp-I22" customClass="HelpNavController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Help" image="ic-help" selectedImage="ic-help-selected" id="deh-eO-0VD"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="iconHelp" selectedImage="iconHelp-selected" id="deh-eO-0VD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="27D-GO-jEp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1163,7 +1169,7 @@ Your battery usage may increase.</string>
             <objects>
                 <viewController id="Vo2-KP-JHY" customClass="HelpViewController" customModule="OpenTrace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSr-jE-Vfw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZH9-jw-L27">
@@ -1478,10 +1484,10 @@ Your battery usage may increase.</string>
         <image name="bluetooth-phones" width="246" height="169.5"/>
         <image name="button-gradient" width="272" height="48"/>
         <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="ic-help" width="24" height="24"/>
-        <image name="ic-help-selected" width="24" height="24"/>
-        <image name="ic-home" width="24" height="24"/>
-        <image name="ic-home-selected" width="24" height="24"/>
+        <image name="iconHelp" width="25" height="25"/>
+        <image name="iconHelp-selected" width="25" height="25"/>
+        <image name="iconNavMonitor" width="25" height="25"/>
+        <image name="iconNavMonitor-selected" width="25" height="25"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="mask-icon" width="22" height="22"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>

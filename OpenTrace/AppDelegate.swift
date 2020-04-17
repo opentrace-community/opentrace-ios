@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        Messaging.messaging().delegate = self
 
         //configure the database manager
         self.configureDatabaseManager()
@@ -45,7 +46,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         navigateToCorrectPage()
+        application.registerForRemoteNotifications()
 
+        window?.tintColor = .black
+        
         return true
     }
 
@@ -139,3 +143,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+extension AppDelegate: MessagingDelegate {}

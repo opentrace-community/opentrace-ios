@@ -63,21 +63,75 @@
 "General.GenericError.title" = "Oops";
 "General.GenericError.body" = "Something went wrong, please try again.";
 "General.GenericError.dismiss_action" = "Ok";
-
+"General.ok" = "OK";
+"General.submit" = "Submit";
 "General.cancel" = "Cancel";
+
+// MARK: - Home
+"Home.startMonitoring" = "Track my condition";
 
 // MARK: - Monitoring, Health Check
 "Monitoring.HealthCheck.title" = "How do you feel today?";
 "Monitoring.HealthCheck.subtitle" = "Keep a track of your symptoms.";
-"Monitoring.HealthCheck.feelingWell" = "I'm feeling good";
-"Monitoring.HealthCheck.feelingSick" = "I'm not quite feeling right";
+"Monitoring.HealthCheck.feelingWell" = "I’m feeling good";
+"Monitoring.HealthCheck.feelingSick" = "I’m not quite feeling right";
 
 // MARK: - Monitoring, Feeling Well
 "Monitoring.FeelingWell.title" = "OK, great!";
-"Monitoring.FeelingWell.subtitle" = "Blah blah blah";
-"Monitoring.FeelingWell.okClose" = "OK";
+"Monitoring.FeelingWell.subtitle" = "Follow the standard precautions. Keep coming back to the app to report how you’re feeling.";
+
+// MARK: - Monitoring, Track symptoms
+"Monitoring.TrackSymptoms.title" = "Let’s find out more about your condition";
+"Monitoring.TrackSymptoms.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+"Monitoring.TrackSymptoms.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+
+// MARK: - Monitoring, Track symptoms, Error Incomplete
+"Monitoring.TrackSymptoms.ErrorIncomplete.title" = "All questions required";
+"Monitoring.TrackSymptoms.ErrorIncomplete.message" = "Please ensure all questions are answered and then retry.";
+
+// MARK: - Monitoring, Advice
+"Monitoring.Advice.title" = "Advice and tips to keep you safe and sound";
+"Monitoring.Advice.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+"Monitoring.Advice.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+
+// MARK: - Monitoring, Contact Form
+"Monitoring.ContactForm.title" = "Please enter your details";
+"Monitoring.ContactForm.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+"Monitoring.ContactForm.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+
+// MARK: - Monitoring, Contact Form, Error Incomplete
+"Monitoring.ContactForm.ErrorIncomplete.title" = "All fields are required";
+"Monitoring.ContactForm.ErrorIncomplete.message" = "Please ensure all fields are completed and then retry.";
+
+// MARK: - Monitoring, Thanks for info
+"Monitoring.ThanksForInfo.title" = "Thanks for your info";
+"Monitoring.ThanksForInfo.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 
 // MARK: - Help
 "Help.View.title" = "Help";
 "Help.Error.title" = "Something went wrong";
 "Help.Error.dismiss" = "Dismiss";
+"Help.Header.title" = "Information about how we handle your data";
+"Help.Header.subtitle" = "We take handling of your information serious that’s why we have parameters in place to protect you.";
+
+//MARK: - Upload Data, Info
+"UploadData.Info.title" = "If you are infected with COVID-19, please let us know.";
+"UploadData.Info.subHeading" = "By sharing your status we can inform the individuals you've recently been in contact with. Please note that don't know who you are and will therefore never be able to share your identity.";
+"UploadData.Info.primary_cta" = "Next";
+
+//MARK: - Upload Data, Enter pin
+"UploadData.EnterPin.title" = "Please enter your pin";
+"UploadData.EnterPin.subHeading" = "Enter the pin you've received from the Health Authority";
+"UploadData.EnterPin.primary_cta" = "Upload data";
+"UploadData.EnterPin.disclaimer" = "By uploading you agree to share your bluetooth proximity of the last 21 days with Ministerie van Volksgezondheid, Welzijn en Sport. We do not collect any geolocation or personally identifiable information.";
+"UploadData.EnterPin.disclaimer_blod" = "We do not collect any geolocation or personally identifiable information.";
+"UploadData.EnterPin.invalid_pin" = "Invalid pin";
+
+
+//MARK: - Upload Data, Success
+"UploadData.UploadSuccess.title" = "Thank you for sharing";
+"UploadData.UploadSuccess.subHeading" = "We'll inform the individuals you've recently been in contact with to avoid the Coronavirus from spreading.";
+"UploadData.UploadSuccess.primary_cta" = "Done";
+
+
+

@@ -8,39 +8,52 @@ import Firebase
 import FirebaseFunctions
 import CoreData
 
-class UploadDataStep2VC: UIViewController {
-    @IBOutlet weak var disclaimerTextLbl: UILabel!
-    @IBOutlet weak var codeInputView: CodeInputView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var uploadErrorMsgLbl: UILabel!
+final class UploadDataStep2VC: UIViewController {
+    
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subHeadingLabel: UILabel!
+    @IBOutlet private var disclaimerLabel: UILabel!
+    @IBOutlet private var codeInputView: CodeInputView!
+    @IBOutlet private var uploadErrorMsgLbl: UILabel!
+    @IBOutlet private var primaryCTA: StyledButton!
+    @IBOutlet private var cancelButton: UIBarButtonItem!
+    
+    private typealias Copy = DisplayStrings.UploadData.EnterPin
 
-    let uploadFailErrMsg = "Upload failed. Please try again later."
-    let invalidPinErrMsg = "Invalid PIN"
-
-    var functions = Functions.functions(region: "europe-west2")
-    let storageUrl = PlistHelper.getvalueFromInfoPlist(withKey: "FIREBASE_STORAGE_URL") ?? ""
+    private var functions = Functions.functions(region: "europe-west2")
+    private let storageUrl = PlistHelper.getvalueFromInfoPlist(withKey: "FIREBASE_STORAGE_URL") ?? ""
+    private let loadingView = LoadingView()
 
     override func viewDidLoad() {
-        disclaimerTextLbl.semiBold(text: "We don’t collect any geolocation or personal data.")
         _ = codeInputView.becomeFirstResponder()
         dismissKeyboardOnTap()
+        setNavbarToBackgroundColour(withShadow: false)
+        setCopy()
+        view.addAndPin(subview: loadingView)
     }
-
-    @IBAction func backBtnTapped(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+    
+    private func setCopy() {
+        titleLabel.text = Copy.title
+        subHeadingLabel.text = Copy.subHeading
+        disclaimerLabel.text = Copy.disclaimer
+        disclaimerLabel.bold(text: Copy.disclaimerBold)
+        primaryCTA.setTitle(Copy.primaryCTA, for: .normal)
     }
-
+    
+    @IBAction func cancelTapped(_ sender: Any) {
+        navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func uploadDataBtnTapped(_ sender: UIButton) {
         sender.isEnabled = false
         self.uploadErrorMsgLbl.isHidden = true
-        activityIndicator.startAnimating()
         let code = codeInputView.text
-
+        loadingView.show()
         functions.httpsCallable("getUploadToken").call(code) { [unowned self] (result, error) in
             if let error = error as NSError? {
+                self.loadingView.hide()
                 sender.isEnabled = true
-                self.activityIndicator.stopAnimating()
-                self.uploadErrorMsgLbl.text = self.uploadFailErrMsg
+                self.uploadErrorMsgLbl.text = DisplayStrings.General.GenericError.body
 
                 if error.domain == FunctionsErrorDomain {
                     let code = FunctionsErrorCode(rawValue: error.code)
@@ -54,21 +67,21 @@ class UploadDataStep2VC: UIViewController {
             }
 
             if let token = (result?.data as? [String: Any])?["token"] as? String {
-                self.uploadFile(token: token) { success in
+                self.uploadFile(token: token) { [weak self] success in
+                    self?.loadingView.hide()
                     if success {
-                        self.performSegue(withIdentifier: "showSuccessVCSegue", sender: nil)
+                        self?.performSegue(withIdentifier: "showSuccessVCSegue", sender: nil)
                     } else {
-                        self.uploadErrorMsgLbl.isHidden = false
-                        self.uploadErrorMsgLbl.text = self.uploadFailErrMsg
+                        self?.uploadErrorMsgLbl.isHidden = false
+                        self?.uploadErrorMsgLbl.text = DisplayStrings.General.GenericError.body
                         sender.isEnabled = true
-                        self.activityIndicator.stopAnimating()
                     }
                 }
             } else {
+                self.loadingView.hide()
                 self.uploadErrorMsgLbl.isHidden = false
-                self.uploadErrorMsgLbl.text = self.invalidPinErrMsg
+                self.uploadErrorMsgLbl.text = Copy.invalidPin
                 sender.isEnabled = true
-                self.activityIndicator.stopAnimating()
             }
         }
     }

@@ -12,12 +12,15 @@ final class HowItWorksViewController: UIViewController {
     @IBOutlet private var headerLabel: UILabel!
     @IBOutlet private var bodyLabel: UILabel!
     @IBOutlet private var greatBtn: UIButton!
+    
+    private let loadingView = LoadingView()
  
     @IBAction func greatBtnOnClick(_ sender: UIButton) {
   
         OnboardingManager.shared.completedIWantToHelp = true
-        #warning("TODO:- Show loading here when we have a decent loading UI")
+        loadingView.show()
         Auth.auth().signInAnonymously { [weak self] (result, error) in
+            self?.loadingView.hide()
             if error != nil || result == nil {
                 self?.showError()
                 return
@@ -40,6 +43,7 @@ final class HowItWorksViewController: UIViewController {
         headerLabel.text = Copy.header
         bodyLabel.text = Copy.body
         greatBtn.setTitle(Copy.footerButtonTitle, for: .normal)
+        view.addAndPin(subview: loadingView)
     }
 
     override func viewDidAppear(_ animated: Bool) {

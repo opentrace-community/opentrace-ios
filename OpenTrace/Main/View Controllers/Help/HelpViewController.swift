@@ -24,6 +24,8 @@ final class HelpViewController: UIViewController {
 		tableView.register(DetailCell.self, forCellReuseIdentifier: DetailCell().identifier)
 		tableView.delegate = self
 		tableView.dataSource = self
+		tableView.sectionHeaderHeight = UITableView.automaticDimension
+		tableView.estimatedSectionHeaderHeight = 35
     }
 
 	private func fetchTableData() {
@@ -43,31 +45,39 @@ final class HelpViewController: UIViewController {
 
 extension HelpViewController: UITableViewDelegate, UITableViewDataSource {
 
-	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return dataSource[section].title
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		let showShadow = scrollView.contentOffset.y > 0
+		setNavbarToBackgroundColour(withShadow: showShadow)
 	}
+
+	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		if section == 0 {  return TableHeaderView() }
+		let view = SectionHeaderView()
+		view.title = dataSource[section - 1].title
+		return view
+	}
+
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return dataSource.count
+		return dataSource.count + 1
 	}
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return dataSource[section].rows.count
+		return section == 0 ? 0 : dataSource[section - 1].rows.count
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		guard let cell = tableView.dequeueReusableCell(withIdentifier: DetailCell().identifier, for: indexPath) as? DetailCell else { return UITableViewCell() }
-		let model = dataSource[indexPath.section].rows[indexPath.row]
+		let model = dataSource[indexPath.section - 1].rows[indexPath.row]
 		cell.model = model
 		return cell
 	}
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		if let url = dataSource[indexPath.section].rows[indexPath.row].url {
+		if let url = dataSource[indexPath.section - 1].rows[indexPath.row].url {
 			let safariViewController = SFSafariViewController(url: url)
 			present(safariViewController, animated: true)
 		}
 		tableView.cellForRow(at: indexPath)?.isSelected = false
 	}
-
 }
 
 extension HelpViewController {

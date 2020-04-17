@@ -12,12 +12,8 @@ class HealthCheckViewController: UIViewController {
 
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
-    @IBOutlet private var wellButton: UIButton!
-    @IBOutlet private var sickButton: UIButton!
-
-    convenience init() {
-        self.init(nibName: String(describing: HealthCheckViewController.self), bundle: Bundle(for: HealthCheckViewController.self))
-    }
+    @IBOutlet private var wellButton: StyledButton!
+    @IBOutlet private var sickButton: StyledButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +24,8 @@ class HealthCheckViewController: UIViewController {
         subtitleLabel.text = Copy.subtitle
         wellButton.setTitle(Copy.feelingWell, for: .normal)
         sickButton.setTitle(Copy.feelingSick, for: .normal)
+        wellButton.appearance = .primaryHollow
+        sickButton.appearance = .primaryHollow
     }
 
     @objc private func cancel() {
@@ -35,17 +33,15 @@ class HealthCheckViewController: UIViewController {
     }
 
     @IBAction func didTapFeelingWell(_ sender: Any) {
-        // TODO: Replace alert with separate screen
-        typealias Copy = DisplayStrings.Monitoring.FeelingWell
-        let alert = UIAlertController(title: Copy.title, message: Copy.subtitle, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Copy.okClose, style: .default, handler: { [weak self] _ in
-            self?.dismiss(animated: true)
-        }))
-        present(alert, animated: true)
+		let controller = MessageViewController()
+		controller.configure(with: .feelingGood, onFooterButtonTap: { vc in
+			vc.dismiss(animated: true)
+		})
+        navigationController?.pushViewController(controller, animated: true)
     }
 
     @IBAction func didTapFeelingSick(_ sender: Any) {
-        let symptomsViewController = SymptomsViewController()
-        navigationController?.pushViewController(symptomsViewController, animated: true)
+        let controller = SymptomsViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
