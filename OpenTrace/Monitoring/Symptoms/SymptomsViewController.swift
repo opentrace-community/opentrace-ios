@@ -47,9 +47,9 @@ class SymptomsViewController: UIViewController {
             presentErrorIncomplete()
             return
         case .advice1:
-            next = AdviceViewController()
+            next = AdviceViewController(advices: AdviceManager.shared.advices1)
         case .advice2:
-            next = AdviceViewController()
+            next = AdviceViewController(advices: AdviceManager.shared.advices2)
         case .contact:
             next = ContactFormViewController()
         }
