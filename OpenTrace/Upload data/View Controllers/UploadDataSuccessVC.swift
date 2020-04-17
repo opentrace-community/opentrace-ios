@@ -9,11 +9,21 @@ final class UploadDataSuccessVC: UIViewController {
       
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subHeadingLabel: UILabel!
+    @IBOutlet private var primaryCTA: StyledButton!
+    
+    private typealias Copy = DisplayStrings.UploadData.UploadSuccess
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         setTransparentNavBar()
+        setCopy()
+    }
+    
+    private func setCopy() {
+        titleLabel.text = Copy.title
+        subHeadingLabel.text = Copy.subHeading
+        primaryCTA.setTitle(Copy.primaryCTA, for: .normal)
     }
  
     @IBAction func doneBtnTapped(_ sender: UIButton) {

@@ -285,6 +285,11 @@
                     <tabBarItem key="tabBarItem" title="Infected" image="tabIconInfected" selectedImage="tabIconInfected-selected" id="Y1B-Ag-Xtw"/>
                     <navigationItem key="navigationItem" id="9vc-Zh-P5M"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="primaryCTA" destination="IDr-rd-rlV" id="pCu-hN-iAZ"/>
+                        <outlet property="subheadingLabel" destination="YY3-md-vNO" id="DmH-k5-FUs"/>
+                        <outlet property="titleLabel" destination="YY3-md-vNO" id="oSg-sZ-48f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ywc-N6-3aU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,6 +381,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cancelButton" destination="mQh-Bs-NP5" id="cJ5-8I-KNx"/>
                         <outlet property="codeInputView" destination="mKA-1q-WgQ" id="9Xw-UH-ip3"/>
                         <outlet property="disclaimerLabel" destination="SnN-xQ-TMr" id="JJj-jD-U52"/>
                         <outlet property="primaryCTA" destination="24k-o7-Lgs" id="dB1-8p-IDt"/>
@@ -446,6 +452,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="76Q-Ls-vsz"/>
                     <connections>
+                        <outlet property="primaryCTA" destination="nC1-Z2-6rf" id="3Ry-9c-3rP"/>
                         <outlet property="subHeadingLabel" destination="Ukc-WZ-i4j" id="fVo-3I-s7v"/>
                         <outlet property="titleLabel" destination="iGt-RX-ZPK" id="MTP-CP-FdZ"/>
                     </connections>

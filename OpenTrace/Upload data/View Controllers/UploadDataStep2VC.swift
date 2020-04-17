@@ -16,9 +16,9 @@ final class UploadDataStep2VC: UIViewController {
     @IBOutlet private var codeInputView: CodeInputView!
     @IBOutlet private var uploadErrorMsgLbl: UILabel!
     @IBOutlet private var primaryCTA: StyledButton!
+    @IBOutlet private var cancelButton: UIBarButtonItem!
     
-    let uploadFailErrMsg = "Upload failed. Please try again later."
-    let invalidPinErrMsg = "Invalid PIN"
+    private typealias Copy = DisplayStrings.UploadData.EnterPin
 
     var functions = Functions.functions(region: "europe-west2")
     let storageUrl = PlistHelper.getvalueFromInfoPlist(withKey: "FIREBASE_STORAGE_URL") ?? ""
@@ -27,6 +27,14 @@ final class UploadDataStep2VC: UIViewController {
         _ = codeInputView.becomeFirstResponder()
         dismissKeyboardOnTap()
         setTransparentNavBar()
+        setCopy()
+    }
+    
+    private func setCopy() {
+        titleLabel.text = Copy.title
+        subHeadingLabel.text = Copy.subHeading
+        disclaimerLabel.text = Copy.disclaimer
+        primaryCTA.setTitle(Copy.primaryCTA, for: .normal)
     }
     
     @IBAction func cancelTapped(_ sender: Any) {
@@ -41,7 +49,7 @@ final class UploadDataStep2VC: UIViewController {
         functions.httpsCallable("getUploadToken").call(code) { [unowned self] (result, error) in
             if let error = error as NSError? {
                 sender.isEnabled = true
-                self.uploadErrorMsgLbl.text = self.uploadFailErrMsg
+                self.uploadErrorMsgLbl.text = DisplayStrings.General.GenericError.body
 
                 if error.domain == FunctionsErrorDomain {
                     let code = FunctionsErrorCode(rawValue: error.code)
@@ -60,13 +68,13 @@ final class UploadDataStep2VC: UIViewController {
                         self.performSegue(withIdentifier: "showSuccessVCSegue", sender: nil)
                     } else {
                         self.uploadErrorMsgLbl.isHidden = false
-                        self.uploadErrorMsgLbl.text = self.uploadFailErrMsg
+                        self.uploadErrorMsgLbl.text = DisplayStrings.General.GenericError.body
                         sender.isEnabled = true
                     }
                 }
             } else {
                 self.uploadErrorMsgLbl.isHidden = false
-                self.uploadErrorMsgLbl.text = self.invalidPinErrMsg
+                self.uploadErrorMsgLbl.text = Copy.invalidPin
                 sender.isEnabled = true
             }
         }

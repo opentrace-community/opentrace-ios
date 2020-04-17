@@ -103,3 +103,22 @@
 "Help.View.title" = "Help";
 "Help.Error.title" = "Something went wrong";
 "Help.Error.dismiss" = "Dismiss";
+
+//MARK: - Upload Data, Info
+"UploadData.Info.title" = "If you are infected with COVID-19, please let us know.";
+"UploadData.Info.subHeading" = "By sharing your status we can inform the individuals you've recently been in contact with. Please note that don't know who you are and will therefore never be able to share your identity.";
+"UploadData.Info.primary_cta" = "Next";
+
+//MARK: - Upload Data, Enter pin
+"UploadData.EnterPin.title" = "Please enter your pin";
+"UploadData.EnterPin.subHeading" = "";
+"UploadData.EnterPin.primary_cta" = "Upload data";
+"UploadData.EnterPin.disclaimer" = "By uploading you agree to share your bluetooth proximity of the last 21 days with Ministerie van Volksgezondheid, Welzijn en Sport. We do not collect any geolocation or personally identifiable information. "";
+"UploadData.EnterPin.invalid_pin" = "Invalid pin";
+
+
+//MARK: - Upload Data, Success
+"UploadData.UploadSuccess.title" = "Thank you for sharing";
+"UploadData.UploadSuccess.subHeading" = "We'll inform the individuals you've recently been in contact with to avoid the Coronavirus from spreading.";
+"UploadData.UploadSuccess.primary_cta" = "Done";
+
