@@ -99,10 +99,16 @@
 "Monitoring.ContactForm.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 "Monitoring.ContactForm.closingStatement" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
 
+// MARK: - Monitoring, Thanks for info
+"Monitoring.ThanksForInfo.title" = "Thanks for your info";
+"Monitoring.ThanksForInfo.subtitle" = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium.";
+
 // MARK: - Help
 "Help.View.title" = "Help";
 "Help.Error.title" = "Something went wrong";
 "Help.Error.dismiss" = "Dismiss";
+"Help.Header.title" = "Information about how we handle your data";
+"Help.Header.subtitle" = "We take handling of your information serious that’s why we have parameters in place to protect you.";
 
 //MARK: - Upload Data, Info
 "UploadData.Info.title" = "If you are infected with COVID-19, please let us know.";
@@ -122,4 +128,6 @@
 "UploadData.UploadSuccess.title" = "Thank you for sharing";
 "UploadData.UploadSuccess.subHeading" = "We'll inform the individuals you've recently been in contact with to avoid the Coronavirus from spreading.";
 "UploadData.UploadSuccess.primary_cta" = "Done";
+
+
 

@@ -51,8 +51,9 @@ class MessageViewController: UIViewController {
 }
 
 extension MessageViewController {
-
-	typealias FeelingWellCopy = DisplayStrings.Monitoring.FeelingWell
+    
+    typealias FeelingWellCopy = DisplayStrings.Monitoring.FeelingWell
+    typealias ThanksForInfoCopy = DisplayStrings.Monitoring.ThanksForInfo
 
 	struct ViewModel {
 		let image: UIImage?
@@ -60,9 +61,14 @@ extension MessageViewController {
 		let subTitle: String
 		let footerButtonTitle: String
 
-		static let feelingGood = ViewModel(image: UIImage(named: "sceneFeelGood"),
-										   title: FeelingWellCopy.title,
-										   subTitle: FeelingWellCopy.subtitle,
-										   footerButtonTitle: FeelingWellCopy.okClose)
+        static let feelingGood = ViewModel(image: UIImage(named: "sceneFeelGood"),
+                                           title: FeelingWellCopy.title,
+                                           subTitle: FeelingWellCopy.subtitle,
+                                           footerButtonTitle: FeelingWellCopy.okClose)
+        
+        static let thanksForInfo = ViewModel(image: UIImage(named: "sceneFeelGood"),
+                                           title: ThanksForInfoCopy.title,
+                                           subTitle: ThanksForInfoCopy.subtitle,
+                                           footerButtonTitle: ThanksForInfoCopy.okClose)
 	}
 }

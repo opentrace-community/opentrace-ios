@@ -18,14 +18,18 @@ extension HelpViewController {
 			didSet {
 				titleLabel.text = model?.title
 				subTitleLabel.text = model?.subTitle
-				if model?.urlString != nil { accessoryType = .disclosureIndicator }
+				if model?.urlString != nil {
+					let image = UIImage(named: "discIndicator")
+					let indicatorImageView = UIImageView(image: image)
+					accessoryView = indicatorImageView
+				}
 			}
 		}
 
 		private let titleLabel: UILabel = {
 			let label = UILabel()
 			label.textAlignment = .left
-			label.font = UIFont(descriptor: .preferredFontDescriptor(withTextStyle: .title1), size: 22)
+			label.font = UIFont.monospacedDigitSystemFont(ofSize: 18, weight: .bold)
 			label.numberOfLines = 0
 			return label
 		}()
@@ -33,7 +37,7 @@ extension HelpViewController {
 		private let subTitleLabel : UILabel = {
 			let label = UILabel()
 			label.textAlignment = .left
-			label.font = UIFont(descriptor: .preferredFontDescriptor(withTextStyle: .callout), size: 16)
+			label.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .regular)
 			label.numberOfLines = 0
 			return label
 		}()
@@ -46,21 +50,29 @@ extension HelpViewController {
 			subTitleLabel.translatesAutoresizingMaskIntoConstraints = false
 
 			NSLayoutConstraint.activate([
-				titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-				titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-				titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32)
+				titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 24),
+				titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 21),
+				titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -76)
 			])
 
 			NSLayoutConstraint.activate([
-				subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 6),
-				subTitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
-				subTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-				subTitleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
+				subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 7),
+				subTitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -76),
+				subTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 21),
+				subTitleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24)
 			])
 		}
 
 		required init?(coder: NSCoder) {
 			fatalError("init(coder:) has not been implemented")
+		}
+
+		override func prepareForReuse() {
+			super.prepareForReuse()
+			accessoryView = nil
+			titleLabel.text = ""
+			subTitleLabel.text = ""
+			isSelected = false
 		}
 
 	}

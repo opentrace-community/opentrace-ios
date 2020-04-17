@@ -12,26 +12,27 @@ final class TransparentNavController: UINavigationController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		setTransparentNavBar()
+		setNavbarToBackgroundColour(withShadow: false)
 	}
 
 	override func pushViewController(_ viewController: UIViewController, animated: Bool) {
 		super.pushViewController(viewController, animated: animated)
-		viewController.setTransparentNavBar()
+		viewController.setNavbarToBackgroundColour(withShadow: false)
 	}
 }
 
 extension UIViewController {
 
-	func setTransparentNavBar() {
+	func setNavbarToBackgroundColour(withShadow: Bool) {
 		if #available(iOS 13.0, *) {
 			let navBarAppearance = UINavigationBarAppearance()
-			navBarAppearance.configureWithTransparentBackground()
-			navBarAppearance.shadowColor = .clear
+			navBarAppearance.configureWithDefaultBackground()
+			navBarAppearance.backgroundColor = view.backgroundColor
+			navBarAppearance.shadowColor = withShadow ? .separator : .clear
 			navigationItem.standardAppearance = navBarAppearance
 		} else {
 			navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-			navigationController?.navigationBar.shadowImage = UIImage()
+			navigationController?.navigationBar.shadowImage = withShadow ? nil : UIImage()
 			navigationController?.navigationBar.isTranslucent = true
 		}
 	}
