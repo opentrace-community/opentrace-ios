@@ -107,3 +107,5 @@
 "Help.View.title" = "Help";
 "Help.Error.title" = "Something went wrong";
 "Help.Error.dismiss" = "Dismiss";
+"Help.Header.title" = "Information about how we handle your data";
+"Help.Header.subtitle" = "We take handling of your information serious that’s why we have parameters in place to protect you.";
