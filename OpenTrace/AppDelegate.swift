@@ -46,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         navigateToCorrectPage()
+        application.registerForRemoteNotifications()
 
         return true
     }
