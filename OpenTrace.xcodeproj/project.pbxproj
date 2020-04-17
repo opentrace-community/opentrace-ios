@@ -15,6 +15,7 @@
 		30E91BE923EFE514002D592A /* UploadDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BE823EFE514002D592A /* UploadDataVC.swift */; };
 		30E91BEB23EFEA0B002D592A /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E91BEA23EFEA0B002D592A /* CodeInputView.swift */; };
 		30FADDAE23F6896C006C125F /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FADDAD23F6896C006C125F /* Encounter+Event.swift */; };
+		378E546124498F7C00AA8DAE /* UploadDataStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E546024498F7C00AA8DAE /* UploadDataStrings.swift */; };
 		37CDA247244759630085A56C /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDA246244759630085A56C /* UIAlertController+Additions.swift */; };
 		553AA5CE243EC91700EE326F /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553AA5CD243EC91700EE326F /* OnboardingManager.swift */; };
 		557FD393243E4062006BDF38 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FD392243E4062006BDF38 /* DatabaseManager.swift */; };
@@ -135,6 +136,7 @@
 		375E62692445F184004D45D3 /* Help.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Help.md; sourceTree = "<group>"; };
 		375E626A2445F1A1004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		375E626B2445F1A6004D45D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		378E546024498F7C00AA8DAE /* UploadDataStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDataStrings.swift; sourceTree = "<group>"; };
 		37CDA246244759630085A56C /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		3C5E7E594E7634084F94F030 /* Pods-OpenTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTrace.debug.xcconfig"; path = "Target Support Files/Pods-OpenTrace/Pods-OpenTrace.debug.xcconfig"; sourceTree = "<group>"; };
 		553AA5CD243EC91700EE326F /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 				EA8667A3244769CB007FF257 /* HomeStrings.swift */,
 				CF5855CB244612D700D5F625 /* OnboardingStrings.swift */,
 				CF82AF2B24473BE300081964 /* HelpStrings.swift */,
+				378E546024498F7C00AA8DAE /* UploadDataStrings.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -1014,6 +1017,7 @@
 				5D8DD06123E319B300E097EF /* Encounter+CoreDataClass.swift in Sources */,
 				5D269C0D23E2958F00ADF2DE /* BluetraceManager.swift in Sources */,
 				C5046D5C23EF18600046E96D /* IntroViewController.swift in Sources */,
+				378E546124498F7C00AA8DAE /* UploadDataStrings.swift in Sources */,
 				B605A7AF24273642008BA819 /* UploadDataSuccessVC.swift in Sources */,
 				D8D3100B243C7ECD00D760B0 /* BluetraceV2.swift in Sources */,
 				5DD41D5323DD4CA400FD4AB0 /* PeripheralController.swift in Sources */,
