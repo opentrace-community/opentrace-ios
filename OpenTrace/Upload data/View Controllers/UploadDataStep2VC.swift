@@ -8,12 +8,15 @@ import Firebase
 import FirebaseFunctions
 import CoreData
 
-class UploadDataStep2VC: UIViewController {
-    @IBOutlet weak var disclaimerTextLbl: UILabel!
-    @IBOutlet weak var codeInputView: CodeInputView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var uploadErrorMsgLbl: UILabel!
-
+final class UploadDataStep2VC: UIViewController {
+    
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subHeadingLabel: UILabel!
+    @IBOutlet private var disclaimerLabel: UILabel!
+    @IBOutlet private var codeInputView: CodeInputView!
+    @IBOutlet private var uploadErrorMsgLbl: UILabel!
+    @IBOutlet private var primaryCTA: StyledButton!
+    
     let uploadFailErrMsg = "Upload failed. Please try again later."
     let invalidPinErrMsg = "Invalid PIN"
 
@@ -21,25 +24,23 @@ class UploadDataStep2VC: UIViewController {
     let storageUrl = PlistHelper.getvalueFromInfoPlist(withKey: "FIREBASE_STORAGE_URL") ?? ""
 
     override func viewDidLoad() {
-        disclaimerTextLbl.semiBold(text: "We don’t collect any geolocation or personal data.")
         _ = codeInputView.becomeFirstResponder()
         dismissKeyboardOnTap()
+        setTransparentNavBar()
     }
-
-    @IBAction func backBtnTapped(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+    
+    @IBAction func cancelTapped(_ sender: Any) {
+        navigationController?.dismiss(animated: true, completion: nil)
     }
-
+    
     @IBAction func uploadDataBtnTapped(_ sender: UIButton) {
         sender.isEnabled = false
         self.uploadErrorMsgLbl.isHidden = true
-        activityIndicator.startAnimating()
         let code = codeInputView.text
 
         functions.httpsCallable("getUploadToken").call(code) { [unowned self] (result, error) in
             if let error = error as NSError? {
                 sender.isEnabled = true
-                self.activityIndicator.stopAnimating()
                 self.uploadErrorMsgLbl.text = self.uploadFailErrMsg
 
                 if error.domain == FunctionsErrorDomain {
@@ -61,14 +62,12 @@ class UploadDataStep2VC: UIViewController {
                         self.uploadErrorMsgLbl.isHidden = false
                         self.uploadErrorMsgLbl.text = self.uploadFailErrMsg
                         sender.isEnabled = true
-                        self.activityIndicator.stopAnimating()
                     }
                 }
             } else {
                 self.uploadErrorMsgLbl.isHidden = false
                 self.uploadErrorMsgLbl.text = self.invalidPinErrMsg
                 sender.isEnabled = true
-                self.activityIndicator.stopAnimating()
             }
         }
     }

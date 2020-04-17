@@ -5,9 +5,19 @@
 import Foundation
 import UIKit
 
-class UploadDataSuccessVC: UIViewController {
+final class UploadDataSuccessVC: UIViewController {
+      
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subHeadingLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+        setTransparentNavBar()
+    }
+ 
     @IBAction func doneBtnTapped(_ sender: UIButton) {
         // Bring user back to home tab
-        self.navigationController?.tabBarController?.selectedIndex = 0
+        dismiss(animated: true, completion: nil)
     }
 }
