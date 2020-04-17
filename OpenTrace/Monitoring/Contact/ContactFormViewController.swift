@@ -27,7 +27,7 @@ class ContactFormViewController: UIViewController {
     }
 
     @IBAction private func didTapFinish(_ sender: Any) {
-        let feelingWellViewController = FeelingWellViewController()
-        navigationController?.pushViewController(feelingWellViewController, animated: true)
+//        let feelingWellViewController = FeelingWellViewController()
+//        navigationController?.pushViewController(feelingWellViewController, animated: true)
     }
 }
