@@ -3,7 +3,6 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'Firebase/Analytics'
 pod 'Firebase/Crashlytics'
 pod 'Firebase/Functions'
 pod 'Firebase/Storage'

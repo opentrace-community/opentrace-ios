@@ -1,12 +1,7 @@
 PODS:
-  - Firebase/Analytics (6.21.0):
-    - Firebase/Core
   - Firebase/Auth (6.21.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.5.1)
-  - Firebase/Core (6.21.0):
-    - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.4.0)
   - Firebase/CoreOnly (6.21.0):
     - FirebaseCore (= 6.6.5)
   - Firebase/Crashlytics (6.21.0):
@@ -25,15 +20,6 @@ PODS:
     - FirebaseAnalyticsInterop (~> 1.3)
     - FirebaseCore (~> 6.1)
     - Protobuf (>= 3.9.2, ~> 3.9)
-  - FirebaseAnalytics (6.4.0):
-    - FirebaseCore (~> 6.6)
-    - FirebaseInstallations (~> 1.1)
-    - GoogleAppMeasurement (= 6.4.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (= 0.3.9011)
   - FirebaseAnalyticsInterop (1.5.0)
   - FirebaseAuth (6.5.1):
     - FirebaseAuthInterop (~> 1.0)
@@ -92,12 +78,6 @@ PODS:
     - GoogleUtilities/UserDefaults
   - FirebaseUI/Phone (8.4.2):
     - FirebaseUI/Auth
-  - GoogleAppMeasurement (6.4.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (= 0.3.9011)
   - GoogleDataTransport (5.1.0)
   - GoogleDataTransportCCTSupport (2.0.1):
     - GoogleDataTransport (~> 5.1)
@@ -109,8 +89,6 @@ PODS:
   - GoogleUtilities/Environment (6.5.2)
   - GoogleUtilities/Logger (6.5.2):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.5.2):
-    - GoogleUtilities/Logger
   - GoogleUtilities/Network (6.5.2):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
@@ -132,7 +110,6 @@ PODS:
   - SwiftLint (0.39.1)
 
 DEPENDENCIES:
-  - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Crashlytics
   - Firebase/Functions
@@ -146,7 +123,6 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseABTesting
-    - FirebaseAnalytics
     - FirebaseAnalyticsInterop
     - FirebaseAuth
     - FirebaseAuthInterop
@@ -160,7 +136,6 @@ SPEC REPOS:
     - FirebaseRemoteConfig
     - FirebaseStorage
     - FirebaseUI
-    - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
@@ -174,7 +149,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Firebase: f378c80340dd41c0ad0914af740c021eb282a04b
   FirebaseABTesting: 821a3a3e4a145987e80fee3657c4de1cb9adf693
-  FirebaseAnalytics: a1a0b3327ceb5cd5b4bacffdb293f6c909aa087d
   FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
   FirebaseAuth: a6da11d78dfd956b7f7af3222a0f0b1c93ef8fc9
   FirebaseAuthInterop: a0f37ae05833af156e72028f648d313f7e7592e9
@@ -188,7 +162,6 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfig: 47abf7a04a9082091955ea555aa79cfdd249b19c
   FirebaseStorage: b43ee271294227e1a3225544b073f3b49b427f46
   FirebaseUI: e57e9b9c4340631151fbe67a14206d23d0974f37
-  GoogleAppMeasurement: 6e68a94d0eaeb1d73ef6b0ed4f7334e29d63ae29
   GoogleDataTransport: b29a21d813e906014ca16c00897827e40e4a24ab
   GoogleDataTransportCCTSupport: 6f15a89b0ca35d6fa523e1f752ef818588885988
   GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
@@ -199,6 +172,6 @@ SPEC CHECKSUMS:
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 0d8b412371c76821a82a89d7bd6b176a70b2b24d
+PODFILE CHECKSUM: 49b71ac2644ae2cd038c8a7834d9ee52539d1971
 
 COCOAPODS: 1.9.1
