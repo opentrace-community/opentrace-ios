@@ -126,5 +126,7 @@
 	<string>Light</string>
 	<key>V2_CHARACTERISTIC_ID</key>
 	<string>$(V2_CHARACTERISTIC_ID)</string>
+	<key>CLOUDFUNCTIONS_REGION</key>
+	<string>$(CLOUDFUNCTIONS_REGION)</string>
 </dict>
 </plist>

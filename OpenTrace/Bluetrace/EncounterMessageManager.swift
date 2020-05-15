@@ -9,7 +9,7 @@ class EncounterMessageManager {
 
     static let shared = EncounterMessageManager()
 
-    lazy var functions = Functions.functions(region: "asia-east2")
+    lazy var functions = Functions.functions(region: PlistHelper.getvalueFromInfoPlist(withKey: "CLOUDFUNCTIONS_REGION") ?? "asia-east2")
 
     var tempId: String? {
         guard var tempIds = UserDefaults.standard.array(forKey: userDefaultsTempIdArrayKey) as! [[String: Any]]? else {
