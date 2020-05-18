@@ -163,6 +163,9 @@ extension CentralController: CBCentralManagerDelegate {
 
         // iphones will "mask" the peripheral's identifier for android devices, resulting in the same android device being discovered multiple times with different peripheral identifier. Hence android is using CBAdvertisementDataServiceDataKey data for identifying an android pheripheral
         if let manuData = advertisementData[CBAdvertisementDataManufacturerDataKey] as? Data {
+            guard manuData.count > 2 else {
+                return
+            }
             let androidIdentifierData = manuData.subdata(in: 2..<manuData.count)
             if discoveredAndroidPeriManufacturerToUUIDMap.keys.contains(androidIdentifierData) {
                 Logger.DLog("Android Peripheral \(peripheral) has been discovered already in this window, will not attempt to connect to it again")
