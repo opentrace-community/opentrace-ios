@@ -53,6 +53,11 @@ class EncounterMessageManager {
     }
 
     func getTempId(onComplete: @escaping (String?) -> Void) {
+
+// Uncomment the code below to be able to debug bluetooth without getting tempIDs from firebase #bluetooth_debug
+//        let fakePayload = "Fj5jfbTtDySw8JoVsCmeul0wsoIcJKRPV0HtEFUlNvNg6C3wyGj8R1utPbw+Iz8tqAdpbxR1nSvr+ILXPG++"
+//        onComplete(fakePayload); return
+        
         // Check refreshDate
         if advtPayloadExpiry == nil ||  Date() > advtPayloadExpiry! {
             fetchBatchTempIdsFromFirebase { [unowned self](error: Error?, resp: (tempIds: [[String: Any]], refreshDate: Date)?) in

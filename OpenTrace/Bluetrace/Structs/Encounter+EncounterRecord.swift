@@ -8,6 +8,12 @@ import CoreData
 extension EncounterRecord {
 
     func saveToCoreData() {
+        
+        // Uncomment to be notified each time an encounter is saved (good for background mode debugging) #bluetooth_debug
+//        let content = UNMutableNotificationContent()
+//        content.body = self.description
+//        UNUserNotificationCenter.current().add(UNNotificationRequest(identifier: "debug", content: content, trigger: UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)))
+        
         DispatchQueue.main.async {
             guard let appDelegate =
                 UIApplication.shared.delegate as? AppDelegate else {

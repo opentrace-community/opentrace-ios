@@ -99,7 +99,7 @@ class BluetraceManager {
         case .unauthorized:
             presentBluetoothAlert("Unauth State")
         case .unknown:
-            presentBluetoothAlert("Unknown State")
+            ()
         case .unsupported:
             centralController.turnOn()
             presentBluetoothAlert("Unsupported State")

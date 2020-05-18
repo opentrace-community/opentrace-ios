@@ -87,6 +87,8 @@ The "Share" message uses Firebase remote config. The key is "ShareText". If it i
 
 There is a debug screen accessible within the staging version of the app. This allows you to view the app's Bluetooth communication log. To access it, you first have to set up the app. Then, tap on the home screen image.
 
+Quick Setup without Cloud Functions (for debugging only): in order to exlore or debug only some of the functionality without the hassle of setting up Firebase Cloud Functions, there are stubs in the code, which you can uncomment. Search for `#bluetooth_debug` in code and uncomment respective lines. Note, that you still need a Firebase instance with "Phone" sign in method turned on in Authentication with some testing phone numbers added there.
+
 ## Linting
 
 There's a build script in `Targets > OpenTrace > Build Phases > Swiftlint` which runs [SwiftLint](https://github.com/realm/SwiftLint) on Build.
